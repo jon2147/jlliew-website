@@ -13,6 +13,16 @@
   }
 }
 
+.first {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.last {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,8 +34,38 @@
   color: white;
 }
 
+.header-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-link:link {
+  color: #d2caaa;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  transition: color .15s;
+  margin: 0 24px;
+}
+
+.header-link:first-child {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.header-link:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.header-link:hover {
+  color: #fff;
+}
+
 .App-link {
-  color: #61dafb;
+  color: #d2caaa;
 }
 
 @keyframes App-logo-spin {

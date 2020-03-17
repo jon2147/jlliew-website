@@ -4,7 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const myFirstElement = <h1>I am the gift of Averil Machin.</h1>
+
+
 ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(myFirstElement, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
