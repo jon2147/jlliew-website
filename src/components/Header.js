@@ -14,7 +14,7 @@ class Header extends React.Component {
                 </div>
                 <div className="contact-block">
                     <p>Send me an email if you'd like to get in touch</p>
-                    <a className="email-link" href="mailto:jon.l2147@gmail.com">jon.l2147@gmail.com</a>
+                    <a className="email-link" href="mailto:design@jlliew.com">design@jlliew.com</a>
                 </div>
             </header>
         );
