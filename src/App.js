@@ -2,20 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './assets/css/fonts.css';
 import './App.css';
+import Header from './components/Header';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">      
-        <h1>I am the gift of Averil Machin.</h1>
-        <div className="header-links">
-          <a className="header-link" href="">Interaction</a>
-          <a className="header-link" href="">Print</a>
-          <a className="header-link" href="">Motion</a>
-        </div>
-      </header>
-    </div>
+      <Header></Header>
   );
 }
 
