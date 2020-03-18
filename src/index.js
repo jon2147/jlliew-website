@@ -4,8 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const myFirstElement = <h1>I am the gift of Averil Machin.</h1>
-
 
 ReactDOM.render(<App />, document.getElementById('root'));
 //ReactDOM.render(myFirstElement, document.getElementById('root'));

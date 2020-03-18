@@ -7,7 +7,26 @@ import Header from './components/Header';
 
 function App() {
   return (
-      <Header></Header>
+    <body>
+      <Header />
+
+
+      <main>
+      
+        <div className="story">
+          <div className="story-image" >
+          </div>
+          <div className="story-content" >
+            <p className="story-heading">Anburion</p>
+            <p className="story-body">A ef i imin haieder her anlaesher.</p>
+          </div>
+        </div>
+
+      </main>
+
+
+    </body>
+
   );
 }
 
