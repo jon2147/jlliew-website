@@ -6,7 +6,6 @@ class DidacticPanel extends React.Component {
     render() {
         return (
             <div className="didactic-panel">
-                <DidacticHeader/>
                 <div className="didactic-panel-story">
                     <h2 className="didactic-panel-heading">
                         Didactic Heading
