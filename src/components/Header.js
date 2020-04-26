@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 
-import {ReactComponent as UnimelbLogo} from './images/unimelb.svg';
-
 
 
 
@@ -46,24 +44,23 @@ class Header extends React.Component {
                             </h2>
                             <div className="experiences">
                                 <div className="experience">
-                                    <UnimelbLogo 
-                                    alt="Digital Designer, University of Melbourne"
-                                    width="3rem" height="auto"
-                                     />
-                                    {/*<img src={UnimelbLogo}
+                                    <img src="./images/unimelb.svg"
                                         alt="Digital Designer, University of Melbourne"
-                                        className="experience-graphic">
-                                    </img>*/}
+                                        className="experience-graphic" />
                                     <div className="experience-position">Digital Designer</div>
                                     <div className="experience-workplace">University of Melbourne</div>
                                 </div>
                                 <div className="experience">
-                                    <div className="experience-graphic"></div>
+                                <img src="./images/unimelb.svg"
+                                        alt="Digital Designer, University of Melbourne"
+                                        className="experience-graphic" />
                                     <div className="experience-position">Graphic Designer</div>
                                     <div className="experience-workplace">Pictoria Media</div>
                                 </div>
                                 <div className="experience">
-                                    <div className="experience-graphic"></div>
+                                <img src="./images/unimelb.svg"
+                                        alt="Digital Designer, University of Melbourne"
+                                        className="experience-graphic" />
                                     <div className="experience-position">Freelance Artist</div>
                                     <div className="experience-workplace">@WartideCCG</div>
                                 </div>
