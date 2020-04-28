@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 
-
+import Randomotron from './Randomotron';
 
 
 class Header extends React.Component {
@@ -43,27 +43,27 @@ class Header extends React.Component {
                                 Recent experience
                             </h2>
                             <div className="experiences">
-                                <div className="experience">
+                                <span className="experience">
                                     <img src="./images/unimelb.svg"
                                         alt="Digital Designer, University of Melbourne"
                                         className="experience-graphic" />
                                     <div className="experience-position">Digital Designer</div>
                                     <div className="experience-workplace">University of Melbourne</div>
-                                </div>
-                                <div className="experience">
-                                <img src="./images/unimelb.svg"
-                                        alt="Digital Designer, University of Melbourne"
-                                        className="experience-graphic" />
-                                    <div className="experience-position">Graphic Designer</div>
-                                    <div className="experience-workplace">Pictoria Media</div>
-                                </div>
-                                <div className="experience">
-                                <img src="./images/unimelb.svg"
-                                        alt="Digital Designer, University of Melbourne"
-                                        className="experience-graphic" />
-                                    <div className="experience-position">Freelance Artist</div>
-                                    <div className="experience-workplace">@WartideCCG</div>
-                                </div>
+                                </span>
+                                <span className="experience">
+                                    <img src="./images/unimelb.svg"
+                                            alt="Graphic Designer, Pictoria Media"
+                                            className="experience-graphic" />
+                                        <div className="experience-position">Graphic Designer</div>
+                                        <div className="experience-workplace">Pictoria Media</div>
+                                </span>
+                                <span className="experience">
+                                    <img src="./images/unimelb.svg"
+                                            alt="Freelance Artist, WartideCCG"
+                                            className="experience-graphic" />
+                                        <div className="experience-position">Freelance Artist</div>
+                                        <div className="experience-workplace">@WartideCCG</div>
+                                </span>
                             </div>
                         </div>
                         <a className="projects-link" href="google.com">
@@ -84,6 +84,7 @@ class Header extends React.Component {
                                 })}
                             </div>
                         </div>
+                        <Randomotron/>
                     </div>
                 </div>
             </header>
