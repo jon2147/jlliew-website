@@ -51,14 +51,14 @@ class Header extends React.Component {
                                     <div className="experience-workplace">University of Melbourne</div>
                                 </span>
                                 <span className="experience">
-                                    <img src="./images/unimelb.svg"
+                                    <img src="./images/pictoria.svg"
                                             alt="Graphic Designer, Pictoria Media"
                                             className="experience-graphic" />
                                         <div className="experience-position">Graphic Designer</div>
                                         <div className="experience-workplace">Pictoria Media</div>
                                 </span>
                                 <span className="experience">
-                                    <img src="./images/unimelb.svg"
+                                    <img src="./images/wartide.svg"
                                             alt="Freelance Artist, WartideCCG"
                                             className="experience-graphic" />
                                         <div className="experience-position">Freelance Artist</div>
@@ -87,29 +87,8 @@ class Header extends React.Component {
                         <Randomotron/>
                     </div>
                 </div>
+                <div className="header-menu"> This is a test</div>
             </header>
-            
-            
-
-            /* original
-            <header className="App-header">
-            <div className="header-container">
-                <h1 className="header-title">Jonathan Liew</h1>
-                <p className="header-intro">Si eth e burion nal things as raubriel ro sorriend. This is a space where things I've designed might go. Her o sibileth araubries malmathras nwenverbethal.</p>
-                <div className="header-links">
-                    <a className="header-link" href="">Interaction</a>
-                    <a className="header-link" href="">Print</a>
-                    <a className="header-link" href="">Motion</a>
-                </div>
-                <div className="contact-block">
-                    <p>Send me an email if you'd like to get in touch</p>
-                    <a className="email-link" href="mailto:design@jlliew.com">design@jlliew.com</a>
-                </div>
-                </div>
-            </header>
-            */
-
-
         );
     }
 }

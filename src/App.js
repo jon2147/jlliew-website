@@ -9,7 +9,7 @@ import Didactic from './components/Didactic';
 function App() {
   return (
     <body>
-      <Header />
+      <Header/>
 
 
       <main>

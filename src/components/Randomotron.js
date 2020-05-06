@@ -7,17 +7,23 @@ class Randomotron extends React.Component {
         super();
         this.state = {
             opaque : false,
-            active : false,
+            displaying : [0,1,2],
             display: '',
             index: -1,
-            items: ['buddy', 'guy', 'friend']
+            items: [
+                (<span>Today is gonna be cold baloney.</span>),
+                (<span>
+                    This is a link to something <a className="" href="google.com">tasty</a>.
+                </span>),
+                (<div>hello <span className="auxiliary-heading">buddy</span></div>)
+            ]
         }
         this.toggleOpacity = this.toggleOpacity.bind(this);
-        this.switchDisplay = this.switchDisplay.bind(this);
+        this.switchItem = this.switchItem.bind(this);
     }
 
 
-    switchDisplay(index) {
+    switchItem(index) {
         index = this.state.index;
         if (index == (this.state.items.length - 1))
         {
@@ -40,33 +46,32 @@ class Randomotron extends React.Component {
         })
     }
 
-
-
     componentDidMount() {
         this.toggleOpacity();
         let index = this.state.index;
 
-        this.interval = setInterval(() => {
-                this.switchDisplay(index);
+        this.interval2 = setInterval(() => {
+                this.toggleOpacity();
             },
             1000
+        );
+
+        this.interval = setInterval(() => {
+                this.switchItem(index);                
+            },
+            3000
         );
 
     }
 
     componentWillUnmount() {
         clearInterval(this.interval);
+        clearInterval(this.interval2);
     }
 
     render() {
-        if (this.state.opaque) {
-            return (
-                <p className="randomotron-opaque">{this.state.display}</p>
-            )
-        }
-
         return (
-            <p className="randomotron">{this.state.display}</p>
+            <p className={this.state.opaque ? "randomotron" : "randomotron-opaque"}>{this.state.display}</p>
         )
     }
 }
