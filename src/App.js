@@ -8,7 +8,7 @@ import Didactic from './components/Didactic';
 
 function App() {
   return (
-    <body>
+    <div>
       <Header/>
 
 
@@ -30,7 +30,7 @@ function App() {
       </main>
 
 
-    </body>
+    </div>
 
   );
 }

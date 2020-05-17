@@ -76,7 +76,14 @@ function Randomotron() {
 
     
     return (
-        <div style={{opacity: fadeOpacity}}>{display}</div>
+        <p style={{opacity: fadeOpacity}}>{display}</p>
+
+/*
+        <p style={{
+            fadeOpacity,
+            transition: 'opacity 200ms ease-in-out'
+        }}>{display}</p>*/
+
     );
     
 }

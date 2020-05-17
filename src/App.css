@@ -10,9 +10,11 @@
     --header-divider: #c4c4c4;
     --software-proficiencies: #646464;
 
-    --header-padding: 4rem 4rem 4rem 4rem;
+    --header-padding: 0rem 4rem;
 
     --header-menu-height: 4rem;
+    --header-menu-item: #000;
+    --header-menu-item-hover: #646464;
 
     /* story */
     --story-box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 100);
@@ -82,13 +84,47 @@ body {
   font-weight: 400;
 }*/
 
+/* HEADER MENU */
+
+
+.header-menu{
+  min-height: var(--header-menu-height);
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-icon {
+  font-size: 2rem !important;
+  transform: 0.75rem !important;
+  width: 2rem !important;
+  height: 2rem !important;  
+  padding: 0 2rem;
+}
+
+.header-menu-item {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+
+  color: var(--header-menu-item);
+  text-decoration: none;
+  transition: color .15s;
+  line-height: 2rem;
+}
+
+.header-menu-item:hover {
+  color: var(--header-menu-item-hover);
+
+}
+
 
 /* HEADER AUX */
 
 .header-auxiliary {
   display: flex;
   flex: 0 1 50%;
-  max-width: 40rem;
+  /*max-width: 42rem;*/
   
   flex-direction: column;
   align-items: center;
@@ -109,9 +145,7 @@ body {
 
 .randomotron {
   opacity: 0;
-  animation: fadeOut ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation: fadeOut 1s ease-in 0s 1 forwards none running;
 
   margin-top: 2rem;
   font-size: 0.875rem;
@@ -122,9 +156,7 @@ body {
 
 .randomotron-opaque {
   opacity: 1;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: backwards;
-  animation-duration: 1s;
+  animation: fadeIn 1s ease-in 0s 1 backwards none running;
   
   margin-top: 2rem;
   font-size: 0.875rem;
@@ -247,10 +279,6 @@ body {
   justify-content: center;
 }
 
-.header-menu{
-  min-height: var(--header-menu-height);
-  
-}
 
 .header-container{
   color: var(--header-text);
