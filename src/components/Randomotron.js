@@ -1,82 +1,56 @@
 import React, {useState, useEffect} from 'react';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 const items = [
-    (<span>Today is gonna be cold baloney.</span>),
+    (<span>Some sound plates I enjoy: <a className="App-link" target="_blank" href="https://open.spotify.com/playlist/2422RGEkrULJt2cVXEBg9t?si=fI3OdOYdT-qJ9YWDstW5jQ">
+    Spotify
+    <OpenInNewIcon className="randomotron-icon"/></a></span>),
+    (<div>Cooking tip #1: if uncertain, add <i>more</i> butter.</div>),
     (<span>
-        This is <i>my</i> favourite <a className="" target="_blank" href="https://commons.wikimedia.org/wiki/File:L%C3%B3magn%C3%BA_with_sand_blowing.jpg">
+        This is <i>my</i> favourite <a className="App-link" target="_blank" href="https://commons.wikimedia.org/wiki/File:L%C3%B3magn%C3%BA_with_sand_blowing.jpg">
             big rock
-            </a>.
+            <OpenInNewIcon className="randomotron-icon"/></a>.
     </span>),
-    (<div>hello <span className="auxiliary-heading">buddy</span></div>)
+    (<div>Cooking tip #2: Make food tastier with butter.</div>)
 ];
 
-const fadeInRate = 0.005;
-const fadeOutRate = 0.0025;
+const showInterval = 4800;
+const hideInterval = 2400;
 
 function Randomotron() {
 
     const [item, setItem] = useState(0);
-    const [display, setDisplay] = useState(items[item]);
-    const [isChanging, setIsChanging] = useState(true);
-    const [isFading, setIsFading] = useState(true);
-    const [fadingIn, setFadingIn] = useState(true);
-    const [fadeOpacity, setFadeOpacity] = useState(0.0); 
+    const [display, setDisplay] = useState('');
 
+    const [fadeIn, setFadeIn] = useState(false);
 
-    useEffect (() => {        
-        if (isFading)
+    function nextItem() {
+        if (item == (items.length - 1))
         {
-            if (fadingIn)
-            {
-                
-                if (fadeOpacity >= 1){
-                    setFadingIn(false);
-                    setIsFading(false);
-                }
-                else {
-                    setFadeOpacity(fadeOpacity + fadeInRate);
-                }
-            } else {                
-                if (fadeOpacity <= 0){
-                    setFadingIn(false);
-                    setIsFading(false);
-                    setIsChanging(true);
-                } 
-                else {
-                    setFadeOpacity(fadeOpacity - fadeOutRate);
-                }
-                
-            }
+            setItem(0); 
         } else {
-            if (isChanging)
-            {
-                
-                if (item == (items.length - 1))
-                {
-                    setItem(0); 
-                } else {
-                    setItem(item + 1);
-                }
-                setDisplay(items[item]);
-                setIsChanging(false);
-                setFadingIn(true);
-                setIsFading(true);
-            } else {
-                setTimeout(() =>
-                {
-                    setIsFading(true);
-                    setFadingIn(false);
-                }
-                , 4000);
-            }
-        }        
+            setItem(item + 1);
+        }
+        setDisplay(items[item]);
+    }
 
-    });
-
-
+   useEffect (() => {
+        if (fadeIn)
+        {
+            setTimeout(() => {
+                setFadeIn(false);
+            }, showInterval);
+        } else {
+            setTimeout(() => {
+                setFadeIn(true);
+                nextItem();
+            }, hideInterval);
+        }
+   });
     
     return (
-        <div style={{opacity: fadeOpacity}}>{display}</div>
+        <div className={fadeIn ? 'randomotron-opaque' : 'randomotron'}>{display}</div>
+
     );
     
 }

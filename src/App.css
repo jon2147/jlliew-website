@@ -145,7 +145,8 @@ body {
 
 .randomotron {
   opacity: 0;
-  animation: fadeOut 1s ease-in 0s 1 forwards none running;
+  animation: fadeOut ease-in 1;
+  animation-duration: .3s;
 
   margin-top: 2rem;
   font-size: 0.875rem;
@@ -156,7 +157,8 @@ body {
 
 .randomotron-opaque {
   opacity: 1;
-  animation: fadeIn 1s ease-in 0s 1 backwards none running;
+  animation: fadeIn ease-in 1;
+  animation-duration: .15s;
   
   margin-top: 2rem;
   font-size: 0.875rem;
@@ -165,6 +167,11 @@ body {
   max-height: 3rem;
 }
 
+.randomotron-icon {
+  font-size: 0.875rem !important;
+  width: 0.875rem !important;
+  height: 0.875rem !important;  
+}
 
 
 .recent-experience {
@@ -449,6 +456,7 @@ body {
 
 .App-link {
   color: var(--header-link);
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
@@ -511,6 +519,7 @@ body {
 
   .header-container{
     padding-top: 1.5rem; padding-bottom: 1.5;
+    flex-direction: column;
   }
 
   .header-title{
@@ -533,6 +542,10 @@ body {
     font-size: 1.5rem;
   }
 
+  .header-divider {
+    display: none;
+  }
+  
 /*
   .story{
     min-height: 100vh;

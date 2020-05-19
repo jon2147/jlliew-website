@@ -88,12 +88,12 @@ class Header extends React.Component {
                         <Randomotron/>
                     </div>
                 </div>
-                <div className="header-menu">
+                {/*<div className="header-menu">
                         <Menu className="header-menu-icon"/>
-                        {/*<a className="header-menu-item" href="#work">Work</a>
+                        <a className="header-menu-item" href="#work">Work</a>
                         <a className="header-menu-item" href="#about">About</a>
-                        <a className="header-menu-item" href="#contact">Contact</a> */}
-                </div>
+                        <a className="header-menu-item" href="#contact">Contact</a> 
+                </div>*/}
             </header>
         );
     }
