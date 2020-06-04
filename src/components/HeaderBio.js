@@ -3,7 +3,7 @@ import React from 'react';
 const bioLabel = "Jonathan Liew";
 
 const bioDescription =
-"Si eth e burion nal things as raubriel ro sorriend. This is a space where things I've designed might go. Her o sibileth araubries malmathras nwenverbethal.";
+"Si eth e burion nal things as raubriel ro sorriend. This is a space where things I've designed might go. This site is under construction.";
 
 const contactInvitation = 
 "Send me an email if you'd like to get in touch";
