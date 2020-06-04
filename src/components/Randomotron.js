@@ -7,11 +7,11 @@ const items = [
         </a>
     </span>),
     (<div>Cooking tip #41: if uncertain, add <i>more</i> butter.</div>),
-    (<span>
+/*(<span>
         This is <i>my</i> favourite <a className="App-link" target="_blank" href="https://commons.wikimedia.org/wiki/File:L%C3%B3magn%C3%BA_with_sand_blowing.jpg">
             big rock
             <OpenInNewIcon className="randomotron-icon"/></a>.
-    </span>)
+    </span>)*/
 ];
 
 const showInterval = 4800;
