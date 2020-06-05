@@ -6,6 +6,8 @@ import Randomotron from './Randomotron';
 
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
 
+import './HeaderAuxiliary.css';
+
 // Projects Link
 const projectsLink = (
     <a className="projects-link" href="google.com">

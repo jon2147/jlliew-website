@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+import './Randomotron.css';
 
 const items = [
-    (<span>Some sound dishes I've been enjoying: <a className="App-link" target="_blank" href="https://open.spotify.com/playlist/2422RGEkrULJt2cVXEBg9t?si=fI3OdOYdT-qJ9YWDstW5jQ">
+    (<span>Some sound dishes I've been enjoying: <a className="link" target="_blank" href="https://open.spotify.com/playlist/2422RGEkrULJt2cVXEBg9t?si=fI3OdOYdT-qJ9YWDstW5jQ">
     Spotify ♫
         </a>
     </span>),

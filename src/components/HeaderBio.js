@@ -1,4 +1,5 @@
 import React from 'react';
+import './HeaderBio.css';
 
 const bioLabel = "Jonathan Liew";
 
