@@ -28,11 +28,12 @@
 
 .didactic{
     display: flex;
-    flex-direction: row;    
+    flex-direction: column;    
     min-height: 100vh;
     max-height: 100vh;   
 
     overflow-x: hidden; 
+    display: none;
 }
 
 .didactic-header {
@@ -82,8 +83,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--didactic-panel-bg);
-    max-height: 100vh;
-    flex: 1;
+    flex: 80;
     justify-content: center;
     align-items: center;
 }
@@ -124,59 +124,47 @@
     height:100%;
 
     display:flex;
-    overflow-x: auto;
     transition-property: transform;
     will-change: transform;
+
+
+    flex: 20;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    -ms-overflow-style: none; /* Hides the scrollbar. */
+    -ms-scroll-chaining: none; /* Prevents Metro from swiping to the next tab or app. */
+    -ms-scroll-snap-type: mandatory; /* Forces snap scroll behaviour on images. */
+    -ms-scroll-snap-points-x: snapInterval(0%, 100%); /* Defines the y and x intervals to snap to when scrolling. */
+
+    scroll-snap-type: mandatory;
+    background-color: var(--didactic-panel-bg);
 }
 
 .didactic-slide {
     float:left;
-    width:300px;
-    height: 500px;
+
 }
 
 .didactic-slides {
-    height:100vh;
-    flex: 2;
+
     overflow: hidden;
 
 }
 
-img {
-    object-fit: cover;
-    object-position: center;
-    min-width: 100%;
-}
-
 .slide-image {
-    width:100%;
-    height: 100%;
     object-fit: cover;
     object-position: center;
+    width: 10vw;
+    height: 10vw;
 }
 
 /* SLIDER ++++++++++++++++++++++++++++++++*/
 
-.didactic-gallery {
-    flex:2;
-    height: 100vh;
-    display: block;
-    overflow: hidden;
-}
-
-.didactic-image {
-    flex: 1;
-    min-width: 360px;
-    width:50%;
-    height:100%;
-    background-size: cover;
-    background-position: center;
-    float: inline-start;
-    transition: all ease .3s;
-}
 
 /* MEDIA QUERIES */
 
+/*
 @media only screen and (max-width: 1440px) {
     .didactic-image{
         width: 100%;
@@ -236,4 +224,4 @@ img {
         margin: .625rem 0;
         font-size: 1.5rem;    
     }
-} 
+} */

@@ -1,0 +1,20 @@
+:root {
+    --didactic-header-bg : rgb(0, 26, 255);
+    --didactic-header-link: #fff;
+
+
+    --didactic-panel-bg : rgb(3, 5, 8);
+    --didactic-panel-heading : #fff;
+    --didactic-panel-body : #dfdfdf;
+}
+
+
+.didactic-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--didactic-panel-bg);
+    max-height: 100vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}

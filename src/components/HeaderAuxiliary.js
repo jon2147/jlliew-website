@@ -7,7 +7,7 @@ import Randomotron from './Randomotron';
 
 import './HeaderAuxiliary.css';
 
-const projectsLink = "google.com";
+const projectsLink = "#projects";
 
 class HeaderAuxiliary extends React.Component {
     render() {

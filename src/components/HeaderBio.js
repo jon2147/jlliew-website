@@ -12,7 +12,7 @@ const contactInvitation =
 "Send me an email if you'd like to get in touch";
 const contactEmail = "design@jlliew.com";
 
-const projectsLink = "google.com";
+const projectsLink = "#projects";
 
 class HeaderBio extends React.Component {
     render() {

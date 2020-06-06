@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import DidacticHeader from './DidacticHeader';
 
+import './DidacticPanel.css';
+
 class DidacticPanel extends React.Component {
     render() {
         return (

@@ -4,16 +4,18 @@ import './assets/css/fonts.css';
 import './App.css';
 import Header from './components/Header';
 import Didactic from './components/Didactic';
+import DidacticPanel from './components/DidacticPanel';
 
 
 function App() {
   return (
-    <div>
+    <div >
       <Header/>
 
 
       <main>
-        
+        <a id="projects" />
+        <Didactic />
 
         {/*<Didactic/>
       

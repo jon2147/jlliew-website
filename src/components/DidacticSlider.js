@@ -21,7 +21,7 @@ class DidacticSlider extends React.Component {
             <div className="didactic-slides" >
                 <div className="didactic-slider">
                     {imgs.map(src => {
-                        return <img key={src} src={src} width="100%" height="100%" />;
+                        return <img className="slide-image" key={src} src={src} width="100%" height="100%" />;
                     })}
                 </div>
                {/* <div className="didactic-slides">
