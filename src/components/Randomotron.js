@@ -50,7 +50,7 @@ function Randomotron() {
    });
     
     return (
-        <div className={fadeIn ? 'randomotron-opaque' : 'randomotron'}>{display}</div>
+        <div className={fadeIn ? 'randomotron opaque' : 'randomotron'}>{display}</div>
 
     );
     

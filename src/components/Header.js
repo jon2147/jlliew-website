@@ -5,11 +5,6 @@ import './Header.css';
 import HeaderBio from './HeaderBio';
 import HeaderAuxiliary from './HeaderAuxiliary';
 
-
-
-import Menu from '@material-ui/icons/Menu';
-
-
 class Header extends React.Component {
 
     render() {
@@ -18,11 +13,10 @@ class Header extends React.Component {
             
             <header className="folio-header">                
                 <div className="header-container">
-                    <HeaderBio/>
+                    <HeaderBio />
                     <div className="header-divider"/>
                     <HeaderAuxiliary />
                 </div>
-                {/*{headerMenu}*/}
             </header>
         );
     }

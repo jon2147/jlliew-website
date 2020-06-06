@@ -16,7 +16,6 @@
       --header-half-inner-padding: 4rem;
       --header-half-outer-padding: 4rem;
   
-  
       --header-menu-height: 4rem;
       --header-menu-item: #000;
       --header-menu-item-hover: #646464;
@@ -26,11 +25,10 @@
   
     background-color: var(--header-background);
   
-  }
-  
+  }  
   
   h1,h2,h3,h4,h5,h6 { font-size: 1rem; }
-  p { max-width: 720px; }
+  p { max-width: 720px; margin-top: 0; }
 
 
   .header-link {
@@ -42,9 +40,7 @@
   .header-link:hover {
     color: var(--header-link-hover);
   }
-   
-  
-  /* HEADER BIO */
+
   
   .folio-header{
     background-color: var(--header-background);
@@ -82,12 +78,7 @@
     height: 70vh;
   }
   
-  /* END OF HEADER BIO */
-  
- 
-  
-  
-  
+
   /* MEDIA QUERIES */
   
   @media only screen and (min-width: 1080px) {
@@ -107,6 +98,7 @@
   
   @media only screen and (max-width: 1080px) and (max-height: 720px)
   {
+    
   }
   
   @media only screen and (max-width: 720px) {
@@ -119,8 +111,6 @@
 
     .header-divider {
         display: none;
-      }
-    
-
+    }
   
   } 

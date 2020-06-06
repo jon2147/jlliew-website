@@ -72,29 +72,7 @@
     text-align: center;
   }
   
-  .projects-link {
-    color: var(--header-link);
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 0 0 3rem 0;
-    text-decoration: none; 
-    transition: color .15s;
-    display: flex !important;
   
-  }
-  
-  .projects-link:hover {
-    color: var(--header-link-hover);  
-  }
-  
-  .projects-icon {
-    font-size: 1.25rem !important;
-    transform: 0.75rem !important;
-    width: 1.25rem !important;
-    height: 1.25rem !important;  
-  }
   
   .software-proficiencies {
     max-width: 30rem;
@@ -141,27 +119,35 @@
     }
   }
   
-  @media only screen and (max-width: 1200px) and (max-height: 720px)
+  @media only screen and (max-width: 1440px) and (max-height: 600px)
   {
     .software-proficiencies {
       display: none;
     }
+
+    .experience {
+      min-width: 10rem;
+    }
+
+    .experience-graphic {
+      margin-bottom: 0.5rem;
+      max-width: 2rem;
+    }
+
+    
   }
   
   @media only screen and (max-width: 1080px) and (max-height: 720px)
   {
-  
     .experience {
       min-width: 10rem;
     }
-  
-    .experience-position {
-      font-size: 0.75rem;
+
+    .experience-graphic {
+      margin-bottom: 0.5rem;
+      max-width: 2rem;
     }
-  
-    .experience-workplace {
-      font-size: 0.625rem;
-    }
+    
   }
   
   @media only screen and (max-width: 720px) {
@@ -187,16 +173,48 @@
     }
     
     .experience {
-      margin: auto;
       min-width: 10rem;
+    }
+
+    .experience-graphic {
+      margin-bottom: 0.5rem;
+      max-width: 2rem;
+    }
+
+    .experience:last-child {
       margin-bottom: 3rem;
-    }
+    };
+
+  }
   
+  @media only screen and (max-width: 600px) 
+  {
+  
+    .recent-experience {
+      display: none;
+    }
+
+    .experience {
+      min-width: 8rem;
+    }
+
+    .experience-position {
+      font-size: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
     
-  
-    .projects-link {
-      margin-top: 0;
+    .experience-workplace {
+      font-size: 0.625rem;
     }
-  
+
+    .experience-graphic {
+      margin-bottom: 0.375rem;
+      max-width: 1.5rem;
+    }
+
+    .experience:last-child {
+      margin-bottom: 0rem;
+    };
+
   
   } 

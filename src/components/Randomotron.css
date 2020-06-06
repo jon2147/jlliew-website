@@ -31,15 +31,10 @@
     max-height: 3rem;
   }
   
-  .randomotron-opaque {
+  .randomotron.opaque {
     opacity: 1;
     animation: fadeIn ease-in 1;
     animation-duration: .15s;
-    
-    font-size: 0.875rem;
-    font-weight: 500;
-    min-height: 3rem;
-    max-height: 3rem;
   }
   
   .randomotron-icon {
@@ -60,30 +55,47 @@
   
   /* MEDIA QUERIES */  
   
-  @media only screen and (max-width: 1200px) and (max-height: 720px)
+  @media only screen and (max-width: 1200px) and (max-height: 600px)
   {
-    .software-proficiencies {
-      display: none;
-    }
   
     .randomotron {
       display: none;
     }
+  }
+
+  @media only screen and (max-width: 1080px) and (max-height: 600px)
+  {
   
-    .randomotron-opaque {
+    .randomotron {
       display: none;
     }
   }
   
-  @media only screen and (max-width: 720px) 
+  @media only screen and (max-width: 900px) 
+  {
+  
+    .randomotron {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 720px) and (min-height: 720px)
   {
   
     .randomotron {
       max-width: 80vw;
+      margin-top: 0rem;
+      display: unset;
     }
-    
-    .randomotron-opaque {
-      max-width: 80vw;
+  
+  } 
+
+  @media only screen and (max-width: 600px) 
+  {
+  
+    .randomotron {
+      margin-top: 3rem;
+      display: unset;
     }
   
   } 
