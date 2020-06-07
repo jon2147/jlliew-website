@@ -11,7 +11,9 @@ if (navigator.msMaxTouchPoints) {
 class DidacticSlider extends React.Component {
 
     state = {
-        imgs: ["/images/study_oyl_better.jpg","/images/wartide_apstaff.jpg","/images/study_oyl_inner.jpg"],
+        imgs: ["/images/study_oyl_better.jpg","/images/wartide_apstaff.jpg","/images/study_oyl_inner.jpg",
+                "/images/wartide_shift.png", "./images/fivex_fb_wrap.png"
+        ],
     }
 
     render() {

@@ -13,8 +13,7 @@ function App() {
       <Header/>
 
 
-      <main>
-        <a id="projects" />
+      <main  id="projects">
         <Didactic />
 
         {/*<Didactic/>

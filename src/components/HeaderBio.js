@@ -12,8 +12,6 @@ const contactInvitation =
 "Send me an email if you'd like to get in touch";
 const contactEmail = "design@jlliew.com";
 
-const projectsLink = "#projects";
-
 class HeaderBio extends React.Component {
     render() {
         return (
@@ -21,7 +19,7 @@ class HeaderBio extends React.Component {
                 <h1 className="bio-label">{bioLabel}</h1>
                 <p className="bio-description">{bioDescription}</p>
                 <div className="bio-contact">
-                    <HeaderProjectsLink projectsLinkURL={projectsLink} showOnMobile={true}/>
+                    <HeaderProjectsLink showOnMobile={true}/>
                     <p>{contactInvitation}</p>
                     <a className="bio-contact-link" href={"mailto:"+contactEmail}>{contactEmail}</a>
                 </div>
