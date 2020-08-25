@@ -118,6 +118,7 @@
     object-fit: cover;
     object-position: center;
     min-width: 20vh;
+    max-width: 128px;
     height: 100%;
 }
 

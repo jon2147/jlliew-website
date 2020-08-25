@@ -1,8 +1,8 @@
 import React from 'react';
 
 const auxiliaryLabel = "Software proficiency";
-const profs = ["Photoshop", "InDesign", "Maya", "Mudbox", "Illustrator", "Acrobat", "Cinema4D", "Figma", "Sketch",
-"Principle", "Sony Vegas", "Premiere", "After Effects", "Visual Studio Code", "Android Studio", "Unity"]
+const profs = ["Photoshop", "InDesign", "Maya", "Mudbox", "Illustrator", "Acrobat", "Figma", "Sketch",
+"Principle", "Sony Vegas", "Premiere", "After Effects", "Visual Studio Code", "Android Studio", "Unity", "Cinema4D"]
 
 class AuxiliaryProficiencies extends React.Component {
  

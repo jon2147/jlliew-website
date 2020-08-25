@@ -1,0 +1,26 @@
+{
+    "projects": [
+        {
+            "projectTitle": "University of Melbourne",
+            "projectSubtitle": "Digital Designer",
+            "projectDescription": "",
+            "projectThumbnail": "jlliew.com/images/thumbnails/unimelb_study_thumb.jpg",
+            "projectImages": [
+                "image1",
+                "image2"
+            ],
+            "isActive": false
+        },
+        {
+            "projectTitle": "Pictoria Media",
+            "projectSubtitle": "Graphic Designer",
+            "projectDescription": "Under Pictoria Media, I've primarily worked on a bi-monthly catalogue for the <i>Bestfurn Furniture & Bedding Group</i>, for which I've consolidated hundreds of media assets to ensure convenient & organised access, participated in studio shoots– decorating the set, working with resident photogrphers & a rotation of production staff– in addition to the design of and planning for the catalogue.",
+            "projectThumbnail": "jlliew.com/images/thumbnails/wartide_apstaff_thumb.jpg",
+            "projectImages": [
+                "image1",
+                "image2"
+            ],
+            "isActive": false
+        }
+    ]
+}

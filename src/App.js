@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './assets/css/fonts.css';
 import './App.css';
 import Header from './components/Header';
+import ProjectTiles from './components/ProjectTiles';
 import Didactic from './components/Didactic';
 import DidacticPanel from './components/DidacticPanel';
 
@@ -12,25 +13,9 @@ function App() {
     <div >
       <Header/>
 
-
       <main  id="projects">
-        <Didactic />
-
-        {/*<Didactic/>
-      
-        <div className="story">
-        <div className="story-image"
-              style={
-                {backgroundImage: `url(images/study_oyl_inner.jpg)`}
-              }>
-          </div>
-          <div className="story-content" >
-            <p className="story-heading">Anburion</p>
-            <p className="story-body">Si eth e burion nal things as raubriel ro sorriend. A hwen ther o tiriel vernwen. Del on Cormorathenned, si Halmosiliath, si Osirion Brumaidha. Her o sibileth araubries malmathras nwenverbethal.</p>
-            </div>
-        </div>*/}
+        <ProjectTiles />
       </main>
-
 
     </div>
 
