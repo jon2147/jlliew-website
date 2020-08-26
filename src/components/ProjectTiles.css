@@ -1,20 +1,21 @@
 :root {
-    --tile-width: 20vh;
-    --tile-min-width: 96px;
+    --tile-width: 10vw;
+    --tile-min-width: 88px;
     --tile-max-width: 480px;
 
-    --tile-width-mobile: 20vh;
+    --tile-width-mobile: 20vw;
     --tile-min-width-mobile: 50vw;
     --tile-max-width-mobile: 100vw;
 
     --tile-overlay : rgba(53, 53, 58,0.7);
 
-
+    /* consider width/height set to fraction of viewport width at different media queries*/
+    /* > 879px => 88px (min width) with 10vw regular width */
 
 }
 
 .project-tiles {
-    background-color: #000;
+    background-color: rgb(30,30,30);
 
 
     max-width: 100vw;
@@ -74,6 +75,8 @@
 
         width: var(--tile-width-mobile);
         height: var(--tile-width-mobile);
+
+
 
     }
 }

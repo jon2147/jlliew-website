@@ -11,12 +11,17 @@ class ProjectTiles extends React.Component {
     render() {
         return (
             <div className="project-tiles">
-                <ProjectTile diff={true}/>
-                <ProjectTile diff={false}/>
-                <ProjectTile diff={true}/>
-                <ProjectTile diff={false}/>
-                <ProjectTile diff={true}/>
-                <ProjectTile diff={false}/>
+                <ProjectTile diff={0}/>
+                <ProjectTile diff={1}/>
+                <ProjectTile diff={2}/>
+                <ProjectTile diff={3}/>
+                <ProjectTile diff={4}/>
+                <ProjectTile diff={5}/>
+                <ProjectTile diff={6}/>
+                <ProjectTile diff={7}/>
+                <ProjectTile diff={8}/>
+                <ProjectTile diff={9}/>
+
             </div>
         );
     }
