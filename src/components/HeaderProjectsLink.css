@@ -46,7 +46,7 @@
   
   } 
 
-  @media only screen and (max-height: 360px) {
+  @media only screen and (max-height: 540px) {
  
     .projects-link {
       margin-top: 0;

@@ -104,7 +104,7 @@
   {
   
     .randomotron {
-      display: unset;
+      display: none;
     }
   }
 
@@ -117,7 +117,7 @@
     }
   }
   
-  @media only screen and (min-width: 600px) and (min-height: 720px)
+  @media only screen and (min-width: 601px) and (min-height: 720px)
   {
   
     .randomotron {

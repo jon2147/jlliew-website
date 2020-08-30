@@ -6,7 +6,7 @@ import './HeaderBio.css';
 const bioLabel = "Jonathan Liew";
 
 const bioDescription =
-"Si eth e burion nal things as raubriel ro sorriend. This is a space where things I've designed might go. This site is under construction.";
+"Si eth e burion nal eoth as raubriel ro sorriend. This is a space where things I've designed might go. This site is under construction. For neole selusid del oelest, muries nen ef cabapret e oelespitel.";
 
 const contactInvitation = 
 "Send me an email if you'd like to get in touch";

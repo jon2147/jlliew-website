@@ -123,8 +123,14 @@
   }
 
 
+  @media only screen and (max-height: 480px) {
+     .header-divider {
+        min-height: 2rem;
+    }
+  } 
 
-  @media only screen and (max-height: 360px) {
+
+  @media only screen and (max-height: 540px) {
  
   
     .header-container{
