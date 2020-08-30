@@ -45,3 +45,17 @@
     }
   
   } 
+
+  @media only screen and (max-height: 360px) {
+ 
+    .projects-link {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      display: none !important;
+    }
+
+    .projects-link.bio {
+      display: flex !important;
+    }
+  
+  } 

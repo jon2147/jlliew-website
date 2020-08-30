@@ -114,3 +114,29 @@
     }
   
   } 
+
+  @media only screen and (max-height: 600px) 
+  {
+    .header-divider {
+      min-height: 20rem;
+    }
+  }
+
+
+
+  @media only screen and (max-height: 360px) {
+ 
+  
+    .header-container{
+      padding-top: 1.5rem; padding-bottom: 1.5;
+      flex-direction: column;
+    }
+
+    .header-divider {
+        display: none;
+    }
+    .header-container{
+      padding-top:1.5rem; padding-bottom: 3rem;
+      flex-direction: column;
+    }
+  } 

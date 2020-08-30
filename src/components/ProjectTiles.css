@@ -1,13 +1,23 @@
 :root {
+    --tile-overlay : rgba(53, 53, 58,0.7); /* delete me*/
+
+
     --tile-width: 10vw;
-    --tile-min-width: 88px;
+    --tile-min-width: 128px;
     --tile-max-width: 480px;
 
-    --tile-width-mobile: 20vw;
-    --tile-min-width-mobile: 50vw;
-    --tile-max-width-mobile: 100vw;
+    --tile-width-s: 16.66vw;
+    --tile-min-width-s: 128px;
+    --tile-max-width-s: 480px;
 
-    --tile-overlay : rgba(53, 53, 58,0.7);
+    --tile-width-xs: 25vw;
+    --tile-min-width-xs: 30.68px;
+    --tile-max-width-xs: 100vw;
+
+    --tile-width-xxs: 50vw;
+    --tile-min-width-xxs: 50vw;
+    --tile-max-width-xxs: 100vw;
+
 
     /* consider width/height set to fraction of viewport width at different media queries*/
     /* > 879px => 88px (min width) with 10vw regular width */
@@ -65,18 +75,44 @@
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1279px) {
 
     .project-tile {
-        min-width: var(--tile-min-width-mobile);
-        max-width: var(--tile-max-width-mobile);
-        min-height: var(--tile-min-width-mobile);
-        max-height: var(--tile-max-width-mobile);
+        min-width: var(--tile-min-width-s);
+        max-width: var(--tile-max-width-s);
+        min-height: var(--tile-min-width-s);
+        max-height: var(--tile-max-width-s);
 
-        width: var(--tile-width-mobile);
-        height: var(--tile-width-mobile);
+        width: var(--tile-width-s);
+        height: var(--tile-width-s);
 
 
 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .project-tile {
+        min-width: var(--tile-min-width-xs);
+        max-width: var(--tile-max-width-xs);
+        min-height: var(--tile-min-width-xs);
+        max-height: var(--tile-max-width-xs);
+
+        width: var(--tile-width-xs);
+        height: var(--tile-width-xs);
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    .project-tile {
+        min-width: var(--tile-min-width-xxs);
+        max-width: var(--tile-max-width-xxs);
+        min-height: var(--tile-min-width-xxs);
+        max-height: var(--tile-max-width-xxs);
+
+        width: var(--tile-width-xxs);
+        height: var(--tile-width-xxs);
     }
 }
