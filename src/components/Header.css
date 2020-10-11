@@ -73,7 +73,7 @@
   
   
   .header-divider {
-    border-left: 0.5px solid var(--header-divider);
+    border-left: 1px solid var(--header-divider);
     min-height: 30rem;
     height: 70vh;
   }

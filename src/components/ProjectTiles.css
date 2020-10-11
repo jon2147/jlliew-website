@@ -18,7 +18,6 @@
     --tile-min-width-xxs: 50vw;
     --tile-max-width-xxs: 100vw;
 
-
     /* consider width/height set to fraction of viewport width at different media queries*/
     /* > 879px => 88px (min width) with 10vw regular width */
 

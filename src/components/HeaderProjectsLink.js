@@ -11,9 +11,9 @@ class HeaderProjectsLink extends React.Component {
 
         return (
             <a className={showOnMobile ? "projects-link bio" : "projects-link"}
-             href={projectsLinkURL ? projectsLinkURL : "#projects"}>
-        {linkLabel ? linkLabel : "View projects"}
-        <ArrowDownward className="projects-icon"/>
+                href={projectsLinkURL ? projectsLinkURL : "#projects"}>
+                {linkLabel ? linkLabel : "View projects"}
+                <ArrowDownward className="projects-icon" />
             </a>
         );
     }

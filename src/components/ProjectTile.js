@@ -1,12 +1,25 @@
 import React from 'react';
 
 
+const thumbPath = "";
+const imgPath = "";
 
+// whether a tile is active should not be specified in the JSON file BTW, this should be handled by ProjectTiles
 
 
 class ProjectTile extends React.Component {
 
+
     render() {
+
+
+        /* Open */
+    function openOverlay() {
+        document.getElementById("myNav").className = "overlay open";
+
+    }
+
+        // This is placeholder content ++++++++++++
 
         const diff = this.props.diff;
         let pathy = "";
@@ -33,12 +46,17 @@ class ProjectTile extends React.Component {
             pathy = "./images/thumbnails/wartide_vshift_thumb.jpg"
         }
 
+        // This is placeholder content ++++++++++++
+
+
+        // openOverlay here should (maybe actually be a part of ProjectTiles, not App.js)
+        // have parameters that the ProjectTile passes through (i.e. title, subtitle, description, etc.)
+        // or if not parameters, an ID referring to this data that ProjectTiles can use to populate its template with
+
         return (
             <div className="project-tile">
-                <a href="google.com">
-                    <img src={
-                        pathy
-                    } class="tile-image" />
+                <a href="javascript:void(0)" onClick={openOverlay}> 
+                    <img src={pathy} class="tile-image" />
                 </a>
             </div>
         );

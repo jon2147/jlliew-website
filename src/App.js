@@ -4,16 +4,29 @@ import './assets/css/fonts.css';
 import './App.css';
 import Header from './components/Header';
 import ProjectTiles from './components/ProjectTiles';
+import ProjectOverlayContent from './components/ProjectOverlayContent';
 import Didactic from './components/Didactic';
 import DidacticPanel from './components/DidacticPanel';
 
 
-function App() {
-  return (
-    <div >
-      <Header/>
 
-      <main  id="projects">
+
+ 
+
+function App() {
+
+
+  return (
+
+
+    <div >
+      <Header />
+
+
+      <ProjectOverlayContent/>
+
+
+      <main id="projects">
         <ProjectTiles />
       </main>
 
