@@ -4,6 +4,7 @@ import React from 'react';
 import Close from '@material-ui/icons/Close';
 import ArrowBack from '@material-ui/icons/ArrowBack';
 import ArrowForward from '@material-ui/icons/ArrowForward';
+import StopRounded from '@material-ui/icons/StopRounded';
 
 import '../components/ProjectOverlay.css';
 
@@ -12,16 +13,9 @@ const projectTitle = "University of Melbourne";
 const projectSubtitle = "Lachlan James @WartideCCG";
 const projectDescription = "The cleaners have done their job on you. They're hip to it, man, they're in the groove. They've hosed you down, you're good as new; and they're lining up to inspect you. Hey, little train, wait for me! I once was blind, but now I see. Have you left a seat for me? Is that such a stretch of the imagination?";
 const projectTags = ["Interaction Design", "User Experience"];
+const imageURLs = ["./images/wartide_apstaff.jpg", "./images/study_oyl_better", ".images/thumbnails/ms_joseph_thumb.jpg", ".images/thumbnails/wartide_vshift_thumb.jpg"]
 
-const projectDescriptionLong = `"Jehoshaphat," he whispered.
-
-At the sun's dictate, half of the gorge was lit in cold brilliance, while the other half stood in a modest shroud.
-
-At each side a host of gargantuan figures stood vigilant. All were clad in ornate mail and mantled in ritual drapery. Their faces were obscured by great crowns, and held outward were long rods that decreed their business - a duty forgotten and foreign to the Earth that remained - as their stone bodies receded into cliff.
-
-The cool mist and shadow of the valley afforded Ahasuerus a tranquil comfort as he advanced. Of the plant-life that managed to persist in the cold, moss clothed the monolithic statues as hanging vines bound them in fellowship.
-
-In the shadow of the valley, the stone guardians were a sombre blue. The air was still, as if half the valley was held in water and out of time. He reached a fold of stone and laid against the rocky cradle.
+const projectDescriptionLong = `The cool mist and shadow of the valley afforded Ahasuerus a tranquil comfort as he advanced. Of the plant-life that managed to persist in the cold, moss clothed the monolithic statues as hanging vines bound them in fellowship. The air was still, as if half the valley was held in water and out of time. He reached a fold of stone and laid against the rocky cradle.
 
 Lying still, Ahasuerus felt as if he were floating in the blue-green of the ocean. The titans' silhouettes became leviathans coursing the sea's corridor - passive in their movements yet never without watchful eyes as they circled round. They would trail silently through the depths, where light could only strain through.
 
@@ -47,7 +41,8 @@ function closeNav() {
     document.getElementById("myNav").className = "overlay";
 }
 
-// JON:use CSS order property for image display on mobile etc.
+// JON: use CSS order property for image display on mobile etc.
+// JON: image gallery viewer thing should be its own class eventually
 
 class ProjectOverlayContent extends React.Component {
 
@@ -57,37 +52,60 @@ class ProjectOverlayContent extends React.Component {
         return (
 
             <div id="myNav" className="overlay">
-                <a href="javascript:void(0)" onClick={closeNav}><Close className="close-overlay-icon" /></a>
+                <a className="overlay-close" href="javascript:void(0)" onClick={closeNav}>
+                    <Close className="overlay-close-icon" />
+                    <span className="overlay-close-text">Close</span>
+                </a>
 
                 <div className="overlay-content">
-                    <div className="overlay-content-left">
+                    <div className="overlay-content-prose">
                         <div className="project-subtitle">{projectSubtitle}</div>
                         <div className="project-title">{projectTitle}</div>
                         <div className="project-description">{projectDescription}</div>
                         <div className="project-tags">
                             {projectTags.map(src => {
                                 return <span className="project-tag"
-                                    key={src} src={src}>
+                                    key={src}>
                                     {src}
                                 </span>;
                             })}
                         </div>
                     </div>
 
-                    <div className="overlay-content-right">
-                        <div><img src="./images/thumbnails/wartide_apstaff_thumb.jpg"/></div>
+                    <div className="overlay-content-gallery">
+                        <div className="overlay-image-container">
+                            <img className="overlay-image" src="./images/wartide_apstaff.jpg" />
+                        </div>
+                        <span className="image-nav">
+                            <span className="image-nav-direction">
+                                <ArrowBack />
+                            </span>
+                            <span className="image-nav-position">
+                                {imageURLs.map(src => {
+                                    return <span className="image-nav-position-dot" key={src}>
+                                        <StopRounded className="image-nav-position-dot-icon" />
+                                    </span>;
+                                })}
+                            </span>
+                            <span className="image-nav-direction forward">
+                                <ArrowForward />
+                            </span>
+                        </span>
                     </div>
                 </div>
 
                 <div className="overlay-nav">
                     <a className="overlay-nav-link" href="javascript:void(0)">
                         <ArrowBack className="overlay-nav-icon" />
-                        Ancient Priest's Staff
+                        <span className="overlay-nav-text">Ancient Priest's Staff</span>
                     </a>
                     <a className="overlay-nav-link forward" href="javascript:void(0)">
                         <ArrowForward className="overlay-nav-icon forward-mobile" />
-                        Pictoria Media
+                        <span className="overlay-nav-text">Pictoria Media</span>
                         <ArrowForward className="overlay-nav-icon forward" />
+                    </a>
+                    <a className="overlay-close-mobile" href="javascript:void(0)" onClick={closeNav}>
+                        <Close/><span className="overlay-close-text-mobile">Close</span>
                     </a>
                 </div>
             </div>

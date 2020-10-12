@@ -13,7 +13,7 @@ class AuxiliaryProficiencies extends React.Component {
                 <div className="proficiencies">
                     {profs.map(src => {
                         return <span className="proficiency"
-                            key={src} src={src}>
+                            key={src}>
                             {src}
                         </span>;
                     })}
