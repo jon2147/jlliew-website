@@ -3,9 +3,6 @@ import React from 'react';
 import ProjectTile from '../components/ProjectTile';
 
 import '../components/ProjectTiles.css';
-import '../components/ProjectOverlay.css';
-
-import ProjectOverlayContent from './ProjectOverlayContent';
 
 
 // import json
@@ -15,11 +12,6 @@ import ProjectOverlayContent from './ProjectOverlayContent';
 // map json object to project tile
 // render project tiles
 
-
-function openOverlay() {
-  document.getElementById("myNav").className = "overlay open";
-
-}
 
 
 

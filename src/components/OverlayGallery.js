@@ -17,18 +17,39 @@ class OverlayGallery extends React.Component {
     render() {
         return (
             <div className="gallery">
+
                 <div className="image-container">
-                    <img className="rename-me-image" src="./images/wartide_apstaff.jpg" />
+                    {/*Image slider */}{/*Image slider                     <img className="rename-me-image" src="./images/wartide_apstaff.jpg" />*/}
+
+                    <div class="slider">
+                        <div class="slide" id="slide-1">
+                            <img className="rename-me-image" src="./images/wartide_apstaff.jpg" />
+                        </div>
+                        <div class="slide" id="slide-2">
+                            <img className="rename-me-image" src="./images/study_oyl_better.jpg" />
+                        </div>
+                        <div class="slide" id="slide-3">
+                            <img className="rename-me-image" src="./images/fivex_fb_wrap.png" />
+                        </div>
+                        <div class="slide" id="slide-4">
+                            <img className="rename-me-image" src="./images/thumbnails/ms_joseph_thumb.jpg" />
+                        </div>
+                    </div>
                 </div>
+
+
+                {/* Image navigation */}
                 <span className="image-nav">
                     <span className="image-nav-direction">
                         <ArrowBack />
                     </span>
                     <span className="image-nav-position">
-                        {imageURLs.map(src => {
-                            return <span className="image-nav-position-dot" key={src}>
-                                <StopRounded className="image-nav-position-dot-icon" />
-                            </span>;
+                        {imageURLs.map((src, index) => {
+                            return <a href={"#slide-" + (index + 1)}>
+                                <span className="image-nav-position-dot" key={src}>
+                                    <StopRounded className="image-nav-position-dot-icon" />
+                                </span>
+                            </a>;
                         })}
                     </span>
                     <span className="image-nav-direction forward">

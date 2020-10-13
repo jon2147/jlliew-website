@@ -26,6 +26,7 @@
     opacity: 0;
     transition: visibility 0s, ease var(--overlay-transition-close), opacity var(--overlay-transition-close) ease;
     flex-direction: column;
+    /* Scrollbar */
     scroll-behavior: smooth;
     scrollbar-width: thin;
     overflow-y: scroll;
