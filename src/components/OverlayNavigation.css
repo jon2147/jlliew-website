@@ -1,0 +1,109 @@
+.overlay-nav {
+    padding: var(--overlay-inner-padding) var(--overlay-outer-padding) var(--overlay-outer-padding) var(--overlay-outer-padding);
+}
+
+.overlay-nav-link {
+    color: var(--overlay-interactive-primary);
+    font-size: 0.625rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    transition: color .15s;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.overlay-nav-link:hover {
+    color: white;
+}
+
+.overlay-nav-link.forward {
+    float: right;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.overlay-nav-icon {
+    margin: 0 1rem -0.5rem 0;
+}
+
+.overlay-nav-icon.forward {
+    margin: 0 0 -0.5rem 1rem;
+}
+
+.overlay-nav-icon.forward-mobile {
+    display: none;
+    margin: 0 1rem -0.5rem 0;
+}
+
+.overlay-nav-text {
+    color: white !important;
+}
+
+.overlay-close-mobile {
+    display: none;
+    color: var(--overlay-interactive-primary);
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.overlay-close-mobile:hover {
+    color: white;
+}
+
+.overlay-close-text-mobile {
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin: 0 1rem 0 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1080px) {
+    .overlay-nav {
+        padding: var(--overlay-inner-padding-mobile) var(--overlay-outer-padding-mobile) var(--overlay-outer-padding-mobile) var(--overlay-outer -padding-mobile);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .overlay-close-mobile {
+        display: flex;
+    }
+    .overlay-nav {
+        padding: var(--overlay-inner-padding-mobile) var(--overlay-outer-padding-mobile) var(--overlay-outer-padding-mobile) var(--overlay-outer-padding-mobile);
+    }
+    .overlay-nav-link {
+        margin-left: 0;
+    }
+    .overlay-nav-link.forward {
+        margin-right: 0;
+    }
+}
+
+/* Overlay Nav Row to Column */
+
+@media only screen and (max-width: 600px) {
+    .overlay-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .overlay-nav-link.forward {
+        float: none;
+        margin-top: 1.5rem;
+    }
+    .overlay-nav-icon.forward {
+        display: none;
+    }
+    .overlay-nav-icon.forward-mobile {
+        display: unset;
+    }
+    .overlay-close-mobile {
+        margin-top: 4rem;
+    }
+}

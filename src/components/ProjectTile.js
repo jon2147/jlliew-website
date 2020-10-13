@@ -15,7 +15,7 @@ class ProjectTile extends React.Component {
 
         /* Open */
     function openOverlay() {
-        document.getElementById("myNav").className = "overlay open";
+        document.getElementById("projectOverlay").className = "overlay open";
 
     }
 
