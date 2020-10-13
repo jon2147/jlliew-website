@@ -118,7 +118,14 @@
     }
   }
   
-  @media only screen and (max-width: 1440px) and (max-height: 800px)
+  @media only screen and (max-width: 1439px) and (max-height: 900px)
+  {
+    .software-proficiencies {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1440px) and (max-height: 768px)
   {
     .software-proficiencies {
       display: none;
@@ -131,9 +138,7 @@
     .experience-graphic {
       margin-bottom: 0.5rem;
       max-width: 2rem;
-    }
-
-    
+    }    
   }
   
   @media only screen and (max-width: 1080px) and (max-height: 720px)
