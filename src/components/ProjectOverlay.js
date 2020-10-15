@@ -7,8 +7,6 @@ import OverlayGallery from './OverlayGallery';
 import OverlayProse from './OverlayProse';
 import OverlayClose from './OverlayClose';
 
-
-
 class ProjectOverlay extends React.Component {
     render() {
         return (

@@ -11,3 +11,7 @@ html::-webkit-scrollbar { /* WebKit (Chrome) */
     width: 0;
     height: 0;
 }
+
+a:hover {
+  cursor: pointer;
+}

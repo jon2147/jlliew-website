@@ -10,7 +10,7 @@ function closeOverlay() {
 class OverlayClose extends React.Component {
     render() {
         return (
-            <a className="overlay-close" href="javascript:void(0)" onClick={closeOverlay}>
+            <a className="overlay-close" onClick={closeOverlay}>
                 <Close className="overlay-close-icon" />
                 <span className="overlay-close-text">Close</span>
             </a>

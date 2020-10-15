@@ -55,8 +55,8 @@ class ProjectTile extends React.Component {
 
         return (
             <div className="project-tile">
-                <a href="javascript:void(0)" onClick={openOverlay}> 
-                    <img src={pathy} class="tile-image" />
+                <a onClick={openOverlay}> 
+                    <img src={pathy} className="tile-image" />
                 </a>
             </div>
         );
