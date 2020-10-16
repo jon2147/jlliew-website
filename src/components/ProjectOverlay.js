@@ -8,15 +8,26 @@ import OverlayProse from './OverlayProse';
 import OverlayClose from './OverlayClose';
 
 class ProjectOverlay extends React.Component {
+
     render() {
         return (
             <div id="projectOverlay" className="overlay">
-                <OverlayClose />
-                <div className="overlay-content">
-                    <div className="overlay-content-prose"><OverlayProse /></div>
-                    <div className="overlay-content-gallery"><OverlayGallery /></div>
+                <OverlayClose closeOverlay={this.props.closeOverlay} />
+                <div className={this.props.contentFadeIn ? "overlay-content" : "overlay-content transparent"}>
+                    <div className="overlay-content-prose"><OverlayProse
+                        projectProseData={this.props.projectProseData}
+                    /></div>
+                    <div className="overlay-content-gallery"><OverlayGallery
+                        projectGalleryData={this.props.projectGalleryData}
+                    /></div>
                 </div>
-                <OverlayNavigation />
+                <OverlayNavigation
+                    contentFadeIn={this.props.contentFadeIn}
+                    projectNavData={this.props.projectNavData}
+                    previousProject={this.props.previousProject}
+                    nextProject={this.props.nextProject}
+                    closeOverlay={this.props.closeOverlay}
+                />
             </div>
         );
     }

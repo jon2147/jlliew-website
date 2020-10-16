@@ -1,5 +1,6 @@
 .overlay-nav {
     padding: var(--overlay-inner-padding) var(--overlay-outer-padding) var(--overlay-outer-padding) var(--overlay-outer-padding);
+    
 }
 
 .overlay-nav-link {
@@ -38,6 +39,17 @@
 
 .overlay-nav-text {
     color: white !important;
+    
+    opacity: 1;
+    animation: fadeIn ease-in 1;
+    animation-duration: 0.04s;
+}
+
+
+.overlay-nav-text.transparent {
+    opacity: 0;    
+    animation: fadeOut ease-in 1;
+    animation-duration: 0.18s;
 }
 
 .overlay-close-mobile {

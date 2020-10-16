@@ -3,21 +3,13 @@ import logo from './logo.svg';
 import './assets/css/fonts.css';
 import './App.css';
 import Header from './components/Header';
-import ProjectTiles from './components/ProjectTiles';
-import ProjectOverlay from './components/ProjectOverlay';
-import Didactic from './components/Didactic';
-import DidacticPanel from './components/DidacticPanel';
-
-
+import ProjectCoordinator from './components/ProjectCoordinator';
 
 function App() {
   return (
     <div >
       <Header />
-      <ProjectOverlay />
-      <main id="projects">
-        <ProjectTiles />
-      </main>
+      <ProjectCoordinator />
     </div>
   );
 }

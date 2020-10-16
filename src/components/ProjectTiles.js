@@ -2,30 +2,29 @@ import React from 'react';
 
 import ProjectTile from '../components/ProjectTile';
 
-import '../components/ProjectTiles.css';
+import './ProjectTiles.css';
 
-
-// import json
-// map json objects to ProjectTile objects
-
-// import json
-// map json object to project tile
-// render project tiles
-
-
-
-
-
-// overlay div should be refactored to ProjectOverlay object, which includes ProjectOVerlayContent itself
 
 class ProjectTiles extends React.Component {
 
-
-
   render() {
     return (
-      <div>
-        <div className="project-tiles">
+      <div className="project-tiles">
+
+        {this.props.projectTileData.map((thumbnail, index) => {
+          return <a className="project-tile"
+            onClick={() => {
+              this.props.openOverlay();
+              this.props.setActiveProject(index);
+            }}
+            key={index}>
+            <img className="tile-image" src={thumbnail} />
+          </a>;
+        })}
+
+
+
+        {/*
           <ProjectTile diff={0} />
           <ProjectTile diff={1} />
           <ProjectTile diff={2} />
@@ -36,8 +35,7 @@ class ProjectTiles extends React.Component {
           <ProjectTile diff={7} />
           <ProjectTile diff={8} />
           <ProjectTile diff={9} />
-
-        </div>
+          */}
       </div>
     );
   }

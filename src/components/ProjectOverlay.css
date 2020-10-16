@@ -11,6 +11,26 @@
     --overlay-outer-padding-mobile: 2rem;
 }
 
+ /* TRANSITION ANIMATIONS */
+ 
+ @keyframes fadeIn {
+    from {
+       opacity: 0;
+   }
+    to {
+       opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+  }
+   to {
+      opacity: 0;
+   }
+  }
+
 .overlay {
     color: var(--project-copy);
     height: 100%;
@@ -50,9 +70,17 @@
 
 .overlay-content {
     padding: var(--overlay-outer-padding) var(--overlay-outer-padding) 0 var(--overlay-outer-padding);
-    margin: auto;
     display: flex;
     flex-direction: row;
+    opacity: 1;
+    animation: fadeIn ease-in 1;
+    animation-duration: 0.16s;
+}
+
+.overlay-content.transparent {
+    opacity: 0;    
+    animation: fadeOut ease-in 1;
+    animation-duration: 0.1s;
 }
 
 .overlay-content-prose {

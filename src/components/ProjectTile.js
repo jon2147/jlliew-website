@@ -14,10 +14,10 @@ class ProjectTile extends React.Component {
 
 
         /* Open */
-    function openOverlay() {
-        document.getElementById("projectOverlay").className = "overlay open";
+        function openOverlay() {
+            document.getElementById("projectOverlay").className = "overlay open";
 
-    }
+        }
 
         // This is placeholder content ++++++++++++
 
@@ -30,35 +30,27 @@ class ProjectTile extends React.Component {
             pathy = "./images/thumbnails/unimelb_study_thumb.jpg"
         } else if (diff == 2) {
             pathy = "./images/thumbnails/bestfurn_daisy_thumb.jpg"
-        }else if (diff == 3) {
+        } else if (diff == 3) {
             pathy = "./images/thumbnails/enp_guide_thumb.jpg"
-        }else if (diff == 4) {
+        } else if (diff == 4) {
             pathy = "./images/thumbnails/unimelb_pursuit_thumb.jpg"
-        }else if (diff == 5) {
+        } else if (diff == 5) {
             pathy = "./images/thumbnails/mlily_vfx_thumb.jpg"
         } else if (diff == 6) {
             pathy = "./images/thumbnails/mlily_store_thumb.jpg"
-        }else if (diff == 7) {
+        } else if (diff == 7) {
             pathy = "./images/thumbnails/ms_joseph_thumb.jpg"
-        }else if (diff == 8) {
+        } else if (diff == 8) {
             pathy = "./images/thumbnails/bant_beacon_thumb.jpg"
-        }else if (diff == 9) {
+        } else if (diff == 9) {
             pathy = "./images/thumbnails/wartide_vshift_thumb.jpg"
         }
 
-        // This is placeholder content ++++++++++++
-
-
-        // openOverlay here should (maybe actually be a part of ProjectTiles, not App.js)
-        // have parameters that the ProjectTile passes through (i.e. title, subtitle, description, etc.)
-        // or if not parameters, an ID referring to this data that ProjectTiles can use to populate its template with
 
         return (
-            <div className="project-tile">
-                <a onClick={openOverlay}> 
-                    <img src={pathy} className="tile-image" />
-                </a>
-            </div>
+            <a className="project-tile" onClick={openOverlay}>
+                <img src={pathy} className="tile-image" />
+            </a>
         );
     }
 }

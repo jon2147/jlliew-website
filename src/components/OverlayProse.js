@@ -9,7 +9,6 @@ const projectTitle = "University of Melbourne";
 const projectSubtitle = "Lachlan James @WartideCCG";
 const projectDescription = "The cleaners have done their job on you. They're hip to it, man, they're in the groove. They've hosed you down, you're good as new; and they're lining up to inspect you. Hey, little train, wait for me! I once was blind, but now I see. Have you left a seat for me? Is that such a stretch of the imagination?";
 const projectTags = ["Interaction Design", "User Experience"];
-const imageURLs = ["./images/wartide_apstaff.jpg", "./images/study_oyl_better", ".images/thumbnails/ms_joseph_thumb.jpg", ".images/thumbnails/wartide_vshift_thumb.jpg"]
 
 const projectDescriptionLong = `The cool mist and shadow of the valley afforded Ahasuerus a tranquil comfort as he advanced. Of the plant-life that managed to persist in the cold, moss clothed the monolithic statues as hanging vines bound them in fellowship. The air was still, as if half the valley was held in water and out of time. He reached a fold of stone and laid against the rocky cradle.
 
@@ -33,12 +32,27 @@ Frost combed Ahasuerus' skin as he woke to a crisp dawn.
 `;
 
 class OverlayProse extends React.Component {
+
+
+
+
     render() {
+
+        const proseData = [];
+        var projectTags = [];
+
+        this.props.projectProseData.map((prose, index) => {
+            proseData.projectSubtitle = prose.projectSubtitle;
+            proseData.projectTitle = prose.projectTitle;
+            proseData.projectDescription = prose.projectDescription;
+            projectTags = prose.projectTags;
+        })
+
         return (
             <div className="prose">
-                <div className="project-subtitle">{projectSubtitle}</div>
-                <div className="project-title">{projectTitle}</div>
-                <div className="project-description">{projectDescription}</div>
+                <div className="project-subtitle">{proseData.projectSubtitle}</div>
+                <div className="project-title">{proseData.projectTitle}</div>
+                <div className="project-description">{proseData.projectDescription}</div>
                 <div className="project-tags">
                     {projectTags.map(src => {
                         return <span className="project-tag"

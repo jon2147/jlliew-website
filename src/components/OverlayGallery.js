@@ -20,7 +20,9 @@ const imageURLs = [
 
 class OverlayGallery extends React.Component {
 
-    componentDidMount() {
+    
+
+    componentDidUpdate() {
 
         /* Initialise Flickity carousel  */
 
@@ -57,8 +59,8 @@ class OverlayGallery extends React.Component {
         flkty.on('select', function () {
             var lastPositionDot = positionDotGroup.querySelector('.selected');
             var currentPositionDot = positionDotGroup.children[flkty.selectedIndex];
-            lastPositionDot.classList.remove('selected');
-            currentPositionDot.classList.add('selected');
+            if (lastPositionDot) lastPositionDot.classList.remove('selected');
+            if (currentPositionDot) currentPositionDot.classList.add('selected');
         });
 
         positionDots.forEach(function (dot, index) {
@@ -66,30 +68,48 @@ class OverlayGallery extends React.Component {
                 flkty.select(index);
             })
         })
+
     }
 
 
     render() {
+
+        const galleryData = this.props.projectGalleryData;
+        const imageURLs = [];
+
+        galleryData.map((galleryImage, index) => {
+            imageURLs[index] = galleryImage.imageURL;
+        })
+
+
+        const showNav = galleryData.length > 1 ? true : false;
+
+        console.log(galleryData)
+        galleryData.map(g => {
+            console.log(g.imageURL)
+        })
+
+
         return (
             <div className="gallery">
 
                 {/* Carousel cells */}
                 <div className="carousel">
-                    {imageURLs.map((imgURL, index) => {
+                    {galleryData.map((galleryImage, index) => {
                         return (<div className="carousel-cell" key={index}>
-                            <img className="cell-content" src={imgURL} />
+                            <img className="cell-content" src={galleryImage.imageURL} alt={galleryImage.imageAlt} />
                         </div>);
                     })}
                 </div>
 
 
                 {/* Carousel navigation */}
-                <span className="carousel-nav">
+                <span className="carousel-nav" style={{ display: showNav ? "flex" : "none" }}>
                     <a className="carousel-nav-direction">
                         <ArrowBack />
                     </a>
                     <span className="carousel-nav-position">
-                        {imageURLs.map((imgURL, index) => {
+                        {galleryData.map((image, index) => {
                             return <a className={index == 0 ?
                                 "carousel-nav-position-dot selected" : "carousel-nav-position-dot"} key={index}>
                                 <PositionDot className="carousel-nav-position-dot-icon" />
