@@ -3,6 +3,8 @@
     --overlay-transition-open: 0.2s;
     --overlay-transition-close: 0.16s;
     --overlay-interactive-primary: #A08A5D;
+    --overlay-interactive-secondary: #84a1c4;
+    --overlay-interactive-secondary-hover: #ffffff;
     --overlay-close-icon-offset: 3.5rem;
     --overlay-inner-padding: 4.5rem;
     --overlay-outer-padding: 3rem;
@@ -30,6 +32,23 @@
       opacity: 0;
    }
   }
+
+a {
+    color: var(--overlay-interactive-secondary);
+    text-decoration: none;
+    transition: color .15s;
+
+}
+
+a:hover{
+    color: var(--overlay-interactive-secondary-hover);
+    transition: color .15s;
+
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
 
 .overlay {
     color: var(--project-copy);

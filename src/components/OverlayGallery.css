@@ -1,6 +1,5 @@
 /* Flickity CSS */
 
-
 /* Flickity ends here */
 
 .gallery {
@@ -31,6 +30,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
+}
+
+.cell-content.desktop-contain {
+    object-fit: contain;
 }
 
 .carousel-nav {
@@ -68,7 +72,6 @@
     margin-right: 0.75rem;
 }
 
-
 .carousel-nav-position-dot {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -93,11 +96,25 @@
 
 @media only screen and (max-width: 1080px) {
     .carousel {
-        height: 70vh;
+        height: 60vh;
         max-height: 540px;
+    }
+
+    .carousel-nav{
+        margin-bottom: 2rem;
+    }
+
+    .carousel-nav.single {
+        margin-bottom: -0.5rem;
     }
     .carousel-nav-position-dot {
         padding-left: 0.625rem;
         padding-right: 0.625rem;
+    }
+    .cell-content.desktop-contain {
+        object-fit: cover;
+    }
+    .cell-content.mobile-contain {
+        object-fit: contain;
     }
 }

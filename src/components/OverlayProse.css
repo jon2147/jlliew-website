@@ -25,6 +25,7 @@
     font-weight: 400;
     white-space: pre-wrap;
     margin-top: 2rem;
+    line-height: 1.25rem;
 }
 
 .project-tags {
@@ -34,7 +35,7 @@
     text-transform: uppercase;
     letter-spacing: 0.16em;
     text-align: left;
-    margin-top: 4.5rem;
+    margin-top: 3rem;
 }
 
 .project-tag {
@@ -53,7 +54,6 @@
     }
     .project-description {
         margin-top: 1.25rem;
-        line-height: 1.25rem;
     }
     .project-tags {
         margin-top: 2rem;
