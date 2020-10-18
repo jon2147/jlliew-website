@@ -99,11 +99,7 @@
         height: 60vh;
         max-height: 540px;
     }
-
-    .carousel-nav{
-        margin-bottom: 2rem;
-    }
-
+    
     .carousel-nav.single {
         margin-bottom: -0.5rem;
     }
