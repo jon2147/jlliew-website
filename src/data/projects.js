@@ -23,16 +23,39 @@ export const projectData = [
         ]
     },
     {
-        projectTitle: "Pursuit",
-        projectSubtitle: "Something about COVID-19",
-        projectDescription: "media team + researchers covid + after effects",
+        projectTitle: "Pursuit: COVID-19 Vaccine Special Report",
+        projectSubtitle: "University of Melbourne",
+        projectDescription: <div>
+            <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
+            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos. The information needed to be as digestible and accurate as possible, so it was a treat to hear the academics were happy with our comparably trivial work; here's hoping the remaining readership are just as thrilled.</p>
+            <p>The video I've included is a relic from an earlier draft to which the team were certainly partial, using modified elements sourced from <i>Good Studio</i> stock. There's also a concept shot with abandoned designs for the video's molecular elements.</p>
+        </div>,
         projectThumbnail: "./images/thumbnails/unimelb_pursuit_thumb.jpg",
-        projectTags: ["After Effects", "Animation", "Motion Graphics"],
+        projectTags: ["After Effects", "Illustrator", "Animation", "Motion Graphics", "Adobe Media Encoder", "COVID-19", "2020"],
         projectImages: [
             {
-                imageURL: "./images/TEMP.jpg",
-                imageAlt: "Wartide - Ancient Priest's Staff",
+                imageURL: "./images/pursuit/pursuit_article_header.jpg",
+                imageAlt: "Pursuit Article Header",
                 desktopContain: true,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/pursuit/pursuit_article_featured.jpg",
+                imageAlt: "Pursuit Article Front Page Feature",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/pursuit/pursuit_bts_anim.mp4",
+                imageAlt: "Pursuit Behind the Scenes Animation",
+                desktopContain: false,
+                mobileContain: false,
+                isVideo: true
+            },
+            {
+                imageURL: "./images/pursuit/pursuit_bts_concept.jpg",
+                imageAlt: "Pursuit Behind the Scenes Concept",
+                desktopContain: false,
                 mobileContain: false
             }
         ]
@@ -40,21 +63,25 @@ export const projectData = [
     {
         projectTitle: "University of Melbourne",
         projectSubtitle: "Digital Designer",
-        projectDescription: "",
+        projectDescription: <div>
+        <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
+        <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos. The information needed to be as digestible and accurate as possible, so it was a treat to hear the academics were happy with our comparably trivial work; here's hoping the remaining readership are just as thrilled.</p>
+        <p>The video I've included is a relic from an earlier draft to which the team were certainly partial, using modified elements sourced from <i>Good Studio</i> stock.</p>
+    </div>,
         projectThumbnail: "./images/thumbnails/unimelb_study_thumb.jpg",
         projectTags: ["Interaction Design", "User Experience"],
         projectImages: [
             {
-                imageURL: "./images/study_oyl_better.jpg",
-                imageAlt: "Study: One Year Later",
+                imageURL: "./images/study_oyl_inner.jpg",
+                imageAlt: "Study: One Year Later Booklet",
                 desktopContain: false,
                 mobileContain: false
             },
             {
-                imageURL: "./images/study_oyl_inner.jpg",
+                imageURL: "./images/unimelb/study_scp_principle.gif",
                 imageAlt: "",
-                desktopContain: false,
-                mobileContain: false
+                desktopContain: true,
+                mobileContain: true
             }
         ]
     },
@@ -73,30 +100,17 @@ export const projectData = [
             }
         ]
     },
-    {
-        projectTitle: "Empira",
-        projectSubtitle: "Lachlan James @WartideCCG",
-        projectDescription: "Put empira stuff here when they're finished",
-        projectThumbnail: "./images/wartide_tsoldier.png",
-        projectTags: ["Card Game", "Illustration", "Concept Art"],
-        projectImages: [
-            {
-                imageURL: "./images/wartide_tsoldier.png",
-                imageAlt: "Wartide - Ancient Priest's Staff",
-                desktopContain: true,
-                mobileContain: false
-            }
-        ]
-    },
+
     {
         projectTitle: "Fivex Art Prize 2020",
         projectSubtitle: "Digital Billboard Art",
-        projectDescription: <div><p>
-            Although I didn't win, my submissions for the new annual Fivex Art Prize are getting a spot here. <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Winning artworks</a> were to be showcased intermittently among advertising content on LED billboards at the corner of Flinders and Elizabeth streets.</p>
-            <p>The artworks [were meant to be inspire *get the actual quote if you can find it* the many Melbournians passing the massive displays]. I conceived the piece as one that might inspire viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world.</p>
-            <p>I chose the figure of a swimmer / diver as I felt it would capture a sense of individual freedom, as well as one of aspirational determination. The swimmer navigates the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p></div>,
-        projectThumbnail: "./images/thumbnails/fivex_podium_thumbTEMP.jpg",
-        projectTags: ["LED billboard", "Flinders St", "Elizabeth St", "2020", "QMS Media"],
+        projectDescription: <div>
+            <p>Although I didn't win, my submissions for the new annual Fivex Art Prize are getting a spot here. <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Winning artworks</a> were to be showcased intermittently among advertising content on a pair of LED billboards on the corner of Flinders and Elizabeth streets.</p>
+            <p>I conceived the piece as one that might inspire its viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world.</p>
+            <p>I chose the figure of a swimmer / diver as I felt it would capture a sense of individual freedom, as well as one of aspirational determination. The swimmer navigates the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p>
+        </div>,
+        projectThumbnail: "./images/thumbnails/fivex_podium_thumb.jpg",
+        projectTags: ["Digital Painting", "LED billboard", "Flinders St", "Elizabeth St", "QMS Media"],
         projectImages: [
             {
                 imageURL: "./images/fivex_fb_wrap.png",

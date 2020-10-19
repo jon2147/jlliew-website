@@ -1,6 +1,6 @@
 .overlay-nav {
     padding: var(--overlay-inner-padding) var(--overlay-outer-padding) var(--overlay-outer-padding) var(--overlay-outer-padding);
-    
+    margin-top: auto;
 }
 
 .overlay-nav-link {
@@ -104,6 +104,9 @@
     .overlay-nav {
         display: flex;
         flex-direction: column;
+    }
+    .overlay-nav-link{
+        line-height: 1.25rem;
     }
     .overlay-nav-link.forward {
         float: none;

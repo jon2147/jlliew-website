@@ -94,6 +94,7 @@ p:last-child{
     opacity: 1;
     animation: fadeIn ease-in 1;
     animation-duration: 0.16s;
+    flex: 1;
 }
 
 .overlay-content.transparent {
@@ -138,6 +139,7 @@ p:last-child{
     .overlay-content-prose {
         order: 2;
         padding: var(--overlay-inner-padding-mobile) var(--overlay-inner-padding-mobile) 0 var(--overlay-inner-padding-mobile);
+        margin-top: -0.5rem;
     }
     .overlay-content-gallery {
         order: 1;
