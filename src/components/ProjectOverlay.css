@@ -105,13 +105,13 @@ p:last-child{
 
 .overlay-content-prose {
     padding: var(--overlay-inner-padding) var(--overlay-inner-padding) 0 var(--overlay-inner-padding);
-    flex: 11;
+    flex: 15;
     order: 1;
 }
 
 .overlay-content-gallery {
     padding: var(--overlay-inner-padding) var(--overlay-inner-padding) 0 var(--overlay-inner-padding);
-    flex: 10;
+    flex: 14;
     order: 2;
 }
 
@@ -146,3 +146,4 @@ p:last-child{
         padding: 0;
     }
 }
+

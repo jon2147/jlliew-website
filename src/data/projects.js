@@ -28,7 +28,6 @@ export const projectData = [
         projectDescription: <div>
             <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
             <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos. The information needed to be as digestible and accurate as possible, so it was a treat to hear the academics were happy with our comparably trivial work; here's hoping the remaining readership are just as thrilled.</p>
-            <p>The video I've included is a relic from an earlier draft to which the team were certainly partial, using modified elements sourced from <i>Good Studio</i> stock. There's also a concept shot with abandoned designs for the video's molecular elements.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/unimelb_pursuit_thumb.jpg",
         projectTags: ["After Effects", "Illustrator", "Animation", "Motion Graphics", "Adobe Media Encoder", "COVID-19", "2020"],
@@ -46,13 +45,6 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "./images/pursuit/pursuit_bts_anim.mp4",
-                imageAlt: "Pursuit Behind the Scenes Animation",
-                desktopContain: false,
-                mobileContain: false,
-                isVideo: true
-            },
-            {
                 imageURL: "./images/pursuit/pursuit_bts_concept.jpg",
                 imageAlt: "Pursuit Behind the Scenes Concept",
                 desktopContain: false,
@@ -64,24 +56,60 @@ export const projectData = [
         projectTitle: "University of Melbourne",
         projectSubtitle: "Digital Designer",
         projectDescription: <div>
-        <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
-        <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos. The information needed to be as digestible and accurate as possible, so it was a treat to hear the academics were happy with our comparably trivial work; here's hoping the remaining readership are just as thrilled.</p>
-        <p>The video I've included is a relic from an earlier draft to which the team were certainly partial, using modified elements sourced from <i>Good Studio</i> stock.</p>
-    </div>,
+            <p><i>"The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them."</i> – We printed that in a book.</p>
+            <p>As a part of this illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
+            <p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get an opportunity to with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p>
+        </div>,
         projectThumbnail: "./images/thumbnails/unimelb_study_thumb.jpg",
-        projectTags: ["Interaction Design", "User Experience"],
+        projectTags: ["Interaction Design", "User Experience", "UX / UI", "Responsive Design", "WCAG 2.0 AA Accessibility", "Design System", "Figma", "Sketch", "InDesign", "Principle", "Print Design"],
         projectImages: [
             {
-                imageURL: "./images/study_oyl_inner.jpg",
-                imageAlt: "Study: One Year Later Booklet",
-                desktopContain: false,
-                mobileContain: false
+                imageURL: "./images/unimelb/unimelb_megamenu.jpg",
+                imageAlt: "Digital Online Channels Booklet Overleaf",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/unimelb/unimelb_mfa_screens.png",
+                imageAlt: "Digital Online Channels Booklet Overleaf",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/unimelb/ffam_vca_profile.png",
+                imageAlt: "",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/unimelb/study_scp_semantic.jpg",
+                imageAlt: "",
+                desktopContain: true,
+                mobileContain: true
             },
             {
                 imageURL: "./images/unimelb/study_scp_principle.gif",
                 imageAlt: "",
                 desktopContain: true,
                 mobileContain: true
+            },
+            {
+                imageURL: "./images/unimelb/study_oyl_inner.jpg",
+                imageAlt: "Study: One Year Later Booklet",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/unimelb/study_oyl_back.jpg",
+                imageAlt: "Study: One Year Later Booklet",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/unimelb/unimelb_doc_stat.jpg",
+                imageAlt: "Digital Online Channels Booklet Overleaf",
+                desktopContain: false,
+                mobileContain: false
             }
         ]
     },

@@ -36,7 +36,7 @@ class OverlayGallery extends React.Component {
                         draggable: true,
                         accessibility: true,
                         autoPlay: 8200,
-                        pauseAutoPlayOnHover: false,
+                        pauseAutoPlayOnHover: true,
                         setGallerySize: false,
                         prevNextButtons: false,
                         pageDots: false,

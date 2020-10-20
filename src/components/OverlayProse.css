@@ -6,26 +6,26 @@
     justify-content: center;
 }
 
-.project-title {
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
 .project-subtitle {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.375rem;
     font-weight: 400;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.4375rem;
+}
+
+.project-title {
+    text-align: left;
+    font-size: 2.25rem;
+    font-weight: 600;
 }
 
 .project-description {
     text-align: left;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     font-weight: 400;
     white-space: pre-wrap;
     margin-top: 2rem;
-    line-height: 1.25rem;
+    line-height: 1.375rem;
 }
 
 .project-tags {
@@ -50,7 +50,10 @@
 
 @media only screen and (max-width: 1080px) {
     .project-subtitle {
-        margin-bottom: 0.5rem;
+        font-size: 1.1625rem;
+    }
+    .project-title {
+        font-size: 1.625rem;
     }
     .project-description {
         margin-top: 1.25rem;
