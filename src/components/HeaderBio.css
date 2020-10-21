@@ -138,3 +138,23 @@
       align-items: center;
     }
   }
+
+  @media only screen and (min-width: 2250px) {
+    p {
+      max-width: 900px;
+    }
+    .header-bio {
+      padding-right: var(--header-half-inner-padding-xl);
+      padding-left: var(--header-half-outer-padding-xl);
+    }
+    .bio-label {
+      font-size: 5.25rem;
+    }
+    .bio-description {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .bio-contact {
+      font-size: 1.8375rem;
+    }
+  }

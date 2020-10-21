@@ -2,32 +2,11 @@ import React from 'react' // React must be in scope to use JSX
 
 export const projectData = [
     {
-        projectTitle: "Ancient Priest's Staff",
-        projectSubtitle: "Lachlan James @WartideCCG",
-        projectDescription: "I've been brought on to complete a series of illustrations for Lachlan James' collectible card game Wartide. Each piece is required to reflect the utility of the card within the context of the game, as well as contribute to the Lore of Wartide.\n\nThe initial test piece commissioned by Lachlan - 'Ancient Priest's Staff ' (pictured) - is intended to create intrigue and ambiguity surrounding the eponymous staff, its people and its history.\n\nEach piece is being composed to advantage their specified dimensions, while also providing plenty of extra bleed for confident printing. Colours are dynamically tested with grayscale & CMYK proofs to ensure optimal values, regardless of context.",
-        projectThumbnail: "./images/thumbnails/wartide_apstaff_thumb.jpg",
-        projectTags: ["Card Game", "Illustration", "Concept Art"],
-        projectImages: [
-            {
-                imageURL: "./images/wartide_apstaff.jpg",
-                imageAlt: "Wartide - Ancient Priest's Staff",
-                desktopContain: true,
-                mobileContain: false
-            },
-            {
-                imageURL: "./images/wartide_vshift.png",
-                imageAlt: "Wartide - Void Shift",
-                desktopContain: true,
-                mobileContain: false
-            }
-        ]
-    },
-    {
         projectTitle: "Pursuit: COVID-19 Vaccine Special Report",
-        projectSubtitle: "University of Melbourne",
+        projectSubtitle: "University of Melbourne – Digital Designer",
         projectDescription: <div>
             <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
-            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos. The information needed to be as digestible and accurate as possible, so it was a treat to hear the academics were happy with our comparably trivial work; here's hoping the remaining readership are just as thrilled.</p>
+            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos. The information needed to be as digestible and accurate as possible, so it was a treat to hear the academics were happy with our comparably trivial work; here's hoping the remaining readership are just as thrilled with the science.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/unimelb_pursuit_thumb.jpg",
         projectTags: ["After Effects", "Illustrator", "Animation", "Motion Graphics", "Adobe Media Encoder", "COVID-19", "2020"],
@@ -58,7 +37,7 @@ export const projectData = [
         projectDescription: <div>
             <p><i>"The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them."</i> – We printed that in a book.</p>
             <p>As a part of this illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
-            <p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get an opportunity to with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p>
+            <p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get the opportunity to work with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/unimelb_study_thumb.jpg",
         projectTags: ["Interaction Design", "User Experience", "UX / UI", "Responsive Design", "WCAG 2.0 AA Accessibility", "Design System", "Figma", "Sketch", "InDesign", "Principle", "Print Design"],
@@ -114,15 +93,84 @@ export const projectData = [
         ]
     },
     {
-        projectTitle: "Pictoria Media",
-        projectSubtitle: "Graphic Designer",
-        projectDescription: "Under Pictoria Media, I've primarily worked on a bi-monthly catalogue for the Bestfurn Furniture & Bedding Group, for which I've consolidated hundreds of media assets to ensure convenient & organised access, participated in studio shoots – decorating the set, working with resident photographers & a rotation of production staff – in addition to the design of and planning for the catalogue.",
-        projectThumbnail: "./images/thumbnails/bestfurn_daisy_thumb.jpg",
-        projectTags: ["Graphic Design", "Pre-press", "VFX Production", "Animation & Compositing"],
+        projectTitle: "Ancient Priest's Staff",
+        projectSubtitle: "Lachlan James @WartideCCG",
+        projectDescription: "I've been brought on to complete a series of illustrations for Lachlan James' collectible card game Wartide. Each piece is required to reflect the utility of the card within the context of the game, as well as contribute to the Lore of Wartide.\n\nThe initial test piece commissioned by Lachlan - 'Ancient Priest's Staff ' (pictured) - is intended to create intrigue and ambiguity surrounding the eponymous staff, its people and its history.\n\nEach piece is being composed to advantage their specified dimensions, while also providing plenty of extra bleed for confident printing. Colours are dynamically tested with grayscale & CMYK proofs to ensure optimal values, regardless of context.",
+        projectThumbnail: "./images/thumbnails/wartide_apstaff_thumb.jpg",
+        projectTags: ["Card Game", "Illustration", "Concept Art"],
         projectImages: [
             {
-                imageURL: "./images/thumbnails/bestfurn_daisy_thumb.jpg",
-                imageAlt: "Daisy 3 Piece Recliner Suite Hero",
+                imageURL: "./images/wartide_apstaff.jpg",
+                imageAlt: "Wartide - Ancient Priest's Staff",
+                desktopContain: true,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/wartide_vshift.png",
+                imageAlt: "Wartide - Void Shift",
+                desktopContain: true,
+                mobileContain: false
+            }
+        ]
+    },
+    {
+        projectTitle: "Bestfurn Furniture & Bedding",
+        projectSubtitle: "Pictoria Media – Graphic Designer",
+        projectDescription: "Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the Bestfurn Furniture & Bedding Group, for which I consolidated hundreds of media assets to ensure convenient & organised access, participated in studio shoots – decorating the set, working with resident photographers & a rotation of production staff – in addition to the design of and planning for the catalogue.",
+        projectThumbnail: "./images/thumbnails/bestfurn_gilmore_thumb.jpg",
+        projectTags: ["Graphic Design", "Pre-press", "Photoshop", "InDesign"],
+        projectImages: [
+            {
+                imageURL: "./images/bestfurn/bestfurn_190304_gilmore.jpg",
+                imageAlt: "Bestfurn July August Winter Spread",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_daisy_hero.jpg",
+                imageAlt: "Bestfurn Daisy Hero",
+                desktopContain: true,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_190708_front.jpg",
+                imageAlt: "Bestfurn Jan Feb Warehouse Sale Back",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_190708_spread_a.jpg",
+                imageAlt: "Bestfurn July August Winter Spread",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_diaz_edit.jpg",
+                imageAlt: "Bestfurn July August Winter Spread",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_191112_shotlist.jpg",
+                imageAlt: "Bestfurn Spring Summer Shoot Plan",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_190102_spread.jpg",
+                imageAlt: "Bestfurn Jan Feb Warehouse Sale Spread",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_190102_back.jpg",
+                imageAlt: "Bestfurn Jan Feb Warehouse Sale Back",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_cooper_mockup.jpg",
+                imageAlt: "Cooper Kids Collection Concept to Final Result",
                 desktopContain: false,
                 mobileContain: false
             }
@@ -154,6 +202,22 @@ export const projectData = [
             }
         ]
     },
+
+    {
+        projectTitle: "MLILY",
+        projectSubtitle: "Pictoria Media – Graphic Designer",
+        projectDescription: "",
+        projectThumbnail: "./images/thumbnails/mlily_vfx_thumb.jpg",
+        projectTags: ["Graphic Design", "Pre-press", "VFX Production", "Animation & Compositing", "POS"],
+        projectImages: [
+            {
+                imageURL: "./images/thumbnails/bestfurn_daisy_thumb.jpg",
+                imageAlt: "Daisy 3 Piece Recliner Suite Hero",
+                desktopContain: false,
+                mobileContain: false
+            }
+        ]
+    },
     {
         projectTitle: "Evans & Partners",
         projectSubtitle: "Graphic Design",
@@ -162,9 +226,9 @@ export const projectData = [
         projectTags: [],
         projectImages: [
             {
-                imageURL: "./images/thumbnails/enp_guide_thumb.jpg",
+                imageURL:  "./images/enp/enp_cover.jpg",
                 imageAlt: "Wartide - Ancient Priest's Staff",
-                desktopContain: true,
+                desktopContain: false,
                 mobileContain: false
             }
         ]
@@ -173,7 +237,7 @@ export const projectData = [
         projectTitle: "Master Studies",
         projectSubtitle: "Originals by Joseph Singer Sargent",
         projectDescription: "Master studies are great for practice because .",
-        projectThumbnail: "./images/masters/egypt_jss.jpg",
+        projectThumbnail: "./images/thumbnails/ms_joseph_thumb.jpg",
         projectTags: ["Master Studies", "Digital Painting", "Portrait Art"],
         projectImages: [
             {
@@ -197,6 +261,21 @@ export const projectData = [
             {
                 imageURL: "./images/masters/joachim_jss.jpg",
                 imageAlt: "Joseph Joachim Master Study (original by Joseph Singer Sargent)",
+                desktopContain: true,
+                mobileContain: false
+            }
+        ]
+    },
+    {
+        projectTitle: "Red Country",
+        projectSubtitle: "Game Design Studio (RMIT University)",
+        projectDescription: ".",
+        projectThumbnail: "./images/thumbnails/redcountry_thumb.jpg",
+        projectTags: ["Concept Art", "3D Modelling", "Level Design", "Video Editing", "Music Production"],
+        projectImages: [
+            {
+                imageURL: "./images/redcountry/rc_cover.jpg",
+                imageAlt: "Joseph Pulitzer Master Study (original by Joseph Singer Sargent)",
                 desktopContain: true,
                 mobileContain: false
             }

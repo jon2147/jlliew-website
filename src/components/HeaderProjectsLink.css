@@ -1,61 +1,65 @@
- 
-  /* PROJECTS LINK */
+ /* PROJECTS LINK */
 
-  .projects-link {
-    color: var(--header-link);
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin: 0 0 3rem 0;
-    text-decoration: none; 
-    transition: color .15s;
-    display: flex !important;
-    align-self: center;
-  
-  }
+ .projects-link {
+   color: var(--header-link);
+   font-size: 1rem;
+   line-height: 1.25rem;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   margin: 0 0 3rem 0;
+   text-decoration: none;
+   transition: color .15s;
+   display: flex !important;
+   align-self: center;
+ }
 
-  .projects-link.bio {
-    display: none !important;
-  }
-  
-  .projects-link:hover {
-    color: var(--header-link-hover);  
-  }
-  
-  .projects-icon {
-    font-size: 1.25rem !important;
-    transform: 0.75rem !important;
-    width: 1.25rem !important;
-    height: 1.25rem !important;  
-  }
-  
-  /* MEDIA QUERIES */
+ .projects-link.bio {
+   display: none !important;
+ }
 
-  @media only screen and (max-width: 720px) {
- 
-    .projects-link {
-      margin-top: 0;
-      margin-bottom: 2rem;
-      display: none !important;
-    }
+ .projects-link:hover {
+   color: var(--header-link-hover);
+ }
 
-    .projects-link.bio {
-      display: flex !important;
-    }
-  
-  } 
+ .projects-icon {
+   font-size: 1.25rem !important;
+   transform: 0.75rem !important;
+   width: 1.25rem !important;
+   height: 1.25rem !important;
+ }
 
-  @media only screen and (max-height: 540px) {
- 
-    .projects-link {
-      margin-top: 0;
-      margin-bottom: 2rem;
-      display: none !important;
-    }
+ /* MEDIA QUERIES */
 
-    .projects-link.bio {
-      display: flex !important;
-    }
-  
-  } 
+ @media only screen and (max-width: 720px) {
+   .projects-link {
+     margin-top: 0;
+     margin-bottom: 2rem;
+     display: none !important;
+   }
+   .projects-link.bio {
+     display: flex !important;
+   }
+ }
+
+ @media only screen and (max-height: 540px) {
+   .projects-link {
+     margin-top: 0;
+     margin-bottom: 2rem;
+     display: none !important;
+   }
+   .projects-link.bio {
+     display: flex !important;
+   }
+ }
+
+ @media only screen and (min-width: 2250px) {
+   .projects-link {
+     font-size: 1.25rem;
+     margin-bottom: 4rem;
+   }
+   .projects-icon {
+     width: 1.5rem !important;
+     height: 1.5rem !important;
+     font-size: 1.5rem !important;
+   }
+ }

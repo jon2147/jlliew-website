@@ -15,7 +15,10 @@
       --header-padding-mobile: 2rem;
       --header-half-inner-padding: 4rem;
       --header-half-outer-padding: 4rem;
-  
+      --header-half-inner-padding-xl: 8rem;
+      --header-half-outer-padding-xl: 8rem;
+
+
       --header-menu-height: 4rem;
       --header-menu-item: #000;
       --header-menu-item-hover: #646464;
