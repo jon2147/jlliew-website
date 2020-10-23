@@ -6,7 +6,7 @@ export const projectData = [
         projectSubtitle: "University of Melbourne – Digital Designer",
         projectDescription: <div>
             <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
-            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos. The information needed to be as digestible and accurate as possible, so it was a treat to hear the academics were happy with our comparably trivial work; here's hoping the remaining readership are just as thrilled with the science.</p>
+            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparably trivial work – here's hoping the remaining readership are just as thrilled with the science.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/unimelb_pursuit_thumb.jpg",
         projectTags: ["After Effects", "Illustrator", "Animation", "Motion Graphics", "Adobe Media Encoder", "COVID-19", "2020"],
@@ -36,7 +36,7 @@ export const projectData = [
         projectSubtitle: "Digital Designer",
         projectDescription: <div>
             <p><i>"The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them."</i> – We printed that in a book.</p>
-            <p>As a part of this illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
+            <p>As a part of this most illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
             <p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get the opportunity to work with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/unimelb_study_thumb.jpg",
@@ -93,11 +93,13 @@ export const projectData = [
         ]
     },
     {
-        projectTitle: "Ancient Priest's Staff",
-        projectSubtitle: "Lachlan James @WartideCCG",
-        projectDescription: "I've been brought on to complete a series of illustrations for Lachlan James' collectible card game Wartide. Each piece is required to reflect the utility of the card within the context of the game, as well as contribute to the Lore of Wartide.\n\nThe initial test piece commissioned by Lachlan - 'Ancient Priest's Staff ' (pictured) - is intended to create intrigue and ambiguity surrounding the eponymous staff, its people and its history.\n\nEach piece is being composed to advantage their specified dimensions, while also providing plenty of extra bleed for confident printing. Colours are dynamically tested with grayscale & CMYK proofs to ensure optimal values, regardless of context.",
+        projectTitle: "Wartide CCG",
+        projectSubtitle: "Lachlan James",
+        projectDescription: <div>
+            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. Many of my pieces have featured an ensemble of characters; I think it's a fantastic way of creating intrigue and dimensionality surrounding an object, event or individual character – with a <i>human</i> element.</p>
+        </div>,
         projectThumbnail: "./images/thumbnails/wartide_apstaff_thumb.jpg",
-        projectTags: ["Card Game", "Illustration", "Concept Art"],
+        projectTags: ["Digital Painting", "Collectible Card Game", "Illustration", "Concept Art"],
         projectImages: [
             {
                 imageURL: "./images/wartide_apstaff.jpg",
@@ -115,8 +117,10 @@ export const projectData = [
     },
     {
         projectTitle: "Bestfurn Furniture & Bedding",
-        projectSubtitle: "Pictoria Media – Graphic Designer",
-        projectDescription: "Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the Bestfurn Furniture & Bedding Group, for which I consolidated hundreds of media assets to ensure convenient & organised access, participated in studio shoots – decorating the set, working with resident photographers & a rotation of production staff – in addition to the design of and planning for the catalogue.",
+        projectSubtitle: "Pictoria Media",
+        projectDescription: <div>
+            <p>Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the <i>Bestfurn Furniture &amp; Bedding Group</i>, consolidating hundreds of media assets, participating in studio shoots – decorating the set, working with resident photographers and a rotation of production staff – in addition to the design of and planning for the catalogue.</p>
+        </div>,
         projectThumbnail: "./images/thumbnails/bestfurn_gilmore_thumb.jpg",
         projectTags: ["Graphic Design", "Pre-press", "Photoshop", "InDesign"],
         projectImages: [
@@ -124,17 +128,11 @@ export const projectData = [
                 imageURL: "./images/bestfurn/bestfurn_190304_gilmore.jpg",
                 imageAlt: "Bestfurn July August Winter Spread",
                 desktopContain: true,
-                mobileContain: true
-            },
-            {
-                imageURL: "./images/bestfurn/bestfurn_daisy_hero.jpg",
-                imageAlt: "Bestfurn Daisy Hero",
-                desktopContain: true,
                 mobileContain: false
             },
             {
-                imageURL: "./images/bestfurn/bestfurn_190708_front.jpg",
-                imageAlt: "Bestfurn Jan Feb Warehouse Sale Back",
+                imageURL: "./images/bestfurn/bestfurn_diaz_edit.jpg",
+                imageAlt: "Bestfurn July August Winter Spread",
                 desktopContain: true,
                 mobileContain: true
             },
@@ -145,16 +143,16 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "./images/bestfurn/bestfurn_diaz_edit.jpg",
-                imageAlt: "Bestfurn July August Winter Spread",
-                desktopContain: true,
-                mobileContain: true
-            },
-            {
                 imageURL: "./images/bestfurn/bestfurn_191112_shotlist.jpg",
                 imageAlt: "Bestfurn Spring Summer Shoot Plan",
                 desktopContain: true,
                 mobileContain: true
+            },
+            {
+                imageURL: "./images/bestfurn/bestfurn_daisy_hero.jpg",
+                imageAlt: "Bestfurn Daisy Hero",
+                desktopContain: true,
+                mobileContain: false
             },
             {
                 imageURL: "./images/bestfurn/bestfurn_190102_spread.jpg",
@@ -169,6 +167,12 @@ export const projectData = [
                 mobileContain: true
             },
             {
+                imageURL: "./images/bestfurn/bestfurn_190708_front.jpg",
+                imageAlt: "Bestfurn Jan Feb Warehouse Sale Back",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
                 imageURL: "./images/bestfurn/bestfurn_cooper_mockup.jpg",
                 imageAlt: "Cooper Kids Collection Concept to Final Result",
                 desktopContain: false,
@@ -176,14 +180,67 @@ export const projectData = [
             }
         ]
     },
-
+    {
+        projectTitle: "MLILY Australia",
+        projectSubtitle: "Pictoria Media",
+        projectDescription: <div>
+            <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair – not the audio file format), and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
+            <p>MLILY were also after point of sale displays (such as pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p>
+        </div>,
+        projectThumbnail: "./images/thumbnails/mlily_vfx_thumb.jpg",
+        projectTags: ["Graphic Design", "Pre-press", "VFX Production", "Animation & Compositing", "POS"],
+        projectImages: [
+            {
+                imageURL: "./images/mlily/mlily_pos_pullup_manu.jpg",
+                imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/mlily/mlily_pcm_storyboard.jpg",
+                imageAlt: "MLILY PCM Active Touch Technology Storyboard",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/mlily/mlily_pcm_vfx.jpg",
+                imageAlt: "MLILY PCM Active Touch VFX Samples",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/mlily/mlily_cf_draft_render.mp4",
+                imageAlt: "MLILY Copper Fusion Mattress Draft Render",
+                desktopContain: true,
+                mobileContain: true,
+                isVideo: true
+            },
+            {
+                imageURL: "./images/mlily/mlily_pos_context.jpg",
+                imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/mlily/mlily_pos_decal.jpg",
+                imageAlt: "MLILY Point of Sale Window Decal - David de Gea",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/mlily/mlily_pos_pullup_wisteria.jpg",
+                imageAlt: "MLILY Point of Sale Pullup Banner - Wisteria",
+                desktopContain: true,
+                mobileContain: true
+            }
+        ]
+    },
     {
         projectTitle: "Fivex Art Prize 2020",
         projectSubtitle: "Digital Billboard Art",
         projectDescription: <div>
-            <p>Although I didn't win, my submissions for the new annual Fivex Art Prize are getting a spot here. <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Winning artworks</a> were to be showcased intermittently among advertising content on a pair of LED billboards on the corner of Flinders and Elizabeth streets.</p>
-            <p>I conceived the piece as one that might inspire its viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world.</p>
-            <p>I chose the figure of a swimmer / diver as I felt it would capture a sense of individual freedom, as well as one of aspirational determination. The swimmer navigates the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p>
+            <p>Although I didn't win, my submissions for the new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Fivex Art Prize</a> are getting their spot here. I conceived this piece as one that might inspire its viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world.</p>
+            <p>The swimmer is a figure of individual freedom, and as a diver one of determined curiosity. They navigate the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/fivex_podium_thumb.jpg",
         projectTags: ["Digital Painting", "LED billboard", "Flinders St", "Elizabeth St", "QMS Media"],
@@ -202,22 +259,6 @@ export const projectData = [
             }
         ]
     },
-
-    {
-        projectTitle: "MLILY",
-        projectSubtitle: "Pictoria Media – Graphic Designer",
-        projectDescription: "",
-        projectThumbnail: "./images/thumbnails/mlily_vfx_thumb.jpg",
-        projectTags: ["Graphic Design", "Pre-press", "VFX Production", "Animation & Compositing", "POS"],
-        projectImages: [
-            {
-                imageURL: "./images/thumbnails/bestfurn_daisy_thumb.jpg",
-                imageAlt: "Daisy 3 Piece Recliner Suite Hero",
-                desktopContain: false,
-                mobileContain: false
-            }
-        ]
-    },
     {
         projectTitle: "Evans & Partners",
         projectSubtitle: "Graphic Design",
@@ -226,7 +267,7 @@ export const projectData = [
         projectTags: [],
         projectImages: [
             {
-                imageURL:  "./images/enp/enp_cover.jpg",
+                imageURL: "./images/enp/enp_cover.jpg",
                 imageAlt: "Wartide - Ancient Priest's Staff",
                 desktopContain: false,
                 mobileContain: false
@@ -234,27 +275,27 @@ export const projectData = [
         ]
     },
     {
-        projectTitle: "Master Studies",
-        projectSubtitle: "Originals by Joseph Singer Sargent",
-        projectDescription: "Master studies are great for practice because .",
+        projectTitle: "Master Portrait Studies",
+        projectSubtitle: "Originals by John Singer Sargent",
+        projectDescription: "Master studies are great for practice. These are a few I conducted studying the work of John Singer Sargent. ",
         projectThumbnail: "./images/thumbnails/ms_joseph_thumb.jpg",
         projectTags: ["Master Studies", "Digital Painting", "Portrait Art"],
         projectImages: [
             {
                 imageURL: "./images/masters/jpulitzer_jss.jpg",
-                imageAlt: "Joseph Pulitzer Master Study (original by Joseph Singer Sargent)",
+                imageAlt: "Joseph Pulitzer Master Study (original by John Singer Sargent)",
                 desktopContain: true,
                 mobileContain: false
             },
             {
                 imageURL: "./images/masters/egypt_jss.jpg",
-                imageAlt: "Egyptian Woman Master Study (original by Joseph Singer Sargent)",
+                imageAlt: "Egyptian Woman Master Study (original by John Singer Sargent)",
                 desktopContain: true,
                 mobileContain: false
             },
             {
                 imageURL: "./images/masters/henry_jss.jpg",
-                imageAlt: "Henry Master Study (original by Joseph Singer Sargent)",
+                imageAlt: "Sir Henry Hughes Wilson Master Study (original by John Singer Sargent)",
                 desktopContain: true,
                 mobileContain: false
             },
@@ -266,19 +307,29 @@ export const projectData = [
             }
         ]
     },
-    {
+    /*{
         projectTitle: "Red Country",
-        projectSubtitle: "Game Design Studio (RMIT University)",
-        projectDescription: ".",
+        projectSubtitle: "",
+        projectDescription: <div>
+            <p><i>Red Country</i> was a real-time online multiplayer (and very student-made) game centred around uncertainty and deception, taking place in the fictional Red Country National Park. A resident doppelgänger preys on unfortunate Red Country patrons who are given no assurance of enemy or ally, and must rely on the tools available and the geography itself to survive.</p>
+            <p>As lead artist, I produced concept art and modelled many of our 3D assets. We were also required to submit a trailer with our game; I edited and produced the music for it, and the dialogue following the intro is taken straight from the game. If you can believe it, I voiced these as well as the intro!</p>
+        </div>,
         projectThumbnail: "./images/thumbnails/redcountry_thumb.jpg",
         projectTags: ["Concept Art", "3D Modelling", "Level Design", "Video Editing", "Music Production"],
         projectImages: [
             {
                 imageURL: "./images/redcountry/rc_cover.jpg",
-                imageAlt: "Joseph Pulitzer Master Study (original by Joseph Singer Sargent)",
+                imageAlt: "Red Country Temp Image",
                 desktopContain: true,
                 mobileContain: false
+            },
+            {
+                imageURL: <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A8NFMhy85SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
+                imageAlt: "Red Country Trailer",
+                desktopContain: true,
+                mobileContain: false,
+                isCustom: true
             }
         ]
-    }
+    }*/
 ];

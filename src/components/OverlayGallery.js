@@ -46,17 +46,20 @@ class OverlayGallery extends React.Component {
                     {galleryData.map((galleryImage, index) => {
 
                         const isVideo = galleryImage.isVideo;
+                        const isCustom = galleryImage.isCustom;
                         const cNameString = "cell-content"
                             + (galleryImage.desktopContain ? " desktop-contain" : "")
                             + (galleryImage.mobileContain ? " mobile-contain" : "");
 
                         return (<div className="carousel-cell" key={index}>
-                            { isVideo ?
-                                <video controls loop muted autoplay="autoplay" className={cNameString}
-                                    src={galleryImage.imageURL} alt={galleryImage.imageAlt} type="video/mp4" />
+                            { isCustom ? <div className={cNameString}>{galleryImage.imageURL}</div>
                                 :
-                                <img className={cNameString}
-                                    src={galleryImage.imageURL} alt={galleryImage.imageAlt} />}
+                                isVideo ?
+                                    <video controls loop muted autoplay="autoplay" className={cNameString}
+                                        src={galleryImage.imageURL} alt={galleryImage.imageAlt} type="video/mp4" />
+                                    :
+                                    <img className={cNameString}
+                                        src={galleryImage.imageURL} alt={galleryImage.imageAlt} />}
 
                         </div>);
                     })}
