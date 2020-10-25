@@ -36,15 +36,21 @@ export const projectData = [
         projectSubtitle: "Digital Designer",
         projectDescription: <div>
             <p><i>"The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them."</i> – We printed that in a book.</p>
-            <p>As a part of this most illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
+            <p>As a part of this illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
             <p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get the opportunity to work with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p>
         </div>,
-        projectThumbnail: "./images/thumbnails/unimelb_study_thumb.jpg",
+        projectThumbnail: "./images/thumbnails/unimelb_doc_thumb.jpg",
         projectTags: ["Interaction Design", "User Experience", "UX / UI", "Responsive Design", "WCAG 2.0 AA Accessibility", "Design System", "Figma", "Sketch", "InDesign", "Principle", "Print Design"],
         projectImages: [
             {
-                imageURL: "./images/unimelb/unimelb_megamenu.jpg",
+                imageURL: "./images/unimelb/unimelb_doc_stat.jpg",
                 imageAlt: "Digital Online Channels Booklet Overleaf",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/unimelb/unimelb_megamenu.png",
+                imageAlt: "Unimelb Megamenu",
                 desktopContain: true,
                 mobileContain: true
             },
@@ -55,38 +61,44 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "./images/unimelb/ffam_vca_profile.png",
-                imageAlt: "",
-                desktopContain: true,
-                mobileContain: true
-            },
-            {
-                imageURL: "./images/unimelb/study_scp_semantic.jpg",
-                imageAlt: "",
+                imageURL: "./images/unimelb/study_ipnav_dev.png",
+                imageAlt: "Study Find a Course In-page Navigation Development",
                 desktopContain: true,
                 mobileContain: true
             },
             {
                 imageURL: "./images/unimelb/study_scp_principle.gif",
-                imageAlt: "",
+                imageAlt: "Study Find a Course In-page Navigation Prototype, made in Principle",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/unimelb/study_fac_filters.png",
+                imageAlt: "Study Find a Course Filters UI Overhaul",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/unimelb/study_scp_semantic.jpg",
+                imageAlt: "Study Sample Course Plan Semantic Colourisation",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/unimelb/unimelb_livewhale_events.png",
+                imageAlt: "LiveWhale Events Component Samples",
                 desktopContain: true,
                 mobileContain: true
             },
             {
                 imageURL: "./images/unimelb/study_oyl_inner.jpg",
-                imageAlt: "Study: One Year Later Booklet",
+                imageAlt: "Study: One Year Later Booklet (Inner)",
                 desktopContain: false,
                 mobileContain: false
             },
             {
                 imageURL: "./images/unimelb/study_oyl_back.jpg",
-                imageAlt: "Study: One Year Later Booklet",
-                desktopContain: false,
-                mobileContain: false
-            },
-            {
-                imageURL: "./images/unimelb/unimelb_doc_stat.jpg",
-                imageAlt: "Digital Online Channels Booklet Overleaf",
+                imageAlt: "Study: One Year Later Booklet (Back)",
                 desktopContain: false,
                 mobileContain: false
             }
@@ -96,7 +108,7 @@ export const projectData = [
         projectTitle: "Wartide CCG",
         projectSubtitle: "Lachlan James",
         projectDescription: <div>
-            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. Many of my pieces have featured an ensemble of characters; I think it's a fantastic way of creating intrigue and dimensionality surrounding an object, event or individual character – with a <i>human</i> element.</p>
+            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of characters; this is to create intrigue and dimensionality surrounding the card's object, event or individual character with a human element.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/wartide_apstaff_thumb.jpg",
         projectTags: ["Digital Painting", "Collectible Card Game", "Illustration", "Concept Art"],
@@ -126,13 +138,13 @@ export const projectData = [
         projectImages: [
             {
                 imageURL: "./images/bestfurn/bestfurn_190304_gilmore.jpg",
-                imageAlt: "Bestfurn July August Winter Spread",
+                imageAlt: "Bestfurn Gilmore Recliner Suite",
                 desktopContain: true,
                 mobileContain: false
             },
             {
                 imageURL: "./images/bestfurn/bestfurn_diaz_edit.jpg",
-                imageAlt: "Bestfurn July August Winter Spread",
+                imageAlt: "Bestfurn Diaz Cover Shoot to Asset",
                 desktopContain: true,
                 mobileContain: true
             },
@@ -185,7 +197,7 @@ export const projectData = [
         projectSubtitle: "Pictoria Media",
         projectDescription: <div>
             <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair – not the audio file format), and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
-            <p>MLILY were also after point of sale displays (such as pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p>
+            <p>MLILY were also after point of sale displays (pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/mlily_vfx_thumb.jpg",
         projectTags: ["Graphic Design", "Pre-press", "VFX Production", "Animation & Compositing", "POS"],
@@ -277,7 +289,9 @@ export const projectData = [
     {
         projectTitle: "Master Portrait Studies",
         projectSubtitle: "Originals by John Singer Sargent",
-        projectDescription: "Master studies are great for practice. These are a few I conducted studying the work of John Singer Sargent. ",
+        projectDescription: <div>
+            <p>Studying works from masters like John Singer Sargent is one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank">reverse Google image search</a> – you know you've done alright when it directs you to the original!</p>
+        </div>,
         projectThumbnail: "./images/thumbnails/ms_joseph_thumb.jpg",
         projectTags: ["Master Studies", "Digital Painting", "Portrait Art"],
         projectImages: [
