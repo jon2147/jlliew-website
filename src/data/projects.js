@@ -3,10 +3,10 @@ import React from 'react' // React must be in scope to use JSX
 export const projectData = [
     {
         projectTitle: "Pursuit: COVID-19 Vaccine Special Report",
-        projectSubtitle: "University of Melbourne – Digital Designer",
+        projectSubtitle: "University of Melbourne",
         projectDescription: <div>
             <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
-            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparably trivial work – here's hoping the remaining readership are just as thrilled with the science.</p>
+            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparatively trivial work – I hope the remaining readership were just as thrilled with the science.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/unimelb_pursuit_thumb.jpg",
         projectTags: ["After Effects", "Illustrator", "Animation", "Motion Graphics", "Adobe Media Encoder", "COVID-19", "2020"],
@@ -108,7 +108,7 @@ export const projectData = [
         projectTitle: "Wartide CCG",
         projectSubtitle: "Lachlan James",
         projectDescription: <div>
-            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of characters; this is to create intrigue and dimensionality surrounding the card's object, individual character or event, with a more human element.</p>
+            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event. Other times I just try to make things look as </p>
         </div>,
         projectThumbnail: "./images/thumbnails/wartide_apstaff_thumb.jpg",
         projectTags: ["Digital Painting", "Collectible Card Game", "Illustration", "Concept Art"],
@@ -273,8 +273,11 @@ export const projectData = [
     },
     {
         projectTitle: "Evans & Partners",
-        projectSubtitle: "Graphic Design",
-        projectDescription: "",
+        projectSubtitle: "Algo Trading Services",
+        projectDescription: <div>
+            <p>The stock-broking solutions firm (then transitioning from <i>Evans &amp; Peters</i>) hired Algo Trading Services to produce an administration portal for staff members, and they required a design overhaul.</p>
+            <p>I prepared a series of visual guides, each containing applications of my new designs and notes on appropriate styling, visual indicators, and form flow– making interactions meaningful and clear, and all in keeping with the established brand identity of Evans &amp; Partners.</p>
+        </div>,
         projectThumbnail: "./images/thumbnails/enp_guide_thumb.jpg",
         projectTags: [],
         projectImages: [
@@ -290,7 +293,7 @@ export const projectData = [
         projectTitle: "Master Portrait Studies",
         projectSubtitle: "Originals by John Singer Sargent",
         projectDescription: <div>
-            <p>Studying works from masters like John Singer Sargent is one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank">reverse Google image search</a> – you know you've done alright when it directs you to the original!</p>
+            <p>Studying works from masters like John Singer Sargent is one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank">reverse Google image search</a> – you know you've done alright when it directs you to the original!</p>
         </div>,
         projectThumbnail: "./images/thumbnails/ms_joseph_thumb.jpg",
         projectTags: ["Master Studies", "Digital Painting", "Portrait Art"],
