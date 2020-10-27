@@ -105,7 +105,7 @@ class ProjectCoordinator extends React.Component {
         const tileData = [];
 
         projectData.map((project, index) => {
-            tileData[index] = project.projectThumbnail;
+            tileData[index] = [project.projectThumbnail, project.projectTitle];
         });
 
         this.setState({ projectTileData: tileData });

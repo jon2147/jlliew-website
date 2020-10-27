@@ -24,6 +24,13 @@ export const projectData = [
                 mobileContain: true
             },
             {
+                imageURL: "./images/pursuit/pursuit_bts_anim.mp4",
+                imageAlt: "Pursuit Video Animation Development",
+                desktopContain: false,
+                mobileContain: false,
+                isVideo: true
+            },
+            {
                 imageURL: "./images/pursuit/pursuit_bts_concept.jpg",
                 imageAlt: "Pursuit Behind the Scenes Concept",
                 desktopContain: false,
@@ -108,7 +115,7 @@ export const projectData = [
         projectTitle: "Wartide CCG",
         projectSubtitle: "Lachlan James",
         projectDescription: <div>
-            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event. Other times I just try to make things look as </p>
+            <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/wartide_apstaff_thumb.jpg",
         projectTags: ["Digital Painting", "Collectible Card Game", "Illustration", "Concept Art"],
@@ -124,6 +131,42 @@ export const projectData = [
                 imageAlt: "Wartide - Void Shift",
                 desktopContain: true,
                 mobileContain: false
+            }
+        ]
+    },
+    {
+        projectTitle: "Melbourne Pollen App Redesign",
+        projectSubtitle: "University of Melbourne",
+        projectDescription: <div>
+            <p><i>Melbourne Pollen</i> lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.</p>
+            <p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href="https://www.melbournepollen.com.au/who-are-we/meet-team/" target="_blank">here they are</a>) to provide modular, adaptable designs to guide the development of their new app.</p>
+        </div>,
+        projectThumbnail: "./images/thumbnails/pollen_grid_thumb.jpg",
+        projectTags: ["Progressive Web App", "Interaction Design", "User Interaction", "Style Guide", "Pollen"],
+        projectImages: [
+            {
+                imageURL: "./images/pollen/pollen_general.png",
+                imageAlt: "Pollen App Preview",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/pollen/pollen_logo_variants.jpg",
+                imageAlt: "Pollen Logo Proposals",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/pollen/pollen_colour_excerpt.jpg",
+                imageAlt: "Pollen Style Guide Colour Excerpt",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/pollen/pollen_pwa_dvm.jpg",
+                imageAlt: "Pollen PWA Desktop vs Mobile",
+                desktopContain: true,
+                mobileContain: true
             }
         ]
     },
@@ -324,12 +367,13 @@ export const projectData = [
             }
         ]
     },
-    /*{
+    
+    {
         projectTitle: "Red Country",
-        projectSubtitle: "",
+        projectSubtitle: "Game Design Studio 2015",
         projectDescription: <div>
-            <p><i>Red Country</i> was a real-time online multiplayer (and very student-made) game centred around uncertainty and deception, taking place in the fictional Red Country National Park. A resident doppelgänger preys on unfortunate Red Country patrons who are given no assurance of enemy or ally, and must rely on the tools available and the geography itself to survive.</p>
-            <p>As lead artist, I produced concept art and modelled many of our 3D assets. We were also required to submit a trailer with our game; I edited and produced the music for it, and the dialogue following the intro is taken straight from the game. If you can believe it, I voiced these as well as the intro!</p>
+            <p><i>Red Country</i> was a real-time online multiplayer (and very student-made) game centred around uncertainty and deception, taking place in the fictional Red Country National Park. Unfortunate Red Country patrons are given no assurance of enemy or ally, relying on the tools available and the geography itself to survive a predatory doppelgänger.</p>
+            <p>As lead artist, I produced concept art and modelled many of our 3D assets. We were also required to submit <a href="https://youtu.be/A8NFMhy85SE" target="_blank">a trailer</a> with our game; I edited and produced the music for it. The voice clips following the intro are voice commands straight from the game, and if you can believe it, I voiced these as well as the intro!</p>
         </div>,
         projectThumbnail: "./images/thumbnails/redcountry_thumb.jpg",
         projectTags: ["Concept Art", "3D Modelling", "Level Design", "Video Editing", "Music Production"],
@@ -341,12 +385,24 @@ export const projectData = [
                 mobileContain: false
             },
             {
+                imageURL: "./images/redcountry/rc_characters.jpg",
+                imageAlt: "Red Country Temp Image",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/redcountry/rc_screenshots.jpg",
+                imageAlt: "Red Country Temp Image",
+                desktopContain: true,
+                mobileContain: false
+            },
+            /*{
                 imageURL: <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A8NFMhy85SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
                 imageAlt: "Red Country Trailer",
                 desktopContain: true,
                 mobileContain: false,
                 isCustom: true
-            }
+            }*/
         ]
-    }*/
+    }
 ];

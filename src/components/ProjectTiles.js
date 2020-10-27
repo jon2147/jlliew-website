@@ -14,7 +14,7 @@ class ProjectTiles extends React.Component {
               this.props.setActiveProject(index);
             }}
             key={index}>
-            <img className="tile-image" src={thumbnail} />
+            <img className="tile-image" src={thumbnail[0]} alt={thumbnail[1]} />
           </a>;
         })}
       </div>
