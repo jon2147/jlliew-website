@@ -135,11 +135,11 @@ export const projectData = [
         ]
     },
     {
-        projectTitle: "Melbourne Pollen App Redesign",
+        projectTitle: "Melbourne Pollen Forecast App",
         projectSubtitle: "University of Melbourne",
         projectDescription: <div>
             <p><i>Melbourne Pollen</i> lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.</p>
-            <p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href="https://www.melbournepollen.com.au/who-are-we/meet-team/" target="_blank">here they are</a>) to provide modular, adaptable designs to guide the development of their new app.</p>
+            <p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href="https://www.melbournepollen.com.au/who-are-we/meet-team/" target="_blank">here they are</a>) on modular, adaptable designs to guide the development of their new app.</p>
         </div>,
         projectThumbnail: "./images/thumbnails/pollen_grid_thumb.jpg",
         projectTags: ["Progressive Web App", "Interaction Design", "User Interaction", "Style Guide", "Pollen"],
@@ -246,12 +246,6 @@ export const projectData = [
         projectTags: ["Graphic Design", "Pre-press", "VFX Production", "Animation & Compositing", "POS"],
         projectImages: [
             {
-                imageURL: "./images/mlily/mlily_pos_pullup_manu.jpg",
-                imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
-                desktopContain: false,
-                mobileContain: false
-            },
-            {
                 imageURL: "./images/mlily/mlily_pcm_storyboard.jpg",
                 imageAlt: "MLILY PCM Active Touch Technology Storyboard",
                 desktopContain: true,
@@ -269,6 +263,12 @@ export const projectData = [
                 desktopContain: true,
                 mobileContain: true,
                 isVideo: true
+            },
+            {
+                imageURL: "./images/mlily/mlily_pos_pullup_manu.jpg",
+                imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
+                desktopContain: false,
+                mobileContain: false
             },
             {
                 imageURL: "./images/mlily/mlily_pos_context.jpg",
@@ -367,16 +367,17 @@ export const projectData = [
             }
         ]
     },
-    
+
     {
-        projectTitle: "Red Country",
-        projectSubtitle: "Game Design Studio 2015",
+        projectTitle: "Bachelor of Design (Games)",
+        projectSubtitle: "RMIT University",
         projectDescription: <div>
-            <p><i>Red Country</i> was a real-time online multiplayer (and very student-made) game centred around uncertainty and deception, taking place in the fictional Red Country National Park. Unfortunate Red Country patrons are given no assurance of enemy or ally, relying on the tools available and the geography itself to survive a predatory doppelgänger.</p>
-            <p>As lead artist, I produced concept art and modelled many of our 3D assets. We were also required to submit <a href="https://youtu.be/A8NFMhy85SE" target="_blank">a trailer</a> with our game; I edited and produced the music for it. The voice clips following the intro are voice commands straight from the game, and if you can believe it, I voiced these as well as the intro!</p>
+            <p>Even though I specialised as a 2D artist, this program's emphasis on independent game development also had me learning how to work with object-oriented programming languages (such as C#), as well as how to sculpt, rig and animate 3D models.</p>
+            <p>Working collaboratively, I contributed concept art, generated 3D assets, produced team documents and presentations, consolidated the team's assets for implementation, and assisted our lead programmer with a bit of code. This cultivated a hollistic and sympathetic practice that has continually prepared me for so many industry-adjacent challenges.</p>
+            <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank">Check out this trailer for our game 'Red Country'!</a></p>
         </div>,
         projectThumbnail: "./images/thumbnails/redcountry_thumb.jpg",
-        projectTags: ["Concept Art", "3D Modelling", "Level Design", "Video Editing", "Music Production"],
+        projectTags: ["Concept Art", "3D Modelling", "Low / High Poly", "Animation", "Object-oriented Programming", "Maya", "Unity", "A/V Production"],
         projectImages: [
             {
                 imageURL: "./images/redcountry/rc_cover.jpg",

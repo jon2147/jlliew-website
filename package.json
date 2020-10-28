@@ -10,8 +10,8 @@
     "@testing-library/user-event": "^7.2.1",
     "flickity": "^2.2.1",
     "gh-pages": "^2.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-scripts": "3.4.0",
     "yarn": "^1.22.10"
   },
