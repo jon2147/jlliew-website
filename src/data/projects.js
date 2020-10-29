@@ -113,7 +113,7 @@ export const projectData = [
     },
     {
         projectTitle: "Wartide CCG",
-        projectSubtitle: "Lachlan James",
+        projectSubtitle: "Lachlan Peterson",
         projectDescription: <div>
             <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event.</p>
         </div>,
@@ -334,9 +334,10 @@ export const projectData = [
     },
     {
         projectTitle: "Master Portrait Studies",
-        projectSubtitle: "Originals by John Singer Sargent",
+        projectSubtitle: "Personal Work",
         projectDescription: <div>
-            <p>Studying works from masters like John Singer Sargent is one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank">reverse Google image search</a> – you know you've done alright when it directs you to the original!</p>
+            <p>Master studies are one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank">reverse Google image search</a> – you know you've done alright when it directs you to the original!</p>
+            <p><i>Original works belong to: John Singer Sargent, Zhaoming Wu and Brian Huang.</i></p>
         </div>,
         projectThumbnail: "./images/thumbnails/ms_joseph_thumb.jpg",
         projectTags: ["Master Studies", "Digital Painting", "Portrait Art"],
@@ -354,6 +355,18 @@ export const projectData = [
                 mobileContain: false
             },
             {
+                imageURL: "./images/masters/rebecca_zw.jpg",
+                imageAlt: "Rebecca Master Study (original by Zhaoming Wu)",
+                desktopContain: true,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/masters/hydra_bh.jpg",
+                imageAlt: "Hydralisk Master Study (original by Brian Huang)",
+                desktopContain: true,
+                mobileContain: false
+            },
+            {
                 imageURL: "./images/masters/henry_jss.jpg",
                 imageAlt: "Sir Henry Hughes Wilson Master Study (original by John Singer Sargent)",
                 desktopContain: true,
@@ -364,6 +377,12 @@ export const projectData = [
                 imageAlt: "Joseph Joachim Master Study (original by Joseph Singer Sargent)",
                 desktopContain: true,
                 mobileContain: true
+            },
+            {
+                imageURL: "./images/masters/captain_zw.jpg",
+                imageAlt: "Captain Master Study (original by Zhaoming Wu)",
+                desktopContain: true,
+                mobileContain: false
             }
         ]
     },
@@ -380,19 +399,49 @@ export const projectData = [
         projectTags: ["Concept Art", "3D Modelling", "Low / High Poly", "Animation", "Object-oriented Programming", "Maya", "Unity", "A/V Production"],
         projectImages: [
             {
-                imageURL: "./images/redcountry/rc_cover.jpg",
+                imageURL: "./images/gdesign/rc_cover.jpg",
                 imageAlt: "Red Country Temp Image",
                 desktopContain: true,
                 mobileContain: false
             },
             {
-                imageURL: "./images/redcountry/rc_characters.jpg",
-                imageAlt: "Red Country Temp Image",
-                desktopContain: false,
+                imageURL: "./images/gdesign/dg_sheet_a.jpg",
+                imageAlt: "Western Fantasy Character Concept Excerpts",
+                desktopContain: true,
                 mobileContain: false
             },
             {
-                imageURL: "./images/redcountry/rc_screenshots.jpg",
+                imageURL: "./images/gdesign/dg_sheet_b.jpg",
+                imageAlt: "Western Fantasy Character Concept Excerpts",
+                desktopContain: true,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/gdesign/wtsr_samples.jpg",
+                imageAlt: "'When the Sun Rises' Samples",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/gdesign/idw_sketches.jpg",
+                imageAlt: "Underwater Horror/Adventure Concept Sketches",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/gdesign/tdg_samples.jpg",
+                imageAlt: "'The Desert Gnome' Samples'",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/gdesign/rc_characters.jpg",
+                imageAlt: "Red Country Character Concepts",
+                desktopContain: false,
+                mobileContain: false
+            },            
+            {
+                imageURL: "./images/gdesign/rc_screenshots.jpg",
                 imageAlt: "Red Country Temp Image",
                 desktopContain: true,
                 mobileContain: false
