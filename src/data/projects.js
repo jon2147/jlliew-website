@@ -399,12 +399,6 @@ export const projectData = [
         projectTags: ["Concept Art", "3D Modelling", "Low / High Poly", "Animation", "Object-oriented Programming", "Maya", "Unity", "A/V Production"],
         projectImages: [
             {
-                imageURL: "./images/gdesign/rc_cover.jpg",
-                imageAlt: "Red Country Temp Image",
-                desktopContain: true,
-                mobileContain: false
-            },
-            {
                 imageURL: "./images/gdesign/dg_sheet_a.jpg",
                 imageAlt: "Western Fantasy Character Concept Excerpts",
                 desktopContain: true,
@@ -417,8 +411,14 @@ export const projectData = [
                 mobileContain: false
             },
             {
-                imageURL: "./images/gdesign/wtsr_samples.jpg",
-                imageAlt: "'When the Sun Rises' Samples",
+                imageURL: "./images/gdesign/venv_cloister.jpg",
+                imageAlt: "Virtual Environments Cloister Samples",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/gdesign/ca_morpheus.jpg",
+                imageAlt: "'An Approach to Death' Artwork",
                 desktopContain: true,
                 mobileContain: true
             },
@@ -429,17 +429,47 @@ export const projectData = [
                 mobileContain: true
             },
             {
+                imageURL: "./images/gdesign/wtsr_samples.jpg",
+                imageAlt: "'When the Sun Rises' Samples",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/gdesign/krispykale_pterosaurterror.jpg",
+                imageAlt: "'Krispy Kale: Pterosaur Terror' Samples",
+                desktopContain: true,
+                mobileContain: true
+            },
+            {
+                imageURL: "./images/gdesign/ivg_nldgclba.jpg",
+                imageAlt: "Independent Videogames Prototype Development",
+                desktopContain: true,
+                mobileContain: true
+            },
+                        {
+                imageURL: "./images/gdesign/rc_characters.jpg",
+                imageAlt: "Red Country Character Concepts",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
                 imageURL: "./images/gdesign/tdg_samples.jpg",
                 imageAlt: "'The Desert Gnome' Samples'",
                 desktopContain: true,
                 mobileContain: true
             },
             {
-                imageURL: "./images/gdesign/rc_characters.jpg",
-                imageAlt: "Red Country Character Concepts",
-                desktopContain: false,
+                imageURL: "./images/gdesign/tanner_posters.jpg",
+                imageAlt: "'Tanner' Diegetic Posters",
+                desktopContain: true,
+                mobileContain: true
+            },       
+            {
+                imageURL: "./images/gdesign/rc_cover.jpg",
+                imageAlt: "Red Country Temp Image",
+                desktopContain: true,
                 mobileContain: false
-            },            
+            },     
             {
                 imageURL: "./images/gdesign/rc_screenshots.jpg",
                 imageAlt: "Red Country Temp Image",
