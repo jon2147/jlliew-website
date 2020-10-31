@@ -413,32 +413,26 @@ export const projectData = [
             {
                 imageURL: "./images/gdesign/venv_cloister.jpg",
                 imageAlt: "Virtual Environments Cloister Samples",
-                desktopContain: true,
-                mobileContain: true
+                desktopContain: false,
+                mobileContain: false
             },
             {
                 imageURL: "./images/gdesign/ca_morpheus.jpg",
                 imageAlt: "'An Approach to Death' Artwork",
+                desktopContain: false,
+                mobileContain: false
+            },
+            {
+                imageURL: "./images/gdesign/rc_samples.jpg",
+                imageAlt: "'Red Country' Online Multiplayer Horror Samples",
                 desktopContain: true,
                 mobileContain: true
             },
             {
-                imageURL: "./images/gdesign/idw_sketches.jpg",
-                imageAlt: "Underwater Horror/Adventure Concept Sketches",
-                desktopContain: true,
-                mobileContain: true
-            },
-            {
-                imageURL: "./images/gdesign/wtsr_samples.jpg",
-                imageAlt: "'When the Sun Rises' Samples",
-                desktopContain: true,
-                mobileContain: true
-            },
-            {
-                imageURL: "./images/gdesign/krispykale_pterosaurterror.jpg",
-                imageAlt: "'Krispy Kale: Pterosaur Terror' Samples",
-                desktopContain: true,
-                mobileContain: true
+                imageURL: "./images/gdesign/dim_wtsrkkptttdg.jpg",
+                imageAlt: "Design for Interactive Media Prototype Samples",
+                desktopContain: false,
+                mobileContain: false
             },
             {
                 imageURL: "./images/gdesign/ivg_nldgclba.jpg",
@@ -446,43 +440,25 @@ export const projectData = [
                 desktopContain: true,
                 mobileContain: true
             },
-                        {
-                imageURL: "./images/gdesign/rc_characters.jpg",
-                imageAlt: "Red Country Character Concepts",
-                desktopContain: false,
-                mobileContain: false
-            },
             {
-                imageURL: "./images/gdesign/tdg_samples.jpg",
-                imageAlt: "'The Desert Gnome' Samples'",
-                desktopContain: true,
+                imageURL: "./images/gdesign/idw_sketches.jpg",
+                imageAlt: "Underwater Horror/Adventure Concept Sketches",
+                desktopContain: false,
                 mobileContain: true
             },
             {
                 imageURL: "./images/gdesign/tanner_posters.jpg",
                 imageAlt: "'Tanner' Diegetic Posters",
-                desktopContain: true,
-                mobileContain: true
-            },       
-            {
-                imageURL: "./images/gdesign/rc_cover.jpg",
-                imageAlt: "Red Country Temp Image",
-                desktopContain: true,
+                desktopContain: false,
                 mobileContain: false
-            },     
-            {
-                imageURL: "./images/gdesign/rc_screenshots.jpg",
-                imageAlt: "Red Country Temp Image",
-                desktopContain: true,
-                mobileContain: false
-            },
+            }
             /*{
                 imageURL: <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A8NFMhy85SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
                 imageAlt: "Red Country Trailer",
                 desktopContain: true,
                 mobileContain: false,
                 isCustom: true
-            }*/
+                                                            }*/
         ]
     }
 ];
