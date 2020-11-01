@@ -392,8 +392,8 @@ export const projectData = [
         projectSubtitle: "RMIT University",
         projectDescription: <div>
             <p>Even though I specialised as a 2D artist, this program's emphasis on independent game development also had me learning how to work with object-oriented programming languages (such as C#), as well as how to sculpt, rig and animate 3D models.</p>
-            <p>Working collaboratively, I contributed concept art, generated 3D assets, produced team documents and presentations, consolidated the team's assets for implementation, and assisted our lead programmer with a bit of code. This cultivated a hollistic and sympathetic practice that has continually prepared me for so many industry-adjacent challenges.</p>
-            <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank">Check out this trailer for our game 'Red Country'!</a></p>
+            <p>Working collaboratively, I contributed concept art, generated 3D assets, produced team documents and presentations, consolidated the team's assets for implementation, and assisted our lead programmer with a dash of code. This cultivated a hollistic and sympathetic practice that has continually prepared me for so many industry-adjacent challenges.</p>
+            <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank">Check out this trailer for our game <i>Red Country!</i></a></p>
         </div>,
         projectThumbnail: "./images/thumbnails/redcountry_thumb.jpg",
         projectTags: ["Concept Art", "3D Modelling", "Low / High Poly", "Animation", "Object-oriented Programming", "Maya", "Unity", "A/V Production"],
@@ -419,7 +419,7 @@ export const projectData = [
             {
                 imageURL: "./images/gdesign/ca_morpheus.jpg",
                 imageAlt: "'An Approach to Death' Artwork",
-                desktopContain: false,
+                desktopContain: true,
                 mobileContain: false
             },
             {
@@ -431,8 +431,8 @@ export const projectData = [
             {
                 imageURL: "./images/gdesign/dim_wtsrkkptttdg.jpg",
                 imageAlt: "Design for Interactive Media Prototype Samples",
-                desktopContain: false,
-                mobileContain: false
+                desktopContain: true,
+                mobileContain: true
             },
             {
                 imageURL: "./images/gdesign/ivg_nldgclba.jpg",
