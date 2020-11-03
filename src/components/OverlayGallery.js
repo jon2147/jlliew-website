@@ -21,9 +21,6 @@ class OverlayGallery extends React.Component {
 
         const showNav = galleryData.length > 1 ? true : false;
 
-        console.log(galleryData)
-
-
 
         return (
             <div className="gallery">
@@ -55,7 +52,7 @@ class OverlayGallery extends React.Component {
                             { isCustom ? <div className={cNameString}>{galleryImage.imageURL}</div>
                                 :
                                 isVideo ?
-                                    <video controls loop muted autoplay="autoplay" className={cNameString}
+                                    <video controls loop muted autoPlay="autoplay" className={cNameString}
                                         src={galleryImage.imageURL} alt={galleryImage.imageAlt} type="video/mp4" />
                                     :
                                     <img className={cNameString}

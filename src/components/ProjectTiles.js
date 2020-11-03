@@ -7,14 +7,14 @@ class ProjectTiles extends React.Component {
     return (
       <div className="project-tiles">
 
-        {this.props.projectTileData.map((thumbnail, index) => {
+        {this.props.projectTileData.map((tile, index) => {
           return <a className="project-tile"
             onClick={() => {
               this.props.openOverlay();
               this.props.setActiveProject(index);
             }}
             key={index}>
-            <img className="tile-image" src={thumbnail[0]} alt={thumbnail[1]} />
+            <img className="tile-image" src={tile[0]} alt={tile[1]} />
           </a>;
         })}
       </div>

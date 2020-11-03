@@ -8,6 +8,8 @@ import { projectData } from '../data/projects.js'
 
 const fadeOutInterval = 200;
 
+
+
 class ProjectCoordinator extends React.Component {
 
 
@@ -19,7 +21,8 @@ class ProjectCoordinator extends React.Component {
             projectTileData: [],
             projectProseData: [],
             projectNavData: [],
-            projectGalleryData: []
+            projectGalleryData: [],
+            projectFromURL: 0
         };
 
         this.setActiveProject = this.setActiveProject.bind(this);
@@ -47,7 +50,7 @@ class ProjectCoordinator extends React.Component {
 
         this.setState({ projectProseData: proseData });
 
-        
+
         const galleryData = projectData[projectIndex].projectImages;
         this.setState({ projectGalleryData: galleryData });
 
@@ -59,7 +62,7 @@ class ProjectCoordinator extends React.Component {
 
         this.setState({ projectNavData: navData });
 
-        
+
 
     }
 
@@ -98,17 +101,29 @@ class ProjectCoordinator extends React.Component {
 
 
     componentDidMount() {
-        // set initial project so that overlay has data
-        this.setActiveProject(0);
+
+        const providedURL = window.location.href;
+        const originURL = window.location.origin;
+
 
         // Prepare an array of thumbnails for the project tiles to send to the ProjectTiles element
         const tileData = [];
 
         projectData.map((project, index) => {
-            tileData[index] = [project.projectThumbnail, project.projectTitle];
+
+            // Prepare the data for the ProjectTiles element
+            tileData[index] = [project.projectThumbnail, project.projectTitle, project.projectURL];
+
+            // Check if the current URL matches a project entry
+            if (providedURL == originURL + "/projects" + project.projectURL){
+                this.setActiveProject(index);
+                this.openOverlay();
+            }
         });
 
         this.setState({ projectTileData: tileData });
+
+
 
     }
 
