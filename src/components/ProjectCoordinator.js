@@ -21,8 +21,7 @@ class ProjectCoordinator extends React.Component {
             projectTileData: [],
             projectProseData: [],
             projectNavData: [],
-            projectGalleryData: [],
-            projectFromURL: 0
+            projectGalleryData: []
         };
 
         this.setActiveProject = this.setActiveProject.bind(this);
@@ -55,15 +54,17 @@ class ProjectCoordinator extends React.Component {
         this.setState({ projectGalleryData: galleryData });
 
 
+        const navBackwardIndex = projectIndex == 0 ? projectData.length - 1 : projectIndex - 1;
+        const navForwardIndex = projectIndex >= (projectData.length - 1) ? 0 : projectIndex + 1;
+
         const navData = [
-            projectData[projectIndex == 0 ? projectData.length - 1 : projectIndex - 1].projectTitle,
-            projectData[projectIndex >= (projectData.length - 1) ? 0 : projectIndex + 1].projectTitle
+            projectData[navBackwardIndex].projectTitle,
+            projectData[navForwardIndex].projectTitle,
+            projectData[navBackwardIndex].projectURL,
+            projectData[navForwardIndex].projectURL
         ];
 
         this.setState({ projectNavData: navData });
-
-
-
     }
 
 
@@ -111,11 +112,11 @@ class ProjectCoordinator extends React.Component {
 
         projectData.map((project, index) => {
 
-            // Prepare the data for the ProjectTiles element
+            // Prepare the data for the ProjectTiles
             tileData[index] = [project.projectThumbnail, project.projectTitle, project.projectURL];
 
             // Check if the current URL matches a project entry
-            if (providedURL == originURL + "/projects" + project.projectURL){
+            if (providedURL == originURL + project.projectURL) {
                 this.setActiveProject(index);
                 this.openOverlay();
             }
@@ -123,9 +124,23 @@ class ProjectCoordinator extends React.Component {
 
         this.setState({ projectTileData: tileData });
 
-
+        window.onpopstate = this.onBrowserNavigationEvent;
 
     }
+
+    onBrowserNavigationEvent = (e) => {
+        projectData.map((project, index) => {
+            const providedURL = window.location.href;
+        const originURL = window.location.origin;
+
+
+            // Check if the current URL matches a project entry
+            if (providedURL == originURL + project.projectURL) {
+                this.setActiveProject(index);
+                this.openOverlay();
+            }
+        });
+    };
 
     render() {
 

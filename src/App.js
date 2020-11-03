@@ -4,13 +4,16 @@ import './assets/css/fonts.css';
 import './App.css';
 import Header from './components/Header';
 import ProjectCoordinator from './components/ProjectCoordinator';
+import { HashRouter, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div >
-      <Header />
-      <ProjectCoordinator />
-    </div>
+    <BrowserRouter>
+      <div >
+        <Header />
+        <ProjectCoordinator />
+      </div>
+    </BrowserRouter>
   );
 }
 

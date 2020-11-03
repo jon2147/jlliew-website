@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProjectTiles.css';
+import { NavLink } from 'react-router-dom';
 
 class ProjectTiles extends React.Component {
 
@@ -8,14 +9,14 @@ class ProjectTiles extends React.Component {
       <div className="project-tiles">
 
         {this.props.projectTileData.map((tile, index) => {
-          return <a className="project-tile"
+          return <NavLink to={tile[2]} className="project-tile"
             onClick={() => {
               this.props.openOverlay();
               this.props.setActiveProject(index);
             }}
             key={index}>
             <img className="tile-image" src={tile[0]} alt={tile[1]} />
-          </a>;
+          </NavLink>;
         })}
       </div>
     );
