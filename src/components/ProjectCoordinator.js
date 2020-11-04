@@ -129,17 +129,27 @@ class ProjectCoordinator extends React.Component {
     }
 
     onBrowserNavigationEvent = (e) => {
-        projectData.map((project, index) => {
-            const providedURL = window.location.href;
+        const providedURL = window.location.href;
         const originURL = window.location.origin;
+        let navigatingToProject = false;
+        const length = projectData.length;
 
-
+        projectData.map((project, index) => {
             // Check if the current URL matches a project entry
             if (providedURL == originURL + project.projectURL) {
-                this.setActiveProject(index);
+                this.changeActiveProject(index);
                 this.openOverlay();
+                navigatingToProject = true;
+            }
+
+            // If we've gotten to the end of the map and we're not navigating to a project, close the overlay
+            if (index === length - 1){
+                if (navigatingToProject == false){
+                    this.closeOverlay();
+                }
             }
         });
+
     };
 
     render() {
