@@ -183,10 +183,6 @@ class ProjectCoordinator extends React.Component {
             <div className="project-coordinator">
                 <Helmet>
                     <title>{"Jonathan Liew | " + this.state.pageTitle}</title>
-                    <meta
-                        name="description"
-                        content={this.state.pageDescription}
-                    />
                 </Helmet>
                 <ProjectOverlay
                     contentFadeIn={this.state.contentFadeIn}

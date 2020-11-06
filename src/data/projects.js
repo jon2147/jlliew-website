@@ -468,7 +468,7 @@ export const projectData = [
                 desktopContain: true,
                 mobileContain: false,
                 isCustom: true
-                                                            }*/
+            }*/
         ]
     }
 ];
