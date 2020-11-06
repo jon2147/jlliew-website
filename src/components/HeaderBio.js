@@ -6,7 +6,7 @@ import './HeaderBio.css';
 const bioLabel = "Jonathan Liew";
 
 const bioDescription =
-"Hello! This is a space I put together to showcase my work as a designer and illustrator. I have a background in games design, and am passionate about the stories we tell through the experiences we create.";
+"Hello! I'm a designer and illustrator with a background in games design. I'm passionate about the stories told through the experiences we create, and this is a space I put together to showcase my work.";
 
 const contactInvitation = 
 "Send me an email if you'd like to get in touch";
