@@ -1,5 +1,15 @@
 import React from 'react' // React must be in scope to use JSX
 
+export const bioLabel = "Jonathan Liew";
+export const bioDescription =
+    "Hello! I'm a designer and illustrator with a background in games. I'm passionate about the stories we tell through the experiences we create, and I put this space together to showcase my work.";
+export const contactInvitation =
+    "Send me an email if you'd like to get in touch";
+export const contactEmail = "design@jlliew.com";
+
+export const siteDescription =
+    "I'm a designer and illustrator with a background in games. I'm passionate about the stories we tell through the experiences we create, and I put this space together to showcase my work.";
+
 export const projectData = [
     {
         projectTitle: "Pursuit: COVID-19 Vaccine Special Report",

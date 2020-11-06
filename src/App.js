@@ -7,6 +7,8 @@ import ProjectCoordinator from './components/ProjectCoordinator';
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
+import { siteDescription } from './data/projects.js';
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +17,7 @@ function App() {
           <title>Jonathan Liew | Design</title>
           <meta
             name="description"
-            content="This is a space I put together to showcase my work as a designer and illustrator. I have a background in games design, and am passionate about the stories we tell through the experiences we create."
+            content={siteDescription}
           />
         </Helmet>
         <Header />

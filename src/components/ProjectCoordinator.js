@@ -2,16 +2,14 @@ import React from 'react';
 import ProjectTiles from './ProjectTiles';
 import ProjectOverlay from './ProjectOverlay';
 
-import { projectData } from '../data/projects.js'
+import { projectData, siteDescription } from '../data/projects.js'
 import { Helmet } from 'react-helmet';
-
 
 
 const fadeOutInterval = 200;
 const canonicalURL = "https://jlliew.com";
 
 const defaultPageTitle = "Design";
-const defaultPageDescription = "I'm a designer and illustrator with a background in games design. I'm passionate about the stories told through the experiences we create, and this is a space I put together to showcase my work.";
 
 
 class ProjectCoordinator extends React.Component {
@@ -27,7 +25,7 @@ class ProjectCoordinator extends React.Component {
             projectNavData: [],
             projectGalleryData: [],
             pageTitle: defaultPageTitle,
-            pageDescription: defaultPageDescription
+            pageDescription: siteDescription
         };
 
         this.setActiveProject = this.setActiveProject.bind(this);
@@ -107,7 +105,7 @@ class ProjectCoordinator extends React.Component {
     closeOverlay() {
         document.getElementById("projectOverlay").className = "overlay";
         this.setState({ pageTitle: defaultPageTitle });
-        this.setState({ pageDescription: defaultPageDescription });
+        this.setState({ pageDescription: siteDescription });
 
     }
 
