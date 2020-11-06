@@ -7,6 +7,7 @@ import { projectData } from '../data/projects.js'
 
 
 const fadeOutInterval = 200;
+const canonicalURL = "https://jlliew.com";
 
 
 
@@ -105,7 +106,8 @@ class ProjectCoordinator extends React.Component {
 
         const providedURL = window.location.href;
         const originURL = window.location.origin;
-
+        let navigatingToProject = false;
+        const length = projectData.length;
 
         // Prepare an array of thumbnails for the project tiles to send to the ProjectTiles element
         const tileData = [];
@@ -119,13 +121,26 @@ class ProjectCoordinator extends React.Component {
             if (providedURL == originURL + project.projectURL) {
                 this.setActiveProject(index);
                 this.openOverlay();
+                navigatingToProject = true;
+            }
+
+            if (index === length - 1) {
+                if (navigatingToProject == false) {
+
+                    // If we've gotten to the end of the map and we're not navigating to a project, close the overlay; redirect to origin if dirty URL is detected
+                    if (providedURL == originURL || providedURL == originURL + "/#projects" || providedURL == originURL + "/") {
+                        this.closeOverlay();
+                    } else {
+                        window.location.href = originURL;
+                    }
+                }
             }
         });
 
         this.setState({ projectTileData: tileData });
 
+        // Respond to a browser navigation event
         window.onpopstate = this.onBrowserNavigationEvent;
-
     }
 
     onBrowserNavigationEvent = (e) => {
@@ -143,8 +158,8 @@ class ProjectCoordinator extends React.Component {
             }
 
             // If we've gotten to the end of the map and we're not navigating to a project, close the overlay
-            if (index === length - 1){
-                if (navigatingToProject == false){
+            if (index === length - 1) {
+                if (navigatingToProject == false) {
                     this.closeOverlay();
                 }
             }

@@ -244,7 +244,7 @@ export const projectData = [
         projectTitle: "MLILY Australia",
         projectSubtitle: "Pictoria Media",
         projectDescription: <div>
-            <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair – not the audio file format), and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
+            <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair ♫), and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
             <p>I also worked on point of sale material (pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/mlily_vfx_thumb.jpg",
@@ -300,7 +300,7 @@ export const projectData = [
         projectTitle: "Fivex Art Prize 2020",
         projectSubtitle: "Digital Billboard Art",
         projectDescription: <div>
-            <p>The new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Fivex Art Prize</a> intended for a selection of paired artworks to be displayed on LED billboards on the corner of Flinders and Elizabeth streets. My submissions were <i>not</i> selected, but I've arranged for them to be displayed here.</p>
+            <p>The new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Fivex Art Prize</a> intended for a selection of paired artworks to be displayed on LED billboards on the corner of Flinders and Elizabeth streets. My submissions were <i>not</i> selected, but I've made the necessary arrangements to have them displayed right here.</p>
             <p>I conceived this piece as one that might inspire its viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world. The swimmer is a figure of individual freedom, and as a diver one of determined curiosity. They navigate the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/fivex_podium_thumb.jpg",
