@@ -330,7 +330,7 @@ export const projectData = [
         </div>,
         projectThumbnail: "/images/thumbnails/enp_guide_thumb.jpg",
         projectURL: "/enp",
-        projectTags: [],
+        projectTags: ["Graphic Design", "Interaction Design", "UX / UI"],
         projectImages: [
             {
                 imageURL: "/images/enp/enp_cover.jpg",
@@ -345,7 +345,7 @@ export const projectData = [
         projectSubtitle: "Personal Work",
         projectDescription: <div>
             <p>Master studies are one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank">reverse Google image search</a> – you know you've done alright when it directs you to the original!</p>
-            <p><i>Original works belong to: John Singer Sargent, Zhaoming Wu and Brian Huang.</i></p>
+            <p>Original works belong to: <i>John Singer Sargent, Zhaoming Wu and Brian Huang.</i></p>
         </div>,
         projectThumbnail: "/images/thumbnails/ms_joseph_thumb.jpg",
         projectURL: "/master-studies",

@@ -3,12 +3,15 @@ import ProjectTiles from './ProjectTiles';
 import ProjectOverlay from './ProjectOverlay';
 
 import { projectData } from '../data/projects.js'
+import { Helmet } from 'react-helmet';
 
 
 
 const fadeOutInterval = 200;
 const canonicalURL = "https://jlliew.com";
 
+const defaultPageTitle = "Design";
+const defaultPageDescription = "This is a space I put together to showcase my work as a designer and illustrator. I have a background in games design, and am passionate about the stories we tell through the experiences we create.";
 
 
 class ProjectCoordinator extends React.Component {
@@ -22,7 +25,9 @@ class ProjectCoordinator extends React.Component {
             projectTileData: [],
             projectProseData: [],
             projectNavData: [],
-            projectGalleryData: []
+            projectGalleryData: [],
+            pageTitle: defaultPageTitle,
+            pageDescription: defaultPageDescription
         };
 
         this.setActiveProject = this.setActiveProject.bind(this);
@@ -39,6 +44,8 @@ class ProjectCoordinator extends React.Component {
     setActiveProject(projectIndex) {
         this.setState({ activeProjectIndex: projectIndex });
         this.setState({ contentFadeIn: true });
+        this.setState({ pageTitle: projectData[projectIndex].projectTitle });
+        this.setState({ pageDescription: projectData[projectIndex].projectDescription });
 
 
         const proseData = [{
@@ -99,6 +106,9 @@ class ProjectCoordinator extends React.Component {
 
     closeOverlay() {
         document.getElementById("projectOverlay").className = "overlay";
+        this.setState({ pageTitle: defaultPageTitle });
+        this.setState({ pageDescription: defaultPageDescription });
+
     }
 
 
@@ -171,6 +181,13 @@ class ProjectCoordinator extends React.Component {
 
         return (
             <div className="project-coordinator">
+                <Helmet>
+                    <title>{"Jonathan Liew | " + this.state.pageTitle}</title>
+                    <meta
+                        name="description"
+                        content={this.state.pageDescription}
+                    />
+                </Helmet>
                 <ProjectOverlay
                     contentFadeIn={this.state.contentFadeIn}
                     projectProseData={this.state.projectProseData}

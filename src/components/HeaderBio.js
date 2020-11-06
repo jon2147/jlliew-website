@@ -6,7 +6,7 @@ import './HeaderBio.css';
 const bioLabel = "Jonathan Liew";
 
 const bioDescription =
-"Si eth e burion nal eoth as raubriel ro sorriend. This is a space where projects I've worked on might go. This site is under construction. For neole selusid del oelest, muries nen ef cabapret e oelespitel.";
+"Hello! This is a space I put together to showcase my work as a designer and illustrator. I have a background in games design, and am passionate about the stories we tell through the experiences we create.";
 
 const contactInvitation = 
 "Send me an email if you'd like to get in touch";
