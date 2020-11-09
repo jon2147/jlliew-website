@@ -26,6 +26,13 @@
     height: 100%;
 }
 
+.cell-to-fullscreen {
+    position: absolute;
+    bottom: var(--overlay-inner-padding-mobile);
+    right: var(--overlay-inner-padding-mobile);
+    color: var(--overlay-interactive-primary);
+}
+
 .cell-content {
     width: 100%;
     height: 100%;

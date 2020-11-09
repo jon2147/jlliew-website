@@ -10,7 +10,6 @@ import ArrowBack from '@material-ui/icons/ArrowBack';
 import ArrowForward from '@material-ui/icons/ArrowForward';
 import PositionDot from '@material-ui/icons/Lens';
 
-
 class OverlayGallery extends React.Component {
 
 
@@ -24,6 +23,8 @@ class OverlayGallery extends React.Component {
 
         return (
             <div className="gallery">
+
+
 
                 {/* Carousel cells */}
                 <Slider
@@ -62,7 +63,6 @@ class OverlayGallery extends React.Component {
                     })}
 
                 </Slider>
-
 
                 {/* Carousel navigation; use style={{ display: showNav ? "flex" : "none" }} to hide nav for single-image project */}
                 <span className={showNav ? "carousel-nav" : "carousel-nav single"} >
