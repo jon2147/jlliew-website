@@ -110,7 +110,7 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "/images/unimelb/study_oyl_inner.jpg",
+                imageURL: "/images/unimelb/study_inner_spread.jpg",
                 imageAlt: "Study: One Year Later Booklet (Inner)",
                 desktopContain: false,
                 mobileContain: false
@@ -134,13 +134,13 @@ export const projectData = [
         projectTags: ["Digital Painting", "Collectible Card Game", "Illustration", "Concept Art"],
         projectImages: [
             {
-                imageURL: "/images/wartide_apstaff.jpg",
+                imageURL: "/images/wartide/wartide_apstaff.jpg",
                 imageAlt: "Wartide - Ancient Priest's Staff",
                 desktopContain: true,
                 mobileContain: false
             },
             {
-                imageURL: "/images/wartide_vshift.png",
+                imageURL: "/images/wartide/wartide_vshift.jpg",
                 imageAlt: "Wartide - Void Shift",
                 desktopContain: true,
                 mobileContain: false
@@ -318,13 +318,13 @@ export const projectData = [
         projectTags: ["Digital Painting", "LED billboard", "Flinders St", "Elizabeth St", "QMS Media"],
         projectImages: [
             {
-                imageURL: "/images/fivex_fb_wrap.png",
+                imageURL: "/images/fivex/fivex_fb_wrap.png",
                 imageAlt: "Fivex Art Prize Billboard Wrap Artwork",
                 desktopContain: false,
                 mobileContain: true
             },
             {
-                imageURL: "/images/fivex_fb_podium.png",
+                imageURL: "/images/fivex/fivex_fb_podium.png",
                 imageAlt: "Fivex Art Prize Billboard Podium Artwork",
                 desktopContain: true,
                 mobileContain: true
@@ -344,7 +344,7 @@ export const projectData = [
         projectImages: [
             {
                 imageURL: "/images/enp/enp_cover.jpg",
-                imageAlt: "Wartide - Ancient Priest's Staff",
+                imageAlt: "Evans and Peters Cover",
                 desktopContain: false,
                 mobileContain: false
             }
