@@ -1,3 +1,10 @@
+:root {
+    --overlay-nav-link-text: 0.625rem;
+    --overlay-nav-link-text-xl: 1.125em;
+
+    --overlay-nav-icon-xl: 1.75rem;
+}
+
 .overlay-nav {
     padding: var(--overlay-inner-padding) var(--overlay-outer-padding) var(--overlay-outer-padding) var(--overlay-outer-padding);
     margin-top: auto;
@@ -5,7 +12,7 @@
 
 .overlay-nav-link {
     color: var(--overlay-interactive-primary);
-    font-size: 0.625rem;
+    font-size: var(--overlay-nav-link-text);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.16em;
@@ -119,4 +126,23 @@
     .overlay-close-mobile {
         margin-top: 4rem;
     }
+}
+
+@media only screen and (min-width: 2250px) {
+    .overlay-nav{
+        padding: var(--overlay-inner-padding-xl) var(--overlay-outer-padding-xl) var(--overlay-outer-padding-xl) var(--overlay-outer-padding-xl);
+
+        
+    }
+
+    .overlay-nav-link {
+        font-size: var(--overlay-nav-link-text-xl);
+        
+    }
+
+    .overlay-nav-icon {
+        width: var(--overlay-nav-icon-xl) !important;
+        height: var(--overlay-nav-icon-xl) !important;
+    }
+    
 }

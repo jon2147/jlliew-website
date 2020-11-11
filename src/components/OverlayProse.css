@@ -1,36 +1,67 @@
+:root {
+    /*project subtitle*/
+    --project-subtitle-mobile: 1.1625rem;
+    --project-subtitle: 1.375rem;
+    --project-subtitle-xl: 1.8375rem;
+    --project-subtitle-margin-bottom: 0.4375rem;
+    --project-subtitle-margin-bottom-xl: 0.8rem;
+    /*project title*/
+    --project-title-mobile: 1.625rem;
+    --project-title: 2.25rem;
+    --project-title-xl: 3rem;
+    /*project description*/
+    --project-description-mobile: 0.9375rem;
+    --project-description: 0.9375rem;
+    --project-description-xl: 1.5rem;
+    --project-description-line-height: 1.375rem;
+    --project-description-line-height-xl: 2.25rem;
+    --project-description-margin-top-mobile: 1.25rem;
+    --project-description-margin-top: 2rem;
+    --project-description-margin-top-xl: 2.5rem;
+    /*project tags*/
+    --project-tags-mobile: 0.625rem;
+    --project-tags: 0.625rem;
+    --project-tags-xl: 0.875rem;
+    --project-tag-horizontal-spacing: 1.5rem;
+    --project-tag-horizontal-spacing-xl: 3.5rem;
+    --project-tag-vertical-spacing: 1rem;
+    --project-tag-vertical-spacing-xl: 1.75rem;
+}
+
 .prose {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: var(--header-half-content-max-width);
 }
 
 .project-subtitle {
     text-align: left;
-    font-size: 1.375rem;
+    font-size: var(--project-subtitle);
     font-weight: 400;
-    margin-bottom: 0.4375rem;
+    margin-bottom: var(--project-subtitle-margin-bottom);
 }
 
 .project-title {
     text-align: left;
-    font-size: 2.25rem;
+    font-size: var(--project-title);
     font-weight: 600;
 }
 
 .project-description {
     text-align: left;
-    font-size: 0.9375rem;
+    font-size: var(--project-description);
     font-weight: 400;
     white-space: pre-wrap;
-    margin-top: 2rem;
-    line-height: 1.375rem;
+    margin-top: var(--project-description-margin-top);
+    line-height: var(--project-description-line-height);
 }
 
 .project-tags {
     color: #aaaaaa;
-    font-size: 0.625rem;
+    font-size: var(--project-tags);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.16em;
@@ -40,8 +71,8 @@
 
 .project-tag {
     display: inline-block;
-    margin-bottom: 1rem;
-    margin-right: 1.5rem;
+    margin-bottom: var(--project-tag-vertical-spacing);
+    margin-right: var(--project-tag-horizontal-spacing);
 }
 
 .project-tag:last-child {
@@ -49,16 +80,46 @@
 }
 
 @media only screen and (max-width: 1080px) {
+    .prose {
+        max-width: var(--header-half-content-max-width-mobile);
+    }
+    
     .project-subtitle {
-        font-size: 1.1625rem;
+        font-size: var(--project-subtitle-mobile);
     }
     .project-title {
-        font-size: 1.625rem;
+        font-size: var(--project-title-mobile);
     }
     .project-description {
-        margin-top: 1.25rem;
+        font-size: var(--project-description-mobile);
+        margin-top: var(--project-description-margin-top-mobile);
     }
     .project-tags {
         margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 2250px) and (min-height: 1080px) {
+    .prose {
+        max-width: var(--header-half-content-max-width-xl);
+    }
+    .project-subtitle {
+        margin-bottom: var(--project-subtitle-margin-bottom-xl);
+        font-size: var(--project-subtitle-xl);
+    }
+    .project-title {
+        font-size: var(--project-title-xl);
+    }
+    .project-description {
+        font-size: var(--project-description-xl);
+        line-height: var(--project-description-line-height-xl);
+        margin-top: var(--project-description-margin-top-xl);
+    }
+    .project-tags {
+        font-size: var(--project-tags-xl);
+    }
+    .project-tag {
+        margin-bottom: var(--project-tag-vertical-spacing-xl);
+        margin-right: var(--project-tag-horizontal-spacing-xl);
     }
 }
