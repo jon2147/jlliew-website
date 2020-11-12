@@ -74,13 +74,13 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "/images/unimelb/unimelb_mfa_screens.png",
+                imageURL: "/images/unimelb/unimelb_mfa_screens.jpg",
                 imageAlt: "Digital Online Channels Booklet Overleaf",
                 desktopContain: true,
                 mobileContain: true
             },
             {
-                imageURL: "/images/unimelb/study_ipnav_dev.png",
+                imageURL: "/images/unimelb/study_ipnav_dev.jpg",
                 imageAlt: "Study Find a Course In-page Navigation Development",
                 desktopContain: true,
                 mobileContain: true
@@ -93,17 +93,17 @@ export const projectData = [
                 isVideo: true
             },
             {
-                imageURL: "/images/unimelb/study_fac_filters.png",
+                imageURL: "/images/unimelb/study_fac_filters.jpg",
                 imageAlt: "Study Find a Course Filters UI Overhaul",
                 desktopContain: true,
                 mobileContain: true
-            },
+            }/*,
             {
                 imageURL: "/images/unimelb/study_scp_semantic.jpg",
                 imageAlt: "Study Sample Course Plan Semantic Colourisation",
                 desktopContain: true,
                 mobileContain: true
-            },
+            }*/,
             {
                 imageURL: "/images/unimelb/unimelb_livewhale_events.jpg",
                 imageAlt: "LiveWhale Events Component Samples",
@@ -111,8 +111,8 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "/images/unimelb/study_inner_spread.jpg",
-                imageAlt: "Study: One Year Later Booklet (Inner)",
+                imageURL: "/images/unimelb/study_oyl_inside.jpg",
+                imageAlt: "Study: One Year Later Booklet (Inside)",
                 desktopContain: false,
                 mobileContain: false
             },
@@ -166,14 +166,8 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "/images/pollen/pollen_logo_variants.jpg",
-                imageAlt: "Pollen Logo Proposals",
-                desktopContain: true,
-                mobileContain: true
-            },
-            {
-                imageURL: "/images/pollen/pollen_colour_excerpt.jpg",
-                imageAlt: "Pollen Style Guide Colour Excerpt",
+                imageURL: "/images/pollen/pollen_guide_excerpts.jpg",
+                imageAlt: "Pollen Style Guide Excerpts",
                 desktopContain: true,
                 mobileContain: true
             },
@@ -222,7 +216,7 @@ export const projectData = [
             {
                 imageURL: "/images/bestfurn/bestfurn_daisy_hero.jpg",
                 imageAlt: "Bestfurn Daisy Hero",
-                desktopContain: true,
+                desktopContain: false,
                 mobileContain: false
             },
             {
@@ -282,20 +276,14 @@ export const projectData = [
                 isVideo: true
             },
             {
-                imageURL: "/images/mlily/mlily_pos_pullup_manu.jpg",
-                imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
-                desktopContain: false,
-                mobileContain: false
-            },
-            {
                 imageURL: "/images/mlily/mlily_pos_context.jpg",
                 imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
-                desktopContain: false,
+                desktopContain: true,
                 mobileContain: false
             },
             {
-                imageURL: "/images/mlily/mlily_pos_decal.jpg",
-                imageAlt: "MLILY Point of Sale Window Decal - David de Gea",
+                imageURL: "/images/mlily/mlily_pos_pullup_manu.jpg",
+                imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
                 desktopContain: true,
                 mobileContain: true
             },
