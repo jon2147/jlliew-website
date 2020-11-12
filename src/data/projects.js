@@ -68,7 +68,7 @@ export const projectData = [
                 mobileContain: false
             },
             {
-                imageURL: "/images/unimelb/unimelb_megamenu.png",
+                imageURL: "/images/unimelb/unimelb_megamenu.jpg",
                 imageAlt: "Unimelb Megamenu",
                 desktopContain: true,
                 mobileContain: true
@@ -86,10 +86,11 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "/images/unimelb/study_scp_principle.gif",
+                imageURL: "/images/unimelb/study_scp_principle.mp4",
                 imageAlt: "Study Find a Course In-page Navigation Prototype, made in Principle",
                 desktopContain: true,
-                mobileContain: true
+                mobileContain: true,
+                isVideo: true
             },
             {
                 imageURL: "/images/unimelb/study_fac_filters.png",
@@ -104,7 +105,7 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "/images/unimelb/unimelb_livewhale_events.png",
+                imageURL: "/images/unimelb/unimelb_livewhale_events.jpg",
                 imageAlt: "LiveWhale Events Component Samples",
                 desktopContain: true,
                 mobileContain: true
@@ -318,13 +319,13 @@ export const projectData = [
         projectTags: ["Digital Painting", "LED billboard", "Flinders St", "Elizabeth St", "QMS Media"],
         projectImages: [
             {
-                imageURL: "/images/fivex/fivex_fb_wrap.png",
+                imageURL: "/images/fivex/fivex_fb_wrap.jpg",
                 imageAlt: "Fivex Art Prize Billboard Wrap Artwork",
                 desktopContain: false,
                 mobileContain: true
             },
             {
-                imageURL: "/images/fivex/fivex_fb_podium.png",
+                imageURL: "/images/fivex/fivex_fb_podium.jpg",
                 imageAlt: "Fivex Art Prize Billboard Podium Artwork",
                 desktopContain: true,
                 mobileContain: true
@@ -414,7 +415,7 @@ export const projectData = [
             <p>Working collaboratively, I contributed concept art, generated 3D assets, produced team documents and presentations, consolidated the team's assets for implementation, and assisted our lead programmer with a dash of code. This cultivated a hollistic and sympathetic practice that has continually prepared me for so many industry-adjacent challenges.</p>
             <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank">Check out this trailer for our game <i>Red Country!</i></a></p>
         </div>,
-        projectThumbnail: "/images/thumbnails/redcountry_thumb.jpg",
+        projectThumbnail: "/images/thumbnails/gdesign_thumb.jpg",
         projectURL: "/games-design",
         projectTags: ["Concept Art", "3D Modelling", "Low / High Poly", "Animation", "Object-oriented Programming", "Maya", "Unity", "A/V Production"],
         projectImages: [
