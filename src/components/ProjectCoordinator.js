@@ -137,7 +137,8 @@ class ProjectCoordinator extends React.Component {
                     if (providedURL == originURL || providedURL == originURL + "/#projects" || providedURL == originURL + "/") {
                         this.closeOverlay();
                     } else {
-                        window.location.href = originURL;
+                        // Because we already redirect to origin when an invalid URL is detected (through Firebase), update the browser-displayed URL to match this
+                        window.history.replaceState({}, "", originURL);
                     }
                 }
             }
