@@ -2,13 +2,11 @@ import React from 'react';
 import ProjectTiles from './ProjectTiles';
 import ProjectOverlay from './ProjectOverlay';
 
-import { projectData, siteDescription } from '../data/projects.js'
+import { projectData, canonicalURL, siteDescription } from '../data/projects.js'
 import { Helmet } from 'react-helmet';
 
 
 const fadeOutInterval = 200;
-const canonicalURL = "https://jlliew.com";
-
 const defaultPageTitle = "Design";
 
 
@@ -25,7 +23,8 @@ class ProjectCoordinator extends React.Component {
             projectNavData: [],
             projectGalleryData: [],
             pageTitle: defaultPageTitle,
-            pageDescription: siteDescription
+            pageDescription: siteDescription,
+            pageCanonicalURL: canonicalURL
         };
 
         this.setActiveProject = this.setActiveProject.bind(this);
@@ -42,7 +41,7 @@ class ProjectCoordinator extends React.Component {
     setActiveProject(projectIndex) {
         this.setState({ activeProjectIndex: projectIndex });
         this.setState({ contentFadeIn: true });
-        this.setState({ pageTitle: projectData[projectIndex].projectTitle });
+        this.setState({ pageTitle: projectData[projectIndex].projectTitle, pageCanonicalURL: canonicalURL + projectData[projectIndex].projectURL});
         this.setState({ pageDescription: projectData[projectIndex].projectDescription });
 
 
@@ -104,9 +103,8 @@ class ProjectCoordinator extends React.Component {
 
     closeOverlay() {
         document.getElementById("projectOverlay").className = "overlay";
-        this.setState({ pageTitle: defaultPageTitle });
+        this.setState({ pageTitle: defaultPageTitle, pageCanonicalURL: canonicalURL });
         this.setState({ pageDescription: siteDescription });
-
     }
 
 
@@ -181,6 +179,7 @@ class ProjectCoordinator extends React.Component {
             <div className="project-coordinator">
                 <Helmet>
                     <title>{"Jonathan Liew | " + this.state.pageTitle}</title>
+                    <link rel="canonical" href={this.state.pageCanonicalURL} />
                 </Helmet>
                 <ProjectOverlay
                     contentFadeIn={this.state.contentFadeIn}

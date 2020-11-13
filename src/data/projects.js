@@ -1,5 +1,6 @@
 import React from 'react' // React must be in scope to use JSX
 
+export const canonicalURL = "jlliew.com";
 export const bioLabel = "Jonathan Liew";
 export const bioDescription =
     "Hello! This is a space I put together to showcase my work. I'm a designer and illustrator with a background in games, and I'm passionate about the stories we tell through the experiences we create.";
@@ -277,7 +278,7 @@ export const projectData = [
             },
             {
                 imageURL: "/images/mlily/mlily_pos_context.jpg",
-                imageAlt: "MLILY Point of Sale Pullup Banner - Manchester United",
+                imageAlt: "MLILY Point of Sale Window Decals and Feather Banner",
                 desktopContain: true,
                 mobileContain: false
             },
