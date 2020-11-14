@@ -209,7 +209,7 @@ export const projectData = [
                 mobileContain: true
             },
             {
-                imageURL: "/images/bestfurn/bestfurn_191112_shotlist.jpg",
+                imageURL: "/images/bestfurn/bestfurn_181112_shotlist.jpg",
                 imageAlt: "Bestfurn Spring Summer Shoot Plan",
                 desktopContain: true,
                 mobileContain: true
@@ -300,7 +300,7 @@ export const projectData = [
         projectTitle: "Fivex Art Prize 2020",
         projectSubtitle: "Digital Billboard Art",
         projectDescription: <div>
-            <p>The new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Fivex Art Prize</a> intended for a selection of paired artworks to be displayed on LED billboards on the corner of Flinders and Elizabeth streets. My submissions <i>weren't</i> selected but here they specially are!</p>
+            <p>The new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Fivex Art Prize</a> intended for a selection of paired artworks to be displayed on LED billboards on the corner of Flinders and Elizabeth streets. My submissions <i>weren't</i> selected, so think of this as an exclusive look.</p>
             <p>I conceived these as pieces that might inspire viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world. The swimmer is a figure of individual freedom, and as a diver one of determined curiosity. They navigate the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/fivex_podium_thumb.jpg",
