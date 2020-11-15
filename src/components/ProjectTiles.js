@@ -14,7 +14,7 @@ class ProjectTiles extends React.Component {
               this.props.openOverlay();
               this.props.setActiveProject(index);
             }}
-            key={index}>
+            key={index} title={tile[1]}>
             <img className="tile-image" src={tile[0]} alt={tile[1]} />
           </NavLink>;
         })}

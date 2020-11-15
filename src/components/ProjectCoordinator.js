@@ -45,12 +45,12 @@ class ProjectCoordinator extends React.Component {
         this.setState({ pageDescription: projectData[projectIndex].projectDescription });
 
 
-        const proseData = [{
+        const proseData = {
             projectTitle: projectData[projectIndex].projectTitle,
             projectSubtitle: projectData[projectIndex].projectSubtitle,
             projectDescription: projectData[projectIndex].projectDescription,
             projectTags: projectData[projectIndex].projectTags
-        }];
+        };
 
         this.setState({ projectProseData: proseData });
 
@@ -59,7 +59,7 @@ class ProjectCoordinator extends React.Component {
         this.setState({ projectGalleryData: galleryData });
 
 
-        const navBackwardIndex = projectIndex == 0 ? projectData.length - 1 : projectIndex - 1;
+        const navBackwardIndex = projectIndex === 0 ? projectData.length - 1 : projectIndex - 1;
         const navForwardIndex = projectIndex >= (projectData.length - 1) ? 0 : projectIndex + 1;
 
         const navData = [
@@ -74,7 +74,7 @@ class ProjectCoordinator extends React.Component {
 
 
     changeActiveProject(projectIndex) {
-        if (projectIndex == this.state.activeProjectIndex) {
+        if (projectIndex === this.state.activeProjectIndex) {
             return;
         }
         this.setState({ contentFadeIn: false });
@@ -92,7 +92,7 @@ class ProjectCoordinator extends React.Component {
     previousProject() {
         const activeIndex = this.state.activeProjectIndex;
 
-        activeIndex == 0 ?
+        activeIndex === 0 ?
             this.changeActiveProject(projectData.length - 1) : this.changeActiveProject(activeIndex - 1);
     }
 
@@ -118,23 +118,23 @@ class ProjectCoordinator extends React.Component {
         // Prepare an array of thumbnails for the project tiles to send to the ProjectTiles element
         const tileData = [];
 
-        projectData.map((project, index) => {
+        projectData.forEach((project, index) => {
 
             // Prepare the data for the ProjectTiles
             tileData[index] = [project.projectThumbnail, project.projectTitle, project.projectURL];
 
             // Check if the current URL matches a project entry
-            if (providedURL == originURL + project.projectURL) {
+            if (providedURL === originURL + project.projectURL) {
                 this.setActiveProject(index);
                 this.openOverlay();
                 navigatingToProject = true;
             }
 
             if (index === length - 1) {
-                if (navigatingToProject == false) {
+                if (navigatingToProject === false) {
 
                     // If we've gotten to the end of the map and we're not navigating to a project, close the overlay; redirect to origin if dirty URL is detected
-                    if (providedURL == originURL || providedURL == originURL + "/#projects" || providedURL == originURL + "/") {
+                    if (providedURL === originURL || providedURL === originURL + "/#projects" || providedURL === originURL + "/") {
                         this.closeOverlay();
                     } else {
                         // Because we already redirect to origin when an invalid URL is detected (through Firebase), update the browser-displayed URL to match this
@@ -156,9 +156,9 @@ class ProjectCoordinator extends React.Component {
         let navigatingToProject = false;
         const length = projectData.length;
 
-        projectData.map((project, index) => {
+        projectData.forEach((project, index) => {
             // Check if the current URL matches a project entry
-            if (providedURL == originURL + project.projectURL) {
+            if (providedURL === originURL + project.projectURL) {
                 this.changeActiveProject(index);
                 this.openOverlay();
                 navigatingToProject = true;
@@ -166,7 +166,7 @@ class ProjectCoordinator extends React.Component {
 
             // If we've gotten to the end of the map and we're not navigating to a project, close the overlay
             if (index === length - 1) {
-                if (navigatingToProject == false) {
+                if (navigatingToProject === false) {
                     this.closeOverlay();
                 }
             }

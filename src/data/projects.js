@@ -1,4 +1,5 @@
 import React from 'react' // React must be in scope to use JSX
+import Launch from '@material-ui/icons/Launch'
 
 export const canonicalURL = "https://jlliew.com";
 export const bioLabel = "Jonathan Liew";
@@ -16,7 +17,7 @@ export const projectData = [
         projectTitle: "Pursuit: COVID-19 Vaccine Special Report",
         projectSubtitle: "University of Melbourne",
         projectDescription: <div>
-            <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank">the search for a COVID-19 vaccine</a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
+            <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank" rel="noopener noreferrer">the search for a COVID-19 vaccine<Launch className="project-external-link-icon" /></a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
             <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparatively trivial work – I hope the remaining readership were just as thrilled with the science.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/unimelb_pursuit_thumb.jpg",
@@ -154,7 +155,7 @@ export const projectData = [
         projectSubtitle: "University of Melbourne",
         projectDescription: <div>
             <p><i>Melbourne Pollen</i> lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.</p>
-            <p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href="https://www.melbournepollen.com.au/who-are-we/meet-team/" target="_blank">here they are</a>) on modular, adaptable designs to guide the development of their new app.</p>
+            <p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href="https://www.melbournepollen.com.au/who-are-we/meet-team/" target="_blank" rel="noopener noreferrer">here they are<Launch className="project-external-link-icon" /></a>) on modular, adaptable designs to guide the development of their new app.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/pollen_grid_thumb.jpg",
         projectURL: "/unimelb-pollen",
@@ -250,7 +251,7 @@ export const projectData = [
         projectTitle: "MLILY Australia",
         projectSubtitle: "Pictoria Media",
         projectDescription: <div>
-            <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair ♫), and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
+            <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair ♫) and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
             <p>I also worked on point of sale material (pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/mlily_vfx_thumb.jpg",
@@ -300,7 +301,7 @@ export const projectData = [
         projectTitle: "Fivex Art Prize 2020",
         projectSubtitle: "Digital Billboard Art",
         projectDescription: <div>
-            <p>The new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank">Fivex Art Prize</a> intended for a selection of paired artworks to be displayed on LED billboards on the corner of Flinders and Elizabeth streets. My submissions <i>weren't</i> selected, so think of this as an exclusive look.</p>
+            <p>The new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank" rel="noopener noreferrer">Fivex Art Prize<Launch className="project-external-link-icon" /></a> intended for a selection of paired artworks to be displayed on LED billboards on the corner of Flinders and Elizabeth streets. My submissions <i>weren't</i> selected, so think of this as a very special, very exclusive look.</p>
             <p>I conceived these as pieces that might inspire viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world. The swimmer is a figure of individual freedom, and as a diver one of determined curiosity. They navigate the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/fivex_podium_thumb.jpg",
@@ -344,7 +345,7 @@ export const projectData = [
         projectTitle: "Master Portrait Studies",
         projectSubtitle: "Personal Work",
         projectDescription: <div>
-            <p>Master studies are one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank">reverse Google image search</a> – you know you've done alright when it directs you to the original!</p>
+            <p>Master studies are one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank" rel="noopener noreferrer">reverse Google image search<Launch className="project-external-link-icon" /></a> – you know you've done alright when it directs you to the original!</p>
             <p>Original works belong to: <i>John Singer Sargent, Zhaoming Wu and Brian Huang.</i></p>
         </div>,
         projectThumbnail: "/images/thumbnails/ms_joseph_thumb.jpg",
@@ -402,7 +403,7 @@ export const projectData = [
         projectDescription: <div>
             <p>Even though I specialised as a 2D artist, this program's emphasis on independent game development also had me learning how to work with object-oriented programming languages (such as C#), as well as how to sculpt, rig and animate 3D models.</p>
             <p>Working collaboratively, I contributed concept art, generated 3D assets, produced team documents and presentations, consolidated the team's assets for implementation, and assisted our lead programmer with a dash of code. This cultivated a hollistic and sympathetic practice that has continually prepared me for so many industry-adjacent challenges.</p>
-            <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank">Check out this trailer for our game <i>Red Country!</i></a></p>
+            <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank" rel="noopener noreferrer">Check out this trailer for our game <i>Red Country!</i><Launch className="project-external-link-icon" /></a></p>
         </div>,
         projectThumbnail: "/images/thumbnails/gdesign_thumb.jpg",
         projectURL: "/games-design",

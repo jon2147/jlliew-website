@@ -1,5 +1,4 @@
 import React from 'react';
-import Flickity from 'flickity';
 import 'flickity/dist/flickity.min.css';
 import './OverlayGallery.css';
 
@@ -66,20 +65,20 @@ class OverlayGallery extends React.Component {
 
                 {/* Carousel navigation; use style={{ display: showNav ? "flex" : "none" }} to hide nav for single-image project */}
                 <span className={showNav ? "carousel-nav" : "carousel-nav single"} >
-                    <a className="carousel-nav-direction" style={{ display: showNav ? "flex" : "none" }}>
+                    <button className="carousel-nav-direction" style={{ display: showNav ? "flex" : "none" }}>
                         <ArrowBack className="carousel-nav-direction-icon"/>
-                    </a>
+                    </button>
                     <span className="carousel-nav-position">
                         {galleryData.map((image, index) => {
-                            return <a className={index == 0 ?
+                            return <button className={index === 0 ?
                                 "carousel-nav-position-dot selected" : "carousel-nav-position-dot"} key={index}>
                                 <PositionDot className="carousel-nav-position-dot-icon" />
-                            </a>;
+                            </button>;
                         })}
                     </span>
-                    <a className="carousel-nav-direction forward" style={{ display: showNav ? "flex" : "none" }} >
+                    <button className="carousel-nav-direction forward" style={{ display: showNav ? "flex" : "none" }} >
                         <ArrowForward className="carousel-nav-direction-icon" />
-                    </a>
+                    </button>
                 </span>
             </div >
         );

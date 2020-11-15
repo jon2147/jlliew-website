@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Header.css';
 
 import HeaderBio from './HeaderBio';
@@ -10,11 +9,10 @@ class Header extends React.Component {
     render() {
 
         return (
-            
-            <header className="folio-header">                
+            <header className="folio-header">
                 <div className="header-container">
                     <HeaderBio />
-                    <div className="header-divider"/>
+                    <div className="header-divider" />
                     <HeaderAuxiliary />
                 </div>
             </header>

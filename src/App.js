@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './assets/css/fonts.css';
 import './App.css';
 import Header from './components/Header';
 import ProjectCoordinator from './components/ProjectCoordinator';
-import { HashRouter, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import { siteDescription } from './data/projects.js';

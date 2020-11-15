@@ -58,6 +58,10 @@
     color: var(--overlay-interactive-primary);
     transition: all .15s ease;
     margin: 0 0 0 var(--overlay-inner-padding-mobile);
+    /* anti-button styles */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .carousel-nav-direction.forward {
@@ -67,6 +71,9 @@
 
 .carousel-nav-direction:hover {
     color: white;
+    /* anti-button styles */
+    outline: none;
+    box-shadow: none;
 }
 
 .carousel-nav-position {
@@ -83,11 +90,18 @@
     padding-right: 0.5rem;
     color: white;
     transition: all .15s ease;
+    /* anti-button styles */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .carousel-nav-position-dot:hover {
     transform: scale(1.75);
     color: var(--overlay-interactive-primary);
+    /* anti-button styles */
+    outline: none;
+    box-shadow: none;
 }
 
 .carousel-nav-position-dot.selected {

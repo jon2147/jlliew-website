@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import './Randomotron.css';
 
 import { randomotronItems } from '../data/randomotron-items.js'
-
 
 const items = randomotronItems;
 
@@ -18,7 +16,7 @@ function Randomotron() {
     const [fadeIn, setFadeIn] = useState(false);
 
     function nextItem() {
-        if (item == (items.length - 1))
+        if (item === (items.length - 1))
         {
             setItem(0); 
         } else {

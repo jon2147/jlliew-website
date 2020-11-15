@@ -53,6 +53,11 @@ p:last-child {
     margin-bottom: 0;
 }
 
+.project-external-link-icon {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+}
+
 .overlay {
     color: var(--project-copy);
     height: 100%;

@@ -12,9 +12,9 @@ class HeaderBio extends React.Component {
                 <h1 className="bio-label">{bioLabel}</h1>
                 <p className="bio-description">{bioDescription}</p>
                 <div className="bio-contact">
-                    <HeaderProjectsLink showOnMobile={true}/>
+                    <HeaderProjectsLink showOnMobile={true} />
                     <p>{contactInvitation}</p>
-                    <a className="bio-contact-link" href={"mailto:"+contactEmail}>{contactEmail}</a>
+                    <a className="bio-contact-link" title={"Send an email to " + contactEmail} href={"mailto:" + contactEmail}>{contactEmail}</a>
                 </div>
             </div>
         );

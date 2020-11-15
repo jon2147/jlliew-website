@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 class AuxiliaryExperiences extends React.Component {
     render() {
         return (
