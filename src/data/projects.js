@@ -18,7 +18,7 @@ export const projectData = [
         projectSubtitle: "University of Melbourne",
         projectDescription: <div>
             <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank" rel="noopener noreferrer">the search for a COVID-19 vaccine<Launch className="project-external-link-icon" /></a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
-            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparatively trivial work – I hope the remaining readership were just as thrilled with the science.</p>
+            <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparatively trivial work – let's hope the remaining readership are just as thrilled with the science.</p>
         </div>,
         projectThumbnail: "/images/thumbnails/unimelb_pursuit_thumb.jpg",
         projectURL: "/unimelb-pursuit",
@@ -114,13 +114,7 @@ export const projectData = [
             },
             {
                 imageURL: "/images/unimelb/study_oyl_inside.jpg",
-                imageAlt: "Study: One Year Later Booklet (Inside)",
-                desktopContain: false,
-                mobileContain: false
-            },
-            {
-                imageURL: "/images/unimelb/study_oyl_back.jpg",
-                imageAlt: "Study: One Year Later Booklet (Back)",
+                imageAlt: "Study: One Year Later Booklet",
                 desktopContain: false,
                 mobileContain: false
             }
@@ -403,7 +397,7 @@ export const projectData = [
         projectDescription: <div>
             <p>Even though I specialised as a 2D artist, this program's emphasis on independent game development also had me learning how to work with object-oriented programming languages (such as C#), as well as how to sculpt, rig and animate 3D models.</p>
             <p>Working collaboratively, I contributed concept art, generated 3D assets, produced team documents and presentations, consolidated the team's assets for implementation, and assisted our lead programmer with a dash of code. This cultivated a hollistic and sympathetic practice that has continually prepared me for so many industry-adjacent challenges.</p>
-            <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank" rel="noopener noreferrer">Check out this trailer for our game <i>Red Country!</i><Launch className="project-external-link-icon" /></a></p>
+            <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank" rel="noopener noreferrer">Check out this trailer for one of our projects, <i>Red Country!</i><Launch className="project-external-link-icon" /></a></p>
         </div>,
         projectThumbnail: "/images/thumbnails/gdesign_thumb.jpg",
         projectURL: "/games-design",
