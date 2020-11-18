@@ -146,7 +146,7 @@ export const projectData = [
                 imageURL: "/images/wartide/wartide_soldier_composition.jpg",
                 imageAlt: "Wartide - Trench vs Draft Soldier Cards - Using Composition and Lighting to Communicate Conflict and Turmoil",
                 desktopContain: true,
-                mobileContain: false
+                mobileContain: true
             }
         ]
     },
