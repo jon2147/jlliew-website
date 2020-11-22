@@ -6,7 +6,7 @@ export const randomotronItems =  [
     (<span>Some sound dishes I've been enjoying: <a className="link" target="_blank" title="Spotify playlist: Heidelberg Hymnary" rel="noopener noreferrer" href="https://open.spotify.com/playlist/2422RGEkrULJt2cVXEBg9t?si=fI3OdOYdT-qJ9YWDstW5jQ">
     Spotify ♫</a></span>),
     ((<span>
-        I'm trying to get back into <a className="link" target="_blank" title="Suspiria Sabbath Study" href="/images/randomotron/suspiria_sabbath_study_bw.jpg">
+        I'm starting to do <a className="link" target="_blank" title="Suspiria Sabbath Study" href="/images/randomotron/suspiria_sabbath_study_bw.jpg">
             daily studies<Launch className="randomotron-icon"/></a>
     </span>)),
     (<span>
