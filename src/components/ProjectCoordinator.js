@@ -189,8 +189,9 @@ class ProjectCoordinator extends React.Component {
                 <Helmet>
                     <title>{"Jonathan Liew | " + this.state.pageTitle}</title>
                     <link rel="canonical" href={this.state.pageCanonicalURL} />
+                    <meta name="description" content={ogTrimmed} />
                     <meta property="og:title" content={"Jonathan Liew | " + this.state.pageTitle} />
-                    <meta property="og:description:" content={ogTrimmed} />
+                    <meta property="og:description" content={ogTrimmed} />
                     <meta property="og:url" content={this.state.canonicalURL} />
                     <meta property="og:type" content="website" />
 
