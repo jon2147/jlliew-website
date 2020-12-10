@@ -41,7 +41,7 @@ class ProjectCoordinator extends React.Component {
     setActiveProject(projectIndex) {
         this.setState({ activeProjectIndex: projectIndex });
         this.setState({ contentFadeIn: true });
-        this.setState({ pageTitle: projectData[projectIndex].projectTitle, pageCanonicalURL: canonicalURL + projectData[projectIndex].projectURL});
+        this.setState({ pageTitle: projectData[projectIndex].projectTitle, pageCanonicalURL: canonicalURL + projectData[projectIndex].projectURL });
         this.setState({ pageDescription: projectData[projectIndex].projectDescription });
 
 
@@ -176,11 +176,21 @@ class ProjectCoordinator extends React.Component {
 
     render() {
 
+        let ogLength = 200;
+
+        let ogDescription = this.state.pageDescription;
+        let ogTrimmed = ogDescription > ogLength ? ogDescription.substring(0, length - 1) + "…" : ogDescription;
+
         return (
             <div className="project-coordinator">
                 <Helmet>
                     <title>{"Jonathan Liew | " + this.state.pageTitle}</title>
                     <link rel="canonical" href={this.state.pageCanonicalURL} />
+                    <meta property="og:title" content={"Jonathan Liew | " + this.state.pageTitle} />
+                    <meta property="og:description:" content={ogTrimmed} />
+                    <meta property="og:url" content={this.state.canonicalURL} />
+                    <meta property="og:type" content="website" />
+
                 </Helmet>
                 <ProjectOverlay
                     contentFadeIn={this.state.contentFadeIn}
