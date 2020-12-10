@@ -179,7 +179,7 @@ class ProjectCoordinator extends React.Component {
         let ogLength = 200;
 
         let ogDescription = this.state.pageDescription;
-        let ogTrimmed = ogDescription > ogLength ? ogDescription.substring(0, length - 1) + "…" : ogDescription;
+        let ogTrimmed = ogDescription > ogLength ? ogDescription.substring(0, ogLength - 1) + "…" : ogDescription;
 
         return (
             <div className="project-coordinator">
