@@ -20,6 +20,7 @@ export const projectData = [
             <p>As the world fell into lockdown, the media team at <i>Pursuit</i> raced to prepare a report on <a href="https://pursuit.unimelb.edu.au/articles/the-science-behind-the-search-for-a-covid-19-vaccine" target="_blank" rel="noopener noreferrer">the search for a COVID-19 vaccine<Launch className="project-external-link-icon" /></a>. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.</p>
             <p>We spent some weeks acquainting ourselves with cellular biology, and drafted scripts with Pursuit's senior editors for the publication's explainer videos, making sure to keep the information as digestible and accurate as possible. By the end, the academics were happy with our comparatively trivial work – let's hope the remaining readership are just as thrilled with the science.</p>
         </div>,
+        pageDescription: "As the world fell into lockdown, the media team at Pursuit raced to prepare a report on the search for a COVID-19 vaccine. They enlisted our help to generate motion graphics and a novel interactive piece for the five-part report.",
         projectThumbnail: "/images/thumbnails/unimelb_pursuit_thumb.jpg",
         projectURL: "/unimelb-pursuit",
         projectTags: ["After Effects", "Illustrator", "Animation", "Motion Graphics", "Adobe Media Encoder", "COVID-19", "2020"],
@@ -55,10 +56,11 @@ export const projectData = [
         projectTitle: "University of Melbourne",
         projectSubtitle: "Digital Designer",
         projectDescription: <div>
-            <p><i>"The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them."</i> – We printed that in a book.</p>
+            <p><i>“The University of Melbourne's websites are our most globally visible asset, attracting <b>27.5 million</b> visitors a year. <b>The Digital and Online Channels (DOC)</b> team is the team responsible for them.”</i> – We printed that in a book.</p>
             <p>As a part of this illustrious DOC team, I contributed to a number of major projects including: Study Find a Course (FAC) – redesigning sample course plans, course filters and in-page navigation; the university's Okta multi-factor authentication login screens; the events.unimelb LiveWhale site; and more – on top of day-to-day BAU work for our digital design system, and occasional print design for internal documentation.</p>
             <p>I left the team to tend to my mental health and attribute more time to other pursuits. If you get the opportunity to work with the DOC team, you'll find a place where you can indulge in good humour, and good will.</p>
         </div>,
+        pageDescription: "“The University of Melbourne's websites are our most globally visible asset, attracting 27.5 million visitors a year. The Digital and Online Channels (DOC) team is the team responsible for them.” – We printed that in a book.",
         projectThumbnail: "/images/thumbnails/unimelb_doc_thumb.jpg",
         projectURL: "/unimelb",
         projectTags: ["Interaction Design", "User Experience", "UX / UI", "Responsive Design", "WCAG 2.0 AA Accessibility", "Design System", "Figma", "Sketch", "InDesign", "Principle", "Print Design"],
@@ -126,6 +128,7 @@ export const projectData = [
         projectDescription: <div>
             <p>I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event.</p>
         </div>,
+        pageDescription: "I've been brought on to complete a series of illustrations for a collectible indie card game called Wartide. I've composed many of my pieces with an ensemble of figures, using a human frame to create intrigue and dimensionality surrounding the card's object, individual character or event.",
         projectThumbnail: "/images/thumbnails/wartide_apstaff_thumb.jpg",
         projectURL: "/wartide",
         projectTags: ["Digital Painting", "Collectible Card Game", "Illustration", "Concept Art"],
@@ -157,6 +160,7 @@ export const projectData = [
             <p><i>Melbourne Pollen</i> lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.</p>
             <p>Just before the 2019 bushfires made air quality monitoring an increasing necessity for the general public, the team behind Pollen proposed a new progressive web app (PWA) that would incorporate additional broadcasts and user tools, superseding the existing service. We iterated with the Pollen team (who've been working pro bono!– <a href="https://www.melbournepollen.com.au/who-are-we/meet-team/" target="_blank" rel="noopener noreferrer">here they are<Launch className="project-external-link-icon" /></a>) on modular, adaptable designs to guide the development of their new app.</p>
         </div>,
+        pageDescription: "Melbourne Pollen lets its users keep track of the level of pollen in the air, which is particularly beneficial for those prone to the effects of hay fever, seasonal asthma or other allergic conditions.",
         projectThumbnail: "/images/thumbnails/pollen_grid_thumb.jpg",
         projectURL: "/unimelb-pollen",
         projectTags: ["Progressive Web App", "Interaction Design", "User Interaction", "Style Guide", "Pollen"],
@@ -187,6 +191,7 @@ export const projectData = [
         projectDescription: <div>
             <p>Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the <i>Bestfurn Furniture &amp; Bedding Group</i>, consolidating hundreds of media assets, participating in studio shoots – decorating the set, working with resident photographers and a rotation of production staff – in addition to the design of and planning for the catalogue.</p>
         </div>,
+        pageDescription: "Under Pictoria Media, I primarily worked on a bi-monthly catalogue for the Bestfurn Furniture & Bedding Group, consolidating hundreds of media assets, participating in studio shoots – decorating the set, working with resident photographers and a rotation of production staff – in addition to the design of and planning for the catalogue.",
         projectThumbnail: "/images/thumbnails/bestfurn_gilmore_thumb.jpg",
         projectURL: "/pictoria-bestfurn",
         projectTags: ["Graphic Design", "Print Design", "CMYK", "Pre-press", "Photoshop", "InDesign"],
@@ -254,6 +259,7 @@ export const projectData = [
             <p>One of Pictoria Media's frequent clients <i>MLILY Australia</i>, were preparing for the AIFF (Australian International Furniture Fair ♫) and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.</p>
             <p>I also worked on point of sale material (pullup and hang banners, feather flags, window decals, etc.) with which staff could adorn their stores and show off their Mancunian partners.</p>
         </div>,
+        pageDescription: "One of Pictoria Media's frequent clients MLILY Australia, were preparing for the AIFF (Australian International Furniture Fair ♫) and required video content to showcase their new technologies. I was responsible for storyboarding, animating, editing and compositing 3D visualisations for their Active Touch and Copper Fusion products.",
         projectThumbnail: "/images/thumbnails/mlily_vfx_thumb.jpg",
         projectURL: "/pictoria-mlily",
         projectTags: ["Graphic Design", "Pre-press", "VFX Production", "Animation & Compositing", "POS"],
@@ -304,6 +310,8 @@ export const projectData = [
             <p>The new annual <a href="https://www.fivexartprize.com.au/gallery/" target="_blank" rel="noopener noreferrer">Fivex Art Prize<Launch className="project-external-link-icon" /></a> intended for a selection of paired artworks to be displayed on LED billboards on the corner of Flinders and Elizabeth streets. My submissions <i>weren't</i> selected, so just think of this as a behind-the-scenes special.</p>
             <p>I conceived these as pieces that might inspire viewers to i. seek out the potential of their world with a quixotic mind; and ii. to find themselves and others in that same world. The swimmer is a figure of individual freedom, and as a diver one of determined curiosity. They navigate the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.</p>
         </div>,
+        pageDescription: "The swimmer is a figure of individual freedom, and as a diver one of determined curiosity. They navigate the atomic complexity of their surroundings – of which they are made up and in which they are reflected – in an endeavour tempered by an appreciation of their world.",
+
         projectThumbnail: "/images/thumbnails/fivex_podium_thumb.jpg",
         projectURL: "/fivex-prize",
         projectTags: ["Digital Painting", "LED billboard", "Flinders St", "Elizabeth St", "QMS Media"],
@@ -329,6 +337,8 @@ export const projectData = [
             <p>The stock-broking solutions firm (then transitioning from <i>Evans &amp; Peters</i>) hired Algo Trading Services to produce an administration portal for staff members, and they required a design overhaul.</p>
             <p>I prepared a series of visual guides, each containing applications of my new designs and notes on appropriate styling, visual indicators, and form flow– making interactions meaningful and clear, and all in keeping with the established brand identity of Evans &amp; Partners.</p>
         </div>,
+        pageDescription: "The stock-broking solutions firm (then transitioning from Evans & Peters) hired Algo Trading Services to produce an administration portal for staff members, and they required a design overhaul.",
+
         projectThumbnail: "/images/thumbnails/enp_guide_thumb.jpg",
         projectURL: "/enp",
         projectTags: ["Graphic Design", "Interaction Design", "UX / UI"],
@@ -348,6 +358,8 @@ export const projectData = [
             <p>Master studies are one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction. A fun way to see how you went is to run a <a href="https://www.google.com/searchbyimage?&amp;image_url=jlliew.com/images/masters/jpulitzer_jss.jpg" target="_blank" rel="noopener noreferrer">reverse Google image search<Launch className="project-external-link-icon" /></a> – you know you've done alright when it directs you to the original!</p>
             <p>Original works belong to: <i>John Singer Sargent, Zhaoming Wu and Brian Huang.</i></p>
         </div>,
+        pageDescription: "Master studies are one of my favourite ways to improve my drawing/painting. It's helpful for gaining insight into how to simplify and capture a potential subject, while honing your mechanics through the reproduction.",
+
         projectThumbnail: "/images/thumbnails/ms_joseph_thumb.jpg",
         projectURL: "/master-studies",
         projectTags: ["Master Studies", "Digital Painting", "Portrait Art"],
@@ -405,6 +417,8 @@ export const projectData = [
             <p>Working collaboratively, I contributed concept art, generated 3D assets, produced team documents and presentations, consolidated the team's assets for implementation, and assisted our lead programmer with a dash of code. This cultivated a hollistic and sympathetic practice that has continually prepared me for so many industry-adjacent challenges.</p>
             <p><a href="https://youtu.be/A8NFMhy85SE" target="_blank" rel="noopener noreferrer">Check out this trailer for one of our projects, <i>Red Country!</i><Launch className="project-external-link-icon" /></a></p>
         </div>,
+        pageDescription: "Even though I specialised as a 2D artist, this program's emphasis on independent game development also had me learning how to work with object-oriented programming languages (such as C#), as well as how to sculpt, rig and animate 3D models.",
+
         projectThumbnail: "/images/thumbnails/gdesign_thumb.jpg",
         projectURL: "/games-design",
         projectTags: ["Concept Art", "3D Modelling", "Low / High Poly", "Animation", "Object-oriented Programming", "Maya", "Unity", "A/V Production"],

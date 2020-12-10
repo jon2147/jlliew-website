@@ -42,7 +42,8 @@ class ProjectCoordinator extends React.Component {
         this.setState({ activeProjectIndex: projectIndex });
         this.setState({ contentFadeIn: true });
         this.setState({ pageTitle: projectData[projectIndex].projectTitle, pageCanonicalURL: canonicalURL + projectData[projectIndex].projectURL });
-        this.setState({ pageDescription: projectData[projectIndex].projectDescription });
+        this.setState({ pageDescription: projectData[projectIndex].pageDescription });
+
 
 
         const proseData = {
@@ -180,6 +181,8 @@ class ProjectCoordinator extends React.Component {
 
         let ogDescription = this.state.pageDescription;
         let ogTrimmed = ogDescription > ogLength ? ogDescription.substring(0, ogLength - 1) + "…" : ogDescription;
+
+        console.log(this.state.pageDescription.innerHTML)
 
         return (
             <div className="project-coordinator">
